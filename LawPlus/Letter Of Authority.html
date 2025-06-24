@@ -1,0 +1,278 @@
+<body>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.sign-html-form{
+	max-width:850px;
+	margin:auto;
+	padding:10px;
+	border: 1px solid #CACACA;
+	box-sizing:border-box;
+	font-family: "Bree Serif", serif;
+	font-weight: 400;
+	font-style: normal;	
+}
+.sign-html-form .header{
+	width:100%;
+	float:left;
+}
+.sign-html-form .header h1{
+	float:left;
+	margin:0;
+	line-height:84px;
+	font-size:30px;
+}
+.sign-html-form .header img{
+	float:right;
+	width:200px;
+}
+
+.sign-html-form .footer{
+	width:100%;
+	font-size:10px;
+	text-align:center;
+	float:left;
+}
+
+.sign-html-form form div.doc-row{
+	float:left;
+	clear:left;
+	margin:5px 0;
+	width:100%;
+	background:#D8DCE6;
+	padding:8px 6px;
+	border-radius:6px;
+	border:2px solid #C2C0C8;
+	box-sizing:border-box;
+}
+
+.sign-html-form form div.doc-row.half{
+	width:calc(50% - 5px);
+	clear:none;
+}
+.sign-html-form form div.doc-row.half.right{
+	float:right;
+}
+.sign-html-form form div.doc-row.third{
+	width:calc(33%);
+	clear:none;
+	min-height:125px;
+}
+.sign-html-form form div.doc-row.third.center-row{
+	margin-right:0.5%;
+	margin-left:0.5%;	
+}
+
+.sign-html-form form div.doc-row label{
+	float:left;
+	font-size:15px;
+	margin-right:10px;
+}
+.sign-html-form form div.doc-row.third label{
+	width:100%;
+}
+
+.sign-html-form form div.doc-row span.data-entry{
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size:15px;
+	float:left;
+}
+.sign-html-form form div.doc-row.third span.data-entry{
+	margin:10px 0;
+}
+
+.sign-html-form form div.doc-row ul{
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-size:13px;
+}
+
+.sign-html-form form div.doc-row ul li span:first-of-type{
+	float:left;
+	min-width:180px;
+	border-right:2px solid #000;
+	margin-right:10px;	
+}
+
+.sign-html-form form p{
+	float:left;
+	clear:left;
+	margin:8px;
+	text-align:justify;
+	font-size:13px;
+	line-height:16px;
+}
+.sign-html-form form p.label{
+	font-size:15px;
+	line-height:17px;
+	margin-bottom:3px;
+}
+
+.sign-html-form form div.signature-tag{
+	float:left;
+	border-radius:4px;
+	padding:11px 22px;
+	margin-right:10px;
+	background:#FFC74D;
+}
+.sign-html-form form .signature{
+	min-width:200px;
+	float:left;
+}
+.sign-html-form .relax{
+	clear:both;
+}
+
+div.signature-block{
+	float:left;
+	font-style:italic;
+	margin:10px 0;
+	clear:left;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;	
+}
+
+.sign-html-form form input[type="text"], .sign-html-form form input[type="date"], .sign-html-form form textarea, .sign-html-form form select{
+	float:left;
+	padding:0 10px;
+	border:1px solid #CCC;
+	border-radius:4px;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+	font-size:13px;
+	width:375px;
+	height:30px;
+	line-height:30px;
+	margin:0 10px 10px 0;
+	max-width:100%;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+/*removestart*/
+/*CSS Adjustments for Mobile*/
+@media (max-width: 800px) {	
+	.sign-html-form .header{
+		text-align:center;
+	}
+	.sign-html-form .header h1{
+		float:none;
+	}
+	.sign-html-form .header img{
+		width:200px;
+		float:none;
+	}
+	.sign-html-form form div.doc-row.half,
+	.sign-html-form form div.doc-row.third{
+		width:100%;
+	}
+
+	.sign-html-form form div.doc-row ul li{
+	margin-bottom:8px;
+	}
+
+	.sign-html-form form div.doc-row ul li span:first-of-type{
+		padding:0;
+		width:100%;
+		margin:0;
+		border:none;
+	}
+}
+
+/*removeend*/
+</style>
+<div class="sign-html-form">
+    <form>
+		
+		<div class="header">
+			<h1>Letter of Authority</h1>
+			<img src='data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDM0Ljg0IDE4MS4yNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNDMuMDMgMTEyLjgzaDIyLjA0YzEuNzYgMCAyLjUtLjM3IDIuNS0yLjEzdi02LjM5bDQuMTcuNDZ2MTIuMDRoLTM4LjQzdi0zLjUybDIuNjktLjM3YzIuMDQtLjI4IDIuNDEtLjkzIDIuNDEtMi44N3YtNTAuNjZsLTQuODItLjI4di0zLjg5aDE0LjU0djMuNTJsLTIuNjkuMzdjLTEuNzYuMjgtMi40MS42NS0yLjQxIDIuNjl6IiBmaWxsPSIjMjUyODJhIi8+PHBhdGggZD0ibTExNi43NCAxMTAuNTJjMCAxLjc2LjQ2IDIuNDEgMS45NSAyLjVsMy4xNS4xOXYzLjYxaC05LjM1di01LjgzbC0uMjgtLjA5Yy0yLjEzIDMuMzMtNi4zIDcuMjItMTQuMDggNy4yMi0xMi40MSAwLTE4LjE1LTguMzMtMTguMTUtMjIuMTMgMC0xNi4zOSA3LjEzLTI2LjEyIDIxLjk1LTI2LjEyIDMuODkgMCAxMC4xOS45MyAxNC44MiAyLjc4djM3Ljg4em0tNC42My0zNC4zNmMtMS44NS0uODMtNS40Ni0xLjg1LTEwLjM3LTEuODUtMTIuNjkgMC0xNi42NyAxMC4zNy0xNi42NyAyMS4yMSAwIDguODkgMi41OSAxOC4yNCAxMy4wNiAxOC4yNCA5LjA4IDAgMTMuOTgtNi4zIDEzLjk4LTEzLjI0eiIgZmlsbD0iIzI1MjgyYSIvPjxwYXRoIGQ9Im0xNjEuNDYgNzEuNTMgMTAuNzQgNDAuNTYgOS42My0zNi40OS00LjYzLS4zN3YtMy45OGgxMy4zNHYzLjUybC0xLjk1LjE5Yy0xLjk0LjE4LTIuMDQuNDYtMi41OSAyLjU5bC0xMC45MyAzOS4yNmgtNS45M2wtMTAuNDYtMzkuNTQtMTAuODMgMzkuNTRoLTYuMTFsLTExLjMtNDEuMTItMy45OC0uNDZ2LTMuOThoMTQuMzV2My41MmwtMy4xNS4zN2MtMS41Ny4xOS0yLjEzLjkzLTEuNjcgMi43OGw4Ljg5IDM0LjM2IDExLjExLTQwLjc1aDUuNDZ6IiBmaWxsPSIjMjUyODJhIi8+PHBhdGggZD0ibTE5NS4xNyAxMDguMDIgMi44Ny0uMjhjMS43Ni0uMTkgMi4xMy0uNzQgMi4xMy0yLjk2di00MC4xbC00LjkxLS4zN3YtOS4wOGgyNy44N2MxNC40NSAwIDIzLjM0IDYuNzYgMjMuMzQgMTkuNTQgMCAxNC4zNS0xMC41NiAyMS41OC0yNS4yOCAyMS41OGgtNS4wOXYxMS4wMmw4LjQzLjM3djkuMDhoLTI5LjM2em0yNC45MS0yMi4zMmM2LjAyIDAgMTAtMi41OSAxMC05Ljkxcy0zLjQzLTkuNjMtOS45MS05LjYzaC00LjA3djE5LjU0eiIgZmlsbD0iIzI1MjgyYSIvPjxwYXRoIGQ9Im0yNzAuNzMgMTA3LjgzIDQuODIuMzd2OC42MWgtMjUuMzd2LTguMzNsMy4wNi0uMjhjMS43Ni0uMTkgMi4yMi0uNzQgMi4yMi0zLjA2di00Mi42YzAtMS45NS0uNTYtMi41OS0yLjIyLTIuNjlsLTMuMTUtLjM3di04LjdoMjAuNjV2NTcuMDR6IiBmaWxsPSIjMjUyODJhIi8+PHBhdGggZD0ibTMyNS4xOCAxMDUuMjRjMCAyLjA0LjQ2IDIuNjkgMi4wNCAyLjg3bDIuNS4yOHY4LjQzaC0xOC42MXYtNS45M2gtLjI4Yy0yLjUgNC4yNi03LjEzIDcuMTMtMTMuNTIgNy4xMy05LjQ1IDAtMTQuMDgtNS0xNC4wOC0xNS42NXYtMjEuMjFjMC0xLjk0LS43NC0yLjUtMi4yMi0yLjY5bC0yLjUtLjE4di04LjhoMjAuMTl2MjkuODJjMCA0LjQ1LjkzIDYuNjcgNC45MSA2LjY3czYuMy0yLjk2IDYuMy03LjQxdi0xNy4zMmMwLTEuOTQtLjU2LTIuNTktMi4yMi0yLjc4bC0yLjA0LS4xOHYtOC44aDE5LjU0djM1Ljc1eiIgZmlsbD0iIzI1MjgyYSIvPjxwYXRoIGQ9Im0zNTUuNjQgNzguMzljLTMuMzMgMC01LjM3IDEuNDgtNS4zNyAzLjg5IDAgMy4zMyAzLjg5IDQuMjYgOC41MiA1LjY1IDYuNDggMS44NSAxMy45OCA0LjE3IDEzLjk4IDEzLjggMCAxMC4yOC04LjE1IDE2LjMtMjAuNzQgMTYuMy01LjI4IDAtMTIuNTktMS4wMi0xNy4wNC0zLjE1di0xMi43OGwxMC4zNy0uNzR2My41MmMwIDEuMi4xOCAxLjk1IDEuMyAyLjMyIDEuMDIuMzcgMi42OS42NSA0LjU0LjY1IDMuNjEgMCA1LjkzLTEuMiA1LjkzLTQuMzVzLTMuNjEtMy45OC04LjQzLTUuMDljLTYuNDgtMS42Ny0xMy41Mi00LjA3LTEzLjUyLTE0LjE3czguNTItMTYuMDIgMjAuNTYtMTYuMDJjNC45MSAwIDEwLjY1IDEuMDIgMTUuMzcgMy4zM3YxMi40MWwtMTAuMzcuNzR2LTMuMzNjMC0xLjM5LS4xOC0yLjA0LTEuMi0yLjQxLTEuMy0uNDYtMi41LS41Ni0zLjg5LS41NnoiIGZpbGw9IiMyNTI4MmEiLz48ZyBmaWxsPSIjZmY2ODFkIj48cGF0aCBkPSJtMzgyLjE1IDQxLjA3aDQuMjZ2MTYuNzZoMTYuMzl2NC4wN2gtMTYuMzl2MTYuNjdoLTQuMjZ2LTE2LjY3aC0xNi4zdi00LjA3aDE2LjN6Ii8+PHBhdGggZD0ibTI1MS40OSAxNDYuNzV2LTQuNzdsMi4yMy0uMjJ2Mi4zNmMwIC41OS4wOS44NC42NSAxLjAyLjUzLjE5IDEuOTIuMzQgMi45MS4zNCAyLjQ1IDAgNC42NS0uNzEgNC42NS0zLjc1IDAtMi40OC0yLjE0LTMuMjktNC42Mi0zLjk3LTIuOTgtLjgxLTUuODYtMS45Mi01Ljg2LTUuNzQgMC0zLjQ0IDIuNjctNS42NyA2Ljg1LTUuNjcgMS41MiAwIDMuODQuMjIgNS40Ni45OXY0LjY4bC0yLjIzLjIydi0yLjQyYzAtLjU5LS4wOS0uODQtLjY1LTEuMDItLjUtLjE2LTEuOC0uMjgtMi42My0uMjgtMi4wMiAwLTQuMTkuNjUtNC4xOSAzLjI1IDAgMi40NSAyLjA1IDMuMTMgNC43MSAzLjk0IDIuODUuOSA1Ljc3IDIuMDEgNS43NyA1Ljkycy0yLjQ4IDYuMDUtNy4zOCA2LjA1Yy0yLjE0IDAtNC4zMS0uMzEtNS42Ny0uOTN6Ii8+PHBhdGggZD0ibTI3NC4yMSAxMzEuNDdjMi4xNCAwIDYuNDIuNjggNi40MiA3LjY5IDAgNi4wNS0yLjk4IDguNTktNi45NSA4LjU5cy02LjQyLTIuNjctNi40Mi04LjI1YzAtNi40MiAzLjg4LTguMDMgNi45NS04LjAzem0zLjgyIDguMjFjMC0zLjU0LS45OS02LjItNC02LjJzLTQuMTkgMi40OC00LjE5IDUuNzFjMCAyLjk1LjUzIDYuNTcgNC4wNiA2LjU3IDIuOTUgMCA0LjEyLTIuODggNC4xMi02LjA4eiIvPjxwYXRoIGQ9Im0yODQuOTcgMTI3Ljk5YzAtLjY4LS4xOS0uODctLjc3LS45bC0uOTMtLjA2di0xLjgzaDQuMDl2MjAuMTVsMS42Ny4wOXYxLjg2aC01LjY3di0xLjc0bC44Ny0uMTJjLjU5LS4wOS43NC0uMjIuNzQtLjk5eiIvPjxwYXRoIGQ9Im0yOTUuNiAxNDUuMzYgMS42NC4wOXYxLjg2aC01LjY3di0xLjc0bC45LS4wOWMuNTktLjA2LjcxLS4yNS43MS0xLjAydi05Ljc3YzAtLjY4LS4xOS0uODctLjc4LS45bC0uOTMtLjA2di0xLjgzaDQuMTJ2MTMuNDZ6bS0xLjUyLTE5LjQ3Yy45IDAgMS42MS43MSAxLjYxIDEuNjEgMCAuOTYtLjcxIDEuNjQtMS42NCAxLjY0cy0xLjU4LS42OC0xLjU4LTEuNjRjMC0uOS42OC0xLjYxIDEuNjEtMS42MXoiLz48cGF0aCBkPSJtMzAyLjQyIDEzOS41YzAgMy41IDEuMjEgNi4xMSA0LjUzIDYuMTEgMS4zIDAgMi42LS40MyAzLjg0LTEuNDNsMS4wMiAxLjc0Yy0uOTkuOS0yLjc5IDEuODMtNS4wNSAxLjgzLTQuNDYgMC02LjkxLTIuODUtNi45MS04LjE1IDAtNi4yOSAzLjkxLTguMTIgNy4wNy04LjEyIDEuOTIgMCAzLjM1LjQ2IDQuNSAxLjI3djMuOTRsLTIuMi4xNXYtMi4wOGMwLS41OS0uMTItLjgxLS42NS0uOTktLjM3LS4xMi0uOTktLjE5LTEuNDYtLjE5LTIuODIgMC00LjY4IDEuNzEtNC42OCA1LjkyeiIvPjxwYXRoIGQ9Im0zMTguNDIgMTQ1LjM2IDEuNjQuMDl2MS44NmgtNS42N3YtMS43NGwuOS0uMDljLjU5LS4wNi43MS0uMjUuNzEtMS4wMnYtOS43N2MwLS42OC0uMTktLjg3LS43OC0uOWwtLjkzLS4wNnYtMS44M2g0LjEydjEzLjQ2em0tMS41Mi0xOS40N2MuOSAwIDEuNjEuNzEgMS42MSAxLjYxIDAgLjk2LS43MSAxLjY0LTEuNjQgMS42NHMtMS41OC0uNjgtMS41OC0xLjY0YzAtLjkuNjgtMS42MSAxLjYxLTEuNjF6Ii8+PHBhdGggZD0ibTMyNi41MSAxNDMuMDNjMCAyLjA1Ljc4IDIuNjQgMi4yMyAyLjY0IDEuMDUgMCAxLjg2LS4zNyAyLjM5LS42OGwuNzEgMS43NGMtLjkuNjItMi4yNiAxLjAyLTMuNTcgMS4wMi00LjA2IDAtNC4xOS0yLjM5LTQuMTktNC42NXYtOS4xMmgtMi4ybC4zMS0xLjkyYzEuOTgtLjE5IDIuNTEtMS44NiAzLjAxLTMuNjNoMS4zdjMuNDdoNC40bC0uMzEgMi4wOGgtNC4wOXY5LjA1eiIvPjxwYXRoIGQ9Im0zNDAuMDkgMTMxLjQ3YzIuMTQgMCA2LjQyLjY4IDYuNDIgNy42OSAwIDYuMDUtMi45OCA4LjU5LTYuOTUgOC41OXMtNi40Mi0yLjY3LTYuNDItOC4yNWMwLTYuNDIgMy44OC04LjAzIDYuOTUtOC4wM3ptMy44MSA4LjIxYzAtMy41NC0uOTktNi4yLTQtNi4ycy00LjE5IDIuNDgtNC4xOSA1LjcxYzAgMi45NS41MyA2LjU3IDQuMDYgNi41NyAyLjk1IDAgNC4xMi0yLjg4IDQuMTItNi4wOHoiLz48cGF0aCBkPSJtMzUzLjIzIDEzNy42MXY3Ljc1bDIuMjkuMDl2MS44NmgtNi4yOXYtMS43NGwuODEtLjA5Yy41OS0uMDYuODEtLjI1LjgxLS45M3YtOS45MmMwLS42Mi0uMTYtLjgxLS42OC0uODRsLTEuMDItLjA2di0xLjgzaDMuODh2Mi4yOWMuNTktMS41MiAyLjA1LTIuNzMgNC4zNy0yLjczLjgxIDAgMi4wNS4yMiAyLjg4LjcxdjQuMzRsLTIuMjkuMjJ2LTIuMDhjMC0uNC0uMDMtLjU2LS4zNC0uNjhzLS42NS0uMTYtMS4wNS0uMTZjLTIuMDEgMC0zLjM1IDEuNjctMy4zNSAzLjc4eiIvPjxwYXRoIGQ9Im0zNjUuMjkgMTM1Ljc1YzAgMS43NyAxLjQ2IDIuMTcgMy4yOSAyLjczIDIuMzkuNzEgNC43MSAxLjQzIDQuNzEgNC41NnMtMi4xMSA0LjcxLTUuNjEgNC43MWMtMi4yMyAwLTQuMzEtLjU2LTQuOTktLjk5di0zLjg0bDIuMjYtLjIydjEuOTJjMCAuNS4xMi42NS41My44MS41OS4yMiAxLjQ2LjM0IDIuMDguMzQgMS45OCAwIDMuMzItLjcxIDMuMzItMi41N3MtMS4xMi0yLjItMy4xNi0yLjczYy0yLjQ4LS42NS00Ljc0LTEuMzYtNC43NC00LjQzczIuNTQtNC41NiA1LjYxLTQuNTZjMS43MSAwIDMuNDcuNDMgNC40MyAxLjEydjMuMzVsLTIuMi4yMnYtMS42NGMwLS41Ni0uMDktLjc0LS41LS44Ny0uNTktLjE5LTEuNC0uMjUtMi4wMi0uMjUtMS41NSAwLTMuMDEuNjUtMy4wMSAyLjM2eiIvPjwvZz48L3N2Zz4='/>		
+		</div>
+		
+		<div class="doc-row">
+			<label>Company Name:</label>
+			<span class="data-entry">{{company_name}}</span>
+		</div>
+		<div class="doc-row half">
+			<label>Agreement/Account Number:</label>
+			<span class="data-entry">{{agreement_number}}</span>
+		</div>
+		<div class="doc-row half right">
+			<label>Vehicle Registration Number:</label>
+			<span class="data-entry">{{vehicle_registration}}</span>
+		</div>		
+		
+		<p>Please accept this letter as my/our instruction to you, (the &quot;company&quot;) to deal directly with LawPlus as my/our authorised claims representative in respect of the complaint and to provide them with any information they request and which they require to pursue my/our complaint. I/we request that as of the date of this letter any further correspondence or communication regarding this matter is to be addressed to LawPlus. For the avoidance of doubt communication includes telephonic and written correspondence whether by fax, email or post. This letter of authority will be in force for the duration of this claim unless otherwise determined by LawPlus and/or the client.</p>
+		
+		<div class="doc-row half">
+			<label>Full Name:</label>
+			<span class="data-entry">{{full_name}}</span>
+		</div>
+		<div class="doc-row half right">
+			<label>Maiden Name (if applicable):</label>
+			<span class="data-entry">{{maiden_name}}</span>
+		</div>
+		<div class="doc-row">
+			<label>Date of Birth:</label>
+			<span class="data-entry">{{date_of_birth}}</span>
+		</div>
+		<div class="doc-row">
+			<label>Address:</label>
+			<span class="data-entry">{{address}}</span>
+		</div>
+		<div class="doc-row">
+			<label>Postcode:</label>
+			<span class="data-entry">{{postcode}}</span>
+		</div>
+		<div class="doc-row">
+			<label>Contact Telephone Number:</label>
+			<span class="data-entry">{{contact_telephone}}</span>
+		</div>
+		<div class="doc-row">
+			<label>National Insurance Number:</label>
+			<span class="data-entry">{{ni_number}}</span>
+		</div>
+		<p class="label">Any Previous Address</p>
+		<div class="doc-row">
+			<label>Address (including Postal Code)</label>
+			<span class="data-entry">{{prev_address_1}}</span>
+		</div>
+		<div class="doc-row">
+			<label>Address (including Postal Code):</label>
+			<span class="data-entry">{{prev_address_2}}</span>
+		</div>
+		
+		<div class="doc-row">
+			<ul>
+				<li><span>Solicitor NAME</span><span>LawPlus (trading name of Consumer Legal Costs Services Limited)</span></li>
+				<li><span>Solicitor SRA Number</span><span>808101</span></li>
+				<li><span>Solicitor Address</span><span>Dale House, Tiviot Dale, Stockport, England, SK1 1TA</span></li>
+				<li><span>Solicitor Contact Number</span><span>0800 327 7575</span></li>
+				<li><span>Solicitor Email</span><span>claims@lawplus.co.uk</span></li>
+			</ul>
+		</div>
+		
+		<div class="doc-row third">
+			<label>Name:</label>
+			<span class="data-entry">{{sign_name}}</span>
+		</div>
+		<div class="doc-row third center-row">
+			<label>Signature:</label>
+			<div class="signature-block">
+				<span>Party to sign here</span>
+			</div>		
+		</div>
+		<div class="doc-row third">
+			<label>Date:</label>
+			<span class="data-entry">
+				<span class="auto-date">Auto Date</span>
+			</span>
+		</div>
+		
+		<div class="footer">LawPlus is a trading style of Consumer Legal Costs Services Limited which is regulated by the SRA, number 808101. Registered under the Data Protection Act 2018, Reference ZA775443. Consumer Legal Costs Services Limited is registered in England and Wales company number 12490780.<br/>Registered Office: Dale House, Tiviot Dale, Stockport, England, SK1 1TA</div>
+			                
+        <div class="relax"></div>
+    </form>
+</div>
+</body>

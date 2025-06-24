@@ -1,0 +1,308 @@
+<body>
+    <style type="text/css">
+         @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+    .sign-html-form{
+        max-width:850px;
+        margin:auto;
+        box-sizing:border-box;
+        font-family: "Arial", san-serif;
+        font-weight: 400;
+        font-style: normal;	
+		font-size:14px;
+		padding:10px;
+    }
+    .sign-html-form h1{
+        margin:0;
+        line-height:84px;
+        font-size:30px;
+        text-decoration: underline;
+        text-align: center;
+    }
+    .sign-html-form p{
+        text-align: justify;
+    }
+    .sign-html-form div.doc-row{
+     font-weight: bold;   
+    }
+    .sign-html-form div.doc-row{
+     font-weight: bold;   
+    }
+    .sign-html-form form div.half{
+        width:calc(50% - 5px);
+        clear:none;
+    }
+    .sign-html-form div.left{
+		float: left; 
+    }
+    .sign-html-form div.padding{
+        padding-bottom: 15px;
+    }
+    .sign-html-form div.left.label{
+		margin-right:10px;
+	}		
+    .sign-html-form div.left.label.signed{
+		line-height:38px;
+	}	
+    .sign-html-form div.cancellation-notice{
+        width:100%;
+        margin: 20px auto;
+        border: 1px solid black;
+        font-size: 15px;
+		float:left;
+    }
+    .sign-html-form div.cancellation-notice h3{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .sign-html-form div.cancellation-notice p{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .sign-html-form div.cancellation-notice span{
+        font-weight: bold;
+    }
+    .sign-html-form div.doc-row ul{
+        font-weight: 400;
+        list-style: none;
+    }
+    .sign-html-form div.doc-row ol{
+        font-weight: 400;
+        list-style: lower-roman;
+    }
+    .sign-html-form ol.letters{
+        font-weight: 400;
+        list-style: lower-alpha;
+    }
+    .sign-html-form div.doc-row span{
+        font-weight: bold;
+    }
+    .sign-html-form .footer{
+        width:100%;
+        font-size:10px;
+        text-align:center;
+        float:left;
+    }
+    div.signature-block{
+	float:left;
+	font-style:italic;
+	margin:10px 0;
+	clear:left;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;	
+}
+.sign-html-form form input[type="text"], .sign-html-form form input[type="date"], .sign-html-form form textarea, .sign-html-form form select{
+	float:left;
+	padding:0 10px;
+	border:1px solid #CCC;
+	border-radius:4px;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+	font-size:20px;
+	width:375px;
+	height:30px;
+	line-height:30px;
+	margin:0 10px 10px 0;
+	max-width:100%;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+.sign-html-form .return{
+	margin:10px 0;
+	float:left;
+	width:100%;
+}
+
+    /*removestart*/
+    /*CSS Adjustments for Mobile*/
+    @media only screen and (max-width: 800px){
+        .sign-html-form{
+            margins: auto;
+            max-width: 90%;
+        }		
+		.sign-html-form h1{
+			line-height:32px;
+			font-size:25px;
+		}		
+        .sign-html-form div{
+            margin-bottom: 2%;
+        }	
+        .sign-html-form form div.half{
+            width:100%;
+        }
+        .sign-html-form form div.doc-row ul li{
+            margin-bottom:8px;
+        }
+    }
+    /*Xsmall screens adjustments */
+    @media only screen and (max-width: 400px){
+        .sign-html-form{
+            font-size: smaller;
+        }
+    }
+    </style>
+    <div class="sign-html-form">
+        <form>
+            <h1>Non-Contentious Business Agreement</h1>
+            <p>This Agreement is a legally binding contract between you and your solicitor. The Conditions are part of the Agreement. Before you sign the Authority Form or give any instructions, please read everything carefully.</p>
+            <div class="doc-row">
+                <label>Agreement Date:</label>
+                <span class="data-entry">
+                    <span class="auto-date">Todays Date</span>
+                </span>
+            </div>
+            <p>Between:</p>
+            <div class="doc-row">
+                Us, We: LawPlus Solicitors 
+            </div>
+            <p>And</p>
+            <div class="doc-row">
+                <label>You, Your, the Client:</label>
+                <span class="data-entry">{{client_name}}</span>
+            </div>
+            <br>
+            <div class="doc-row">
+                Scope of work included in this Agreement
+            </div>
+            <p>
+                All the work we do on your claim for compensation
+            </p>
+            <div class="doc-row">
+                Scope of work excluded from this Agreement
+            </div>
+            <p>
+                The issue of court proceedings and any work consequent to the issue of court proceedings.
+            </p>
+            <div class="doc-row">
+                Paying us if you Win
+            </div>
+            <p>If we win your claim, you will pay us a fee based on the compensation that we recover on your behalf, as outlined in the fee caps under the SRA Claims Management Fees Rules 2024, plus applicable VAT at the standard rate (currently 20% of our charges). The fees are calculated as follows:</p>
+            <div class="doc-row">
+                <ul>
+                    <li>
+                        <span>For redress awarded between £1 - £1,499:</span>
+                        30% or £420, whichever is lower
+                    </li>
+                    <li>
+                        <span>For redress awarded between £1,500 - £9,999:</span>
+                        28% or £2,500, whichever is lower
+                    </li>
+                    <li>
+                        <span>For redress awarded between £10,000 - £24,999: </span>
+                        25% or £5,000, whichever is lower
+                    </li>
+                    <li>
+                        <span>For redress awarded between £25,000 - £49,999:</span>
+                        20% or £7,500, whichever is lower
+                    </li>
+                    <li>
+                        <span>For redress awarded £50,000 or above: </span>
+                        15% or £10,000, whichever is lower
+                    </li>
+                </ul>
+                <ol>
+                    <li>if you lose we will not earn anything </li>
+                    <li>your case is complex and involves specialised knowledge on our part</li>
+                    <li>the time we spend on your business</li>
+                    <li>the volume of documents</li>
+                    <li>the amount of money involved</li>
+                    <li>the importance of this matter to you</li>
+                    <li>what we consider to be a fair and reasonable charge for the work we will do on your case</li>
+                </ol>
+            </div>
+            <div class="doc-row">Paying us if you Lose</div>
+            <p>If you lose your claim, you do not pay us anything</p>
+            <div class="doc-row">Paying us if you end the Agreement</div>
+            <p>You can end this Agreement at any time. If you end this Agreement before the claim is won or lost you then are liable to pay us for the work we have done on your claim at an hourly rate of £300 per hour for each hour of work we have done. You agree to pay us for routine letters or telephone calls lasting less than 6 minutes at 1/10th of the hourly rate. If they take longer they will be charged at the appropriate proportion of the hourly rate. VAT will be added to this sum.</p>
+            <div class="doc-row">Paying us if we end the Agreement</div>
+            <p>We can end this Agreement if you do not keep to your responsibilities as set out in this Agreement. You then are liable to pay us for the work we have done on your claim at an hourly rate of £300 per hour for each hour of work we have done. You agree to pay us for routine letters or telephone calls lasting less than 6 minutes at 1/10th of the hourly rate. If they take longer they will be charged at the appropriate proportion of the hourly rate. VAT will be added to this sum. 
+                <br>
+                <br>
+                We can end this Agreement if you reject our advice about accepting a settlement. You then are liable to pay us for the work we have done on your claim at an hourly rate of £300 per hour for each hour of work we have done. You agree to pay us for routine letters or telephone calls lasting less than 6 minutes at 1/10th of the hourly rate. If they take longer they will be charged at the appropriate proportion of the hourly rate. VAT will be added to this sum.           
+                <br>
+                <br>
+                We can end this Agreement if we believe that you are unlikely to win. You do not then have to pay us anything.
+            </p>
+            <div class="doc-row">Your responsibilities</div>
+            <p>Your responsibilities are to</p>
+            <ol class="letters">
+                <li>Give us clear instructions promptly which allow us to work on your claim properly.</li>
+                <li>Not to ask us to work in an improper or unreasonable way.</li>
+                <li>Not to deliberately mislead us or lie or exaggerate your claim.</li>
+                <li>Co-operate with us in pursuing your claim.</li>
+            </ol>
+            <div class="doc-row">Our responsibilities</div>
+            <p>Our responsibilities are to</p>
+            <ol class="letters">
+                <li>Always act in your best interests, subject to our professional obligations.</li>
+                <li>Explain to you the risks and benefits of pursuing your claim.</li>
+                <li>Give you our best advice about whether to accept any offer of settlement.</li>
+                <li>Give you the best information possible about the likely costs of your claim.</li>
+            </ol>
+            <div class="doc-row">Paying us from your compensation</div>
+            <p>If you win you pay us the agreed percentage of the compensation that we recover on your behalf and any VAT. You agree that we may receive the money you recover. If the money is sent to you, you agree to pay into a designated account any cheque received by your or by us and made payable to you. Out of the money you agree to let us take first our share of the money. You take the rest.</p>            
+            <div class="doc-row">Billing you</div>
+            <p>We will send you requests for payment on account of disbursements as the claim progresses. We will send you a final statute bill of our fees at the conclusion of your claim.</p>
+            <div class="doc-row">Rights to assessment under section 70 of the Solicitors Act 1974</div>
+            <p>You have a right to have our final statute bill assessed by the Court under section 70 of the Solicitors Act 1974. Strict time limits apply for you to make any application for such an assessment. Those time limits are specified in section 70 of the Solicitors Act 1974 and if in doubt you should seek immediate legal advice.</p>
+            <div class="doc-row">Death</div>
+            <p>This Agreement automatically ends if you die before your claim is concluded. We will be entitled to recover our fees from your estate. Your estate is then liable to pay us for the work we have done on your claim at an hourly rate of £300 per hour for each hour of work we have done. You agree to pay us for routine letters or telephone calls lasting less than 6 minutes at 1/10th of the hourly rate. If they take longer they will be charged at the appropriate proportion of the hourly rate. VAT will be added to this sum. If your personal representatives wish to continue your claim we may offer them a new non-contentious business agreement.</p>
+            <div class="doc-row">What happens after this Agreement ends</div>
+            <p>After this Agreement ends, if any money is owing to us from you, we have the right to preserve our lien and may refuse to release documents to you or any new solicitor until that money has been paid.</p>
+            <div class="doc-row">Explanation of words used</div>
+            <br>
+            <div class="doc-row">(a)	Our charges</div>
+            <p>The percentage share of compensation we recover on your behalf that you agree to pay us with VAT; or alternatively a sum calculated at an hourly rate that you become liable to pay us under this Agreement with VAT.</p>
+            <div class="doc-row">(b)	Claim</div>
+            <p>Your demand for compensation </p>
+            <div class="doc-row">(c)	Compensation</div>
+            <p>Money that we recover on your behalf</p>
+            <div class="doc-row">(d)	Lien</div>
+            <p>Our right to keep all papers, documents, money, or other property held on your behalf until all money due to us is paid. A lien may be applied after this Agreement ends.</p>
+            <div class="doc-row">(e)	Lose</div>
+            <p>Your claim for compensation has failed or you have stopped it on our advice.</p>
+            <div class="doc-row">(f)	Win</div>
+            <p>Your claim for compensation is decided in your favour by an award or settlement of money.</p>
+            <p>By signing the Authority form and or by providing continuing instructions, You, the Client, agree that You will be bound by and will fulfil Your part of this agreement and comply with the Terms & Conditions below.</p>
+            <div class="padding label">Client Name:</div>
+            <div class="padding">
+                <span class="data-entry">{{client_name}}</span>
+            </div>
+            <div class="padding">
+                <div class="signature-block-2">
+                    <span>Party to sign here</span>
+                </div>
+            </div>
+            <p>Law Plus Solicitors</p>
+            <div class="padding">
+                <div class="signature-block-1">
+                    <span>Party to sign here</span>
+                </div>
+            </div>
+            <div class="cancellation-notice">
+                <h3>Cancellation Notice</h3>
+                <p>
+                    Your Non contentious Business Agreement or &quot;No Win No Fee Agreement&quot; with Us forms the contract between You and Us. <span>YOU MAY CANCEL THIS NON-CONTENTIOUS BUSINESS AGREEMENT WITHOUT CHARGE</span>, if You do so <span>WITHIN 14 DAYS</span> from the date upon which you received this notice from Us. 
+                </p>
+                <p>If You wish to cancel the contract You <span>MUST DO SO IN WRITING</span> and deliver personally or send (Which may be by electronic mail) notice to the person named below. You may use this form if you want to, but You do not have to.</p>
+                <p>To meet the cancellation deadline, it is sufficient for You to send Your communication concerning Your exercise of the right to cancel before the cancellation period has expired. However, where a dispute arises it is for You to show that the contract was cancelled within the relevant cancellation period.</p>
+            </div>
+            <div class="return">
+                <h2>NOTICE OF CANCELLATION OF NON-CONTENTIOUS BUSINESS AGREEMENT</h2>
+                <p>
+                    LawPlus Solicitors
+                    <br>Dale House
+                    <br> Stockport
+                    <br>SK1 1TA
+                    <br>0800 327 7575
+                </p>		
+                <p>I <span class="data-entry">{{client_name}}</span>, hereby give notice that I wish to cancel my Non-contentious Business Agreement under your reference <span class="data-entry">{{case_key}}</span></p>
+                <div class="padding label">Client Name:</div>
+                <div class="padding">
+                    <span class="data-entry">{{client_name}}</span>
+                </div>
+                <div class="padding">Signed:</div>
+                <div class="padding">Dated:</div>
+            </div>
+        </form>
+    </div>
+</body>

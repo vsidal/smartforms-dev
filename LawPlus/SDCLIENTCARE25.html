@@ -1,0 +1,286 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+      /*Main Styles*/
+      .sign-html-form{
+          max-width:850px;
+          margin:auto;
+          padding:10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-style: normal;	
+		  font-size:14px;
+        }
+		
+		  .sign-html-form h1{
+			font-size:28px;
+		  }	  
+		  .sign-html-form h2{
+			font-size:22px;
+		  }
+		
+        /*Header*/
+        .sign-html-form .header img{
+          float:left;
+          width:200px;
+        }
+        .sign-html-form .header p{
+          float: right;
+        }
+        /* Body */
+        .sign-html-form section{
+          padding-top: 10%;
+        }
+        .sign-html-form div.addresses{
+          margin-top: 5%;
+          margin-bottom: 5%;
+		  font-size:14px;
+        }
+        .sign-html-form addresses{
+          float: left;
+        }
+        .sign-html-form div.doc-row{
+          margin-bottom: 15px;
+        }
+        .sign-html-form div.doc-row h2{
+          font-size: medium;
+        }
+        .sign-html-form div.doc-row ul{
+          list-style: none; 
+        }
+        .sign-html-form div.doc-row li span{
+          font-weight:bold ;
+        }
+          
+        /*Footer */
+        .sign-html-form .footer{
+          text-align: center;
+        }
+        /*removestart */
+        @media (max-width:600px){
+		
+			.sign-html-form .header img{
+				float:none;
+				margin:auto;
+				display:block;
+			}
+			.sign-html-form .header p{
+				text-align: center;		
+				width:100%;
+			}
+            .sign-html-form section{
+				clear:both;
+				padding-top:0;
+            }		
+		
+          .sign-html-form div.addresses{
+            margin-top: 12%;
+          }
+        }
+        /*removeend*/
+    </style>
+    <div class="sign-html-form">
+        <form>
+          <div class="header">
+            <img src='data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDM0Ljg0IDE4MS4yNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNDMuMDMgMTEyLjgzaDIyLjA0YzEuNzYgMCAyLjUtLjM3IDIuNS0yLjEzdi02LjM5bDQuMTcuNDZ2MTIuMDRoLTM4LjQzdi0zLjUybDIuNjktLjM3YzIuMDQtLjI4IDIuNDEtLjkzIDIuNDEtMi44N3YtNTAuNjZsLTQuODItLjI4di0zLjg5aDE0LjU0djMuNTJsLTIuNjkuMzdjLTEuNzYuMjgtMi40MS42NS0yLjQxIDIuNjl6IiBmaWxsPSIjMjUyODJhIi8+PHBhdGggZD0ibTExNi43NCAxMTAuNTJjMCAxLjc2LjQ2IDIuNDEgMS45NSAyLjVsMy4xNS4xOXYzLjYxaC05LjM1di01LjgzbC0uMjgtLjA5Yy0yLjEzIDMuMzMtNi4zIDcuMjItMTQuMDggNy4yMi0xMi40MSAwLTE4LjE1LTguMzMtMTguMTUtMjIuMTMgMC0xNi4zOSA3LjEzLTI2LjEyIDIxLjk1LTI2LjEyIDMuODkgMCAxMC4xOS45MyAxNC44MiAyLjc4djM3Ljg4em0tNC42My0zNC4zNmMtMS44NS0uODMtNS40Ni0xLjg1LTEwLjM3LTEuODUtMTIuNjkgMC0xNi42NyAxMC4zNy0xNi42NyAyMS4yMSAwIDguODkgMi41OSAxOC4yNCAxMy4wNiAxOC4yNCA5LjA4IDAgMTMuOTgtNi4zIDEzLjk4LTEzLjI0eiIgZmlsbD0iIzI1MjgyYSIvPjxwYXRoIGQ9Im0xNjEuNDYgNzEuNTMgMTAuNzQgNDAuNTYgOS42My0zNi40OS00LjYzLS4zN3YtMy45OGgxMy4zNHYzLjUybC0xLjk1LjE5Yy0xLjk0LjE4LTIuMDQuNDYtMi41OSAyLjU5bC0xMC45MyAzOS4yNmgtNS45M2wtMTAuNDYtMzkuNTQtMTAuODMgMzkuNTRoLTYuMTFsLTExLjMtNDEuMTItMy45OC0uNDZ2LTMuOThoMTQuMzV2My41MmwtMy4xNS4zN2MtMS41Ny4xOS0yLjEzLjkzLTEuNjcgMi43OGw4Ljg5IDM0LjM2IDExLjExLTQwLjc1aDUuNDZ6IiBmaWxsPSIjMjUyODJhIi8+PHBhdGggZD0ibTE5NS4xNyAxMDguMDIgMi44Ny0uMjhjMS43Ni0uMTkgMi4xMy0uNzQgMi4xMy0yLjk2di00MC4xbC00LjkxLS4zN3YtOS4wOGgyNy44N2MxNC40NSAwIDIzLjM0IDYuNzYgMjMuMzQgMTkuNTQgMCAxNC4zNS0xMC41NiAyMS41OC0yNS4yOCAyMS41OGgtNS4wOXYxMS4wMmw4LjQzLjM3djkuMDhoLTI5LjM2em0yNC45MS0yMi4zMmM2LjAyIDAgMTAtMi41OSAxMC05Ljkxcy0zLjQzLTkuNjMtOS45MS05LjYzaC00LjA3djE5LjU0eiIgZmlsbD0iIzI1MjgyYSIvPjxwYXRoIGQ9Im0yNzAuNzMgMTA3LjgzIDQuODIuMzd2OC42MWgtMjUuMzd2LTguMzNsMy4wNi0uMjhjMS43Ni0uMTkgMi4yMi0uNzQgMi4yMi0zLjA2di00Mi42YzAtMS45NS0uNTYtMi41OS0yLjIyLTIuNjlsLTMuMTUtLjM3di04LjdoMjAuNjV2NTcuMDR6IiBmaWxsPSIjMjUyODJhIi8+PHBhdGggZD0ibTMyNS4xOCAxMDUuMjRjMCAyLjA0LjQ2IDIuNjkgMi4wNCAyLjg3bDIuNS4yOHY4LjQzaC0xOC42MXYtNS45M2gtLjI4Yy0yLjUgNC4yNi03LjEzIDcuMTMtMTMuNTIgNy4xMy05LjQ1IDAtMTQuMDgtNS0xNC4wOC0xNS42NXYtMjEuMjFjMC0xLjk0LS43NC0yLjUtMi4yMi0yLjY5bC0yLjUtLjE4di04LjhoMjAuMTl2MjkuODJjMCA0LjQ1LjkzIDYuNjcgNC45MSA2LjY3czYuMy0yLjk2IDYuMy03LjQxdi0xNy4zMmMwLTEuOTQtLjU2LTIuNTktMi4yMi0yLjc4bC0yLjA0LS4xOHYtOC44aDE5LjU0djM1Ljc1eiIgZmlsbD0iIzI1MjgyYSIvPjxwYXRoIGQ9Im0zNTUuNjQgNzguMzljLTMuMzMgMC01LjM3IDEuNDgtNS4zNyAzLjg5IDAgMy4zMyAzLjg5IDQuMjYgOC41MiA1LjY1IDYuNDggMS44NSAxMy45OCA0LjE3IDEzLjk4IDEzLjggMCAxMC4yOC04LjE1IDE2LjMtMjAuNzQgMTYuMy01LjI4IDAtMTIuNTktMS4wMi0xNy4wNC0zLjE1di0xMi43OGwxMC4zNy0uNzR2My41MmMwIDEuMi4xOCAxLjk1IDEuMyAyLjMyIDEuMDIuMzcgMi42OS42NSA0LjU0LjY1IDMuNjEgMCA1LjkzLTEuMiA1LjkzLTQuMzVzLTMuNjEtMy45OC04LjQzLTUuMDljLTYuNDgtMS42Ny0xMy41Mi00LjA3LTEzLjUyLTE0LjE3czguNTItMTYuMDIgMjAuNTYtMTYuMDJjNC45MSAwIDEwLjY1IDEuMDIgMTUuMzcgMy4zM3YxMi40MWwtMTAuMzcuNzR2LTMuMzNjMC0xLjM5LS4xOC0yLjA0LTEuMi0yLjQxLTEuMy0uNDYtMi41LS41Ni0zLjg5LS41NnoiIGZpbGw9IiMyNTI4MmEiLz48ZyBmaWxsPSIjZmY2ODFkIj48cGF0aCBkPSJtMzgyLjE1IDQxLjA3aDQuMjZ2MTYuNzZoMTYuMzl2NC4wN2gtMTYuMzl2MTYuNjdoLTQuMjZ2LTE2LjY3aC0xNi4zdi00LjA3aDE2LjN6Ii8+PHBhdGggZD0ibTI1MS40OSAxNDYuNzV2LTQuNzdsMi4yMy0uMjJ2Mi4zNmMwIC41OS4wOS44NC42NSAxLjAyLjUzLjE5IDEuOTIuMzQgMi45MS4zNCAyLjQ1IDAgNC42NS0uNzEgNC42NS0zLjc1IDAtMi40OC0yLjE0LTMuMjktNC42Mi0zLjk3LTIuOTgtLjgxLTUuODYtMS45Mi01Ljg2LTUuNzQgMC0zLjQ0IDIuNjctNS42NyA2Ljg1LTUuNjcgMS41MiAwIDMuODQuMjIgNS40Ni45OXY0LjY4bC0yLjIzLjIydi0yLjQyYzAtLjU5LS4wOS0uODQtLjY1LTEuMDItLjUtLjE2LTEuOC0uMjgtMi42My0uMjgtMi4wMiAwLTQuMTkuNjUtNC4xOSAzLjI1IDAgMi40NSAyLjA1IDMuMTMgNC43MSAzLjk0IDIuODUuOSA1Ljc3IDIuMDEgNS43NyA1Ljkycy0yLjQ4IDYuMDUtNy4zOCA2LjA1Yy0yLjE0IDAtNC4zMS0uMzEtNS42Ny0uOTN6Ii8+PHBhdGggZD0ibTI3NC4yMSAxMzEuNDdjMi4xNCAwIDYuNDIuNjggNi40MiA3LjY5IDAgNi4wNS0yLjk4IDguNTktNi45NSA4LjU5cy02LjQyLTIuNjctNi40Mi04LjI1YzAtNi40MiAzLjg4LTguMDMgNi45NS04LjAzem0zLjgyIDguMjFjMC0zLjU0LS45OS02LjItNC02LjJzLTQuMTkgMi40OC00LjE5IDUuNzFjMCAyLjk1LjUzIDYuNTcgNC4wNiA2LjU3IDIuOTUgMCA0LjEyLTIuODggNC4xMi02LjA4eiIvPjxwYXRoIGQ9Im0yODQuOTcgMTI3Ljk5YzAtLjY4LS4xOS0uODctLjc3LS45bC0uOTMtLjA2di0xLjgzaDQuMDl2MjAuMTVsMS42Ny4wOXYxLjg2aC01LjY3di0xLjc0bC44Ny0uMTJjLjU5LS4wOS43NC0uMjIuNzQtLjk5eiIvPjxwYXRoIGQ9Im0yOTUuNiAxNDUuMzYgMS42NC4wOXYxLjg2aC01LjY3di0xLjc0bC45LS4wOWMuNTktLjA2LjcxLS4yNS43MS0xLjAydi05Ljc3YzAtLjY4LS4xOS0uODctLjc4LS45bC0uOTMtLjA2di0xLjgzaDQuMTJ2MTMuNDZ6bS0xLjUyLTE5LjQ3Yy45IDAgMS42MS43MSAxLjYxIDEuNjEgMCAuOTYtLjcxIDEuNjQtMS42NCAxLjY0cy0xLjU4LS42OC0xLjU4LTEuNjRjMC0uOS42OC0xLjYxIDEuNjEtMS42MXoiLz48cGF0aCBkPSJtMzAyLjQyIDEzOS41YzAgMy41IDEuMjEgNi4xMSA0LjUzIDYuMTEgMS4zIDAgMi42LS40MyAzLjg0LTEuNDNsMS4wMiAxLjc0Yy0uOTkuOS0yLjc5IDEuODMtNS4wNSAxLjgzLTQuNDYgMC02LjkxLTIuODUtNi45MS04LjE1IDAtNi4yOSAzLjkxLTguMTIgNy4wNy04LjEyIDEuOTIgMCAzLjM1LjQ2IDQuNSAxLjI3djMuOTRsLTIuMi4xNXYtMi4wOGMwLS41OS0uMTItLjgxLS42NS0uOTktLjM3LS4xMi0uOTktLjE5LTEuNDYtLjE5LTIuODIgMC00LjY4IDEuNzEtNC42OCA1LjkyeiIvPjxwYXRoIGQ9Im0zMTguNDIgMTQ1LjM2IDEuNjQuMDl2MS44NmgtNS42N3YtMS43NGwuOS0uMDljLjU5LS4wNi43MS0uMjUuNzEtMS4wMnYtOS43N2MwLS42OC0uMTktLjg3LS43OC0uOWwtLjkzLS4wNnYtMS44M2g0LjEydjEzLjQ2em0tMS41Mi0xOS40N2MuOSAwIDEuNjEuNzEgMS42MSAxLjYxIDAgLjk2LS43MSAxLjY0LTEuNjQgMS42NHMtMS41OC0uNjgtMS41OC0xLjY0YzAtLjkuNjgtMS42MSAxLjYxLTEuNjF6Ii8+PHBhdGggZD0ibTMyNi41MSAxNDMuMDNjMCAyLjA1Ljc4IDIuNjQgMi4yMyAyLjY0IDEuMDUgMCAxLjg2LS4zNyAyLjM5LS42OGwuNzEgMS43NGMtLjkuNjItMi4yNiAxLjAyLTMuNTcgMS4wMi00LjA2IDAtNC4xOS0yLjM5LTQuMTktNC42NXYtOS4xMmgtMi4ybC4zMS0xLjkyYzEuOTgtLjE5IDIuNTEtMS44NiAzLjAxLTMuNjNoMS4zdjMuNDdoNC40bC0uMzEgMi4wOGgtNC4wOXY5LjA1eiIvPjxwYXRoIGQ9Im0zNDAuMDkgMTMxLjQ3YzIuMTQgMCA2LjQyLjY4IDYuNDIgNy42OSAwIDYuMDUtMi45OCA4LjU5LTYuOTUgOC41OXMtNi40Mi0yLjY3LTYuNDItOC4yNWMwLTYuNDIgMy44OC04LjAzIDYuOTUtOC4wM3ptMy44MSA4LjIxYzAtMy41NC0uOTktNi4yLTQtNi4ycy00LjE5IDIuNDgtNC4xOSA1LjcxYzAgMi45NS41MyA2LjU3IDQuMDYgNi41NyAyLjk1IDAgNC4xMi0yLjg4IDQuMTItNi4wOHoiLz48cGF0aCBkPSJtMzUzLjIzIDEzNy42MXY3Ljc1bDIuMjkuMDl2MS44NmgtNi4yOXYtMS43NGwuODEtLjA5Yy41OS0uMDYuODEtLjI1LjgxLS45M3YtOS45MmMwLS42Mi0uMTYtLjgxLS42OC0uODRsLTEuMDItLjA2di0xLjgzaDMuODh2Mi4yOWMuNTktMS41MiAyLjA1LTIuNzMgNC4zNy0yLjczLjgxIDAgMi4wNS4yMiAyLjg4LjcxdjQuMzRsLTIuMjkuMjJ2LTIuMDhjMC0uNC0uMDMtLjU2LS4zNC0uNjhzLS42NS0uMTYtMS4wNS0uMTZjLTIuMDEgMC0zLjM1IDEuNjctMy4zNSAzLjc4eiIvPjxwYXRoIGQ9Im0zNjUuMjkgMTM1Ljc1YzAgMS43NyAxLjQ2IDIuMTcgMy4yOSAyLjczIDIuMzkuNzEgNC43MSAxLjQzIDQuNzEgNC41NnMtMi4xMSA0LjcxLTUuNjEgNC43MWMtMi4yMyAwLTQuMzEtLjU2LTQuOTktLjk5di0zLjg0bDIuMjYtLjIydjEuOTJjMCAuNS4xMi42NS41My44MS41OS4yMiAxLjQ2LjM0IDIuMDguMzQgMS45OCAwIDMuMzItLjcxIDMuMzItMi41N3MtMS4xMi0yLjItMy4xNi0yLjczYy0yLjQ4LS42NS00Ljc0LTEuMzYtNC43NC00LjQzczIuNTQtNC41NiA1LjYxLTQuNTZjMS43MSAwIDMuNDcuNDMgNC40MyAxLjEydjMuMzVsLTIuMi4yMnYtMS42NGMwLS41Ni0uMDktLjc0LS41LS44Ny0uNTktLjE5LTEuNC0uMjUtMi4wMi0uMjUtMS41NSAwLTMuMDEuNjUtMy4wMSAyLjM2eiIvPjwvZz48L3N2Zz4='/>
+            <p>Dale House
+              <br> Stockport
+              <br>SK1 1TA
+              <br>0800 327 7575
+            </p>		
+          </div>
+          <section class="body">
+            <div class="addresses">
+              <div>
+                <span class="data-entry">{{client_name}}</span>
+              </div>
+              <div>
+                <span class="data-entry">{{address_line_1}}</span>
+              </div>
+              <div>
+                <span class="data-entry">{{address_line_2}}</span>
+              </div>
+              <div>
+                <span class="data-entry">{{address_line_3}}</span>
+              </div>
+              <div>
+                <span class="data-entry">{{address_line_4}}</span>
+              </div>
+              <div>
+                <span class="data-entry">{{address_line_5}}</span>
+              </div>
+            </div>
+            <div>
+              <label>Ref:</label>
+              <span class="data-entry">{{case_key}}</span>
+            </div>
+            <div>
+              <label>Date:</label>
+              <span class="data-entry">
+                <span class="auto-date">Auto Date</span>
+              </span>
+            </div>
+            <br>
+            <div class="doc-row">
+              <label>Dear:</label>
+              <span class="data-entry">{{salutation}}</span>
+            </div>
+            <div class="doc-row">
+              <h2>Your Fraud Recovery Claim</h2>
+              <p>Thank you for choosing LawPlus Solicitors to act on your behalf to recover your funds. We understand this incident has caused you an incredible amount of stress, inconvenience, and financial loss. We are here to listen, care and do our best to win your claim.</p>
+              <p>We value your business and appreciate you as a client.</p>
+              <p>We are experts in fraud and asset recovery, banking laws and regulations which means that means we are perfectly positioned to assist you in recovering your money.</p>
+              <p>We are committed to tackling fraud and helping innocent victims recover their losses</p>
+              <p>We understand that when you have been a victim of fraud it is hard to trust organisations in case it is a fraudster impersonating them. As such, we will never ask you to make any payments over the phone. </p>
+              <p>If you receive any requests via email to make a change to any of your account details and/or transfer any funds, then you must not respond to the email and must contact us immediately because this could be a scam.</p>
+              <p>We think it wise to present the background to your case, set out the problems we have identified and confirm to you the solution to the problems we have discussed on the telephone. Whilst you may understandably feel that there is a lot to consider, we are obliged to deliver all this information under the Solicitors’ Code of Conduct. We have tried to simplify this for you to have all the relevant information explained to you.</p>
+            </div>
+            <div class="doc-row">
+              <h2>Our Initial Advice to You</h2>
+              <p>You have advised us that you have been a victim of a scam or fraud. You have spoken to one of our fraud advisors and they believe that you have a good claim to recover your money with interest and compensation.</p>
+              <p>You now must sign these documents and our Fraud and Scam team will investigate your case. We will investigate your circumstances as to how the scam occurred.</p>
+              <p>We will also investigate whether your bank was responsible for failing to carry out their necessary checks and having the correct systems in place before processing any payments in accordance with banking regulations. Should we determine that your bank failed in their duty of care to you then we would look to bring a formal complaint to the bank; and then to the Financial Ombudsman Service if the bank do not uphold the complaint to them. The Financial Ombudsman Service have powers to compel the bank to refund you any losses and to order the bank to pay you interest at 8%, compensation and order the bank to pay your costs.</p>
+              <p>If we do not obtain redress through the bank or the Financial Ombudsman Service, then we may issue court proceedings against the bank if we believe they have failed in their duty of care to you.</p>
+              <p>As your claim progresses, we shall continue to keep you updated and advise you on the most appropriate options for you in this matter.</p>
+              <p>At this stage we believe that your fastest and most cost&hyphen;effective way to seek to recover your losses will be for us to prepare a letter of claim and / or complaint to your bank and any banks that received your funds; and escalate the complaint to the Financial Ombudsman Service if they refuse to refund your funds.</p>
+              <p>You may not believe that there are any reasons as to why a bank may refund you. We are experts in this field and put together a detailed and complex analysis of what has occurred in relation to the scam and the funds you have lost, together with any of the bank’s failings to ask that they refund your lost funds.</p>
+              <p>We contact your bank to advise that a scam has occurred and outline the scam transaction. This is prior to our formal investigation and before the complaint letter is sent. If you receive any refund from your bank after having signed this agreement, then the fees set out below are due. If you do not recover any refund then no fees are due.</p>
+              <p>We may complain to both the sending and receiving bank.</p>
+              <p>If these steps do not work, we will advise you in respect of court proceedings and recovery against the bank or other identified third parties following information provided by the bank after our initial enquiries.</p>
+              <p>We must advise you that if we are successful in recovering any monies then payment will be made to your bank account directly and at that stage our fees will be due within 7 days.</p>
+            </div>
+            <div class="doc-row">
+              <h2>Limitation and time limits</h2>
+              <p>You only have 6 months from when your bank provides you with a final letter of response to make a complaint to the Financial Ombudsman. If you have complained directly and are already past this date you cannot complain again. This is a short timescale so it is important that you send all information requested by us to us as a matter of urgency. We can not assess your claim until we receive this information and we will not be responsible for any missed deadlines until we have been sent all of the documents requested by us and had reasonable time to review your case. This is why it is important the we complain on your behalf so deadlines are not missed.</p>
+              <p>If you have not complained then you have six years from the date of your first monetary transaction to the scammer in which to make a claim. If you have passed this date you can not complain.</p>
+            </div>
+            <div class="doc-row">
+              <h2>Funding your claim. Damages Based Agreement</h2>
+              <p>As the name suggests, this is a funding option where the amount you pay your solicitor is a percentage of the compensation you recover, regardless of how much work the solicitor does. Under the SRA Claims Management Fees Rules 2024, the fees are capped as follows:</p>
+              <ul>
+                <li>
+                  <span>For redress awarded between &pound;1 &hyphen; &pound;1,499:</span> 30% or &pound;420, whichever is lower
+                </li>
+                <li>
+                  <span>For redress awarded between &pound;1,500 &hyphen; &pound;9,999: </span> 28% or &pound;2,500, whichever is lower
+                </li>
+                <li>
+                  <span>For redress awarded between &pound;10,000 &hyphen; &pound;24,999: </span> 25% or &pound;5,000, whichever is lower
+                </li>
+                <li>
+                  <span>For redress awarded between &pound;25,000 &hyphen; &pound;49,999: </span> 20% or &pound;7,500, whichever is lower
+                </li>
+                <li>
+                  <span>For redress awarded &pound;50,000 or above: </span> 15% or &pound;10,000, whichever is lower
+                </li>
+              </ul>
+              <p>VAT at the prevailing rate (20%) will be added to the charges. If you are VAT registered, then you can claim the VAT back from HMRC, and we will provide you with a VAT invoice for this purpose. We believe this is the appropriate funding model for your claim. The total fee is capped based on the recovered amount, ensuring transparency and compliance with the SRA rules. There are no hidden charges.</p>
+            </div>
+          <div class="doc-row">
+            <h2>Illustration of How the Funding Works:</h2>
+            <ol>
+              <li>
+                If you recover &pound;10,000, our fee would be &pound;2,500 + VAT (a total of &pound;3,000). You would receive &pound;7,000.
+              </li>
+            </ol>
+            <p>If you cancel your instructions after the 14&hyphen;day cooling&hyphen;off period, you will be responsible for any fees reasonably incurred. You have the right to cancel without any costs within this 14&hyphen;day window.</p>
+            <p>After you have signed this agreement, you will be liable to pay us based on the above fee structure from any recovery from your bank.</p>
+            <p>We must advise you that you can complain directly to the bank or Financial Ombudsman Service yourself and if you are successful in your complaint you may receive a full recovery of your losses.</p>
+            <p>However, in our experience claims made directly to the bank or Financial Ombudsman Service are often rejected as clients are not aware of banking laws and regulations. Direct complainants do not have our knowledge of banking law and regulations, so they do not set out properly why the bank has failed, why you should get interest, compensation and costs.</p>
+            <p>The banks use experts to deal with complaints themselves who can easily confuse direct complaints with complex arguments that they cannot respond to.</p>
+            <p>We are experts in this field and often compel the banks to make payments, inclusive of interest at up to 8% from the date of loss; we may also seek damages for stress and inconvenience and recovery of our costs in full. Please refer to the success stories and testimonials on our website from our clients that demonstrate the results that we get for scam victims</p>
+            <p>If you do currently have a complaint on&hyphen;going with your bank or the Financial Ombudsman you must notify us immediately to avoid costs being incurred whilst a response is awaited. In the event that you fail to notify us of an on&hyphen;going complaint, a deduction of 25% plus VAT may still be payable from any funds recovered.</p>
+          </div>
+          <div class="doc-row">
+            <h2>Alternative forms of funding</h2>
+            <p>You are also free to go to other solicitors who may offer different types of funding agreements. Please assess the market yourself if you are unsure whether to sign up. Other firms may enter into different funding agreements such as you paying the fees up front. We prefer a damages&hyphen;based agreement as it offers a clear maximum amount of deductions for clients set at 25% of recoveries plus VAT. If you wish to pay your fees up front rather than a “no win, no fee” agreement then please advise us of this and we will send you an alternative agreement.</p>
+          </div>
+          <div class="doc-row">
+            <h2>Likely Timescales</h2>
+            <p>If we decide it is appropriate to complain to your bank, then they will have 8 weeks to respond to our complaint. If they reject your complaint, then we may escalate the complaint to the Financial Ombudsman Service. In our experience it takes around 1 to 6 months to decide depending on their back logs of claims.</p>
+            <p>We have an agreed procedure with most banks and the Financial Ombudsman Service to fast track our clients&apos; complaints. We have worked hard to achieve this relationship over several years.</p>
+            <p>For direct complaints by consumers and from other organisations that are not fast tracked a final decision can take up to 18 to 24 months. This is why we recommend using this firm over another firm.</p>
+            <p>We hope to have all the evidence to prove your claim within 1 month and seek settlement within 12 months.</p>
+          </div>
+          <div class="doc-row">
+            <h2>People Responsible for Your Work</h2>
+            <p>
+              The people with initial responsibility for dealing with your claim are <span class="data_entry">{{fee_earner_desc}}</span> and Matthew Reynard who is a Director and Solicitor at LawPlus Solicitors. Their contact details can be found at the top of this letter. The person responsible for the overall supervision of your claim is Matthew Reynard and he is our Legal Director.
+            </p>
+            <p>If your file is transferred to another person at any stage, then you will be informed in writing. There will be occasions where your file will be dealt with by other file handlers and supervised by other Solicitors.</p>
+            <p>Your file will be handled by the fraud and scam recovery team.</p>
+          </div>
+          <div class="doc-row">
+            <h2>Billing</h2>
+            <p>Please note that this is for guidance only. As advised above, so long as our agreement is not terminated, we shall not ask you for any payments to be made until the conclusion of your claim, and then this will be limited to the fee caps outlined under the SRA Claims Management Fees Rules 2024, plus VAT of your recoveries, along with any expenses you recover.</p>
+            <p>As soon as you have received any money from your bank or other financial organization in relation to your scam complaint after signing your DBA funding agreement, you will be charged based on the following structure:</p>
+            <ul>
+              <li>
+                <span>For redress awarded between &pound;1 &hyphen; &pound;1,499:</span> 30% or &pound;420, whichever is lower
+              </li>
+              <li>
+                <span>For redress awarded between &pound;1,500 &hyphen; &pound;9,999: </span> 28% or &pound;2,500, whichever is lower
+              </li>
+              <li>
+                <span>For redress awarded between &pound;10,000 &hyphen; &pound;24,999: </span> 25% or &pound;5,000, whichever is lower
+              </li>
+              <li>
+                <span>For redress awarded between &pound;25,000 &hyphen; &pound;49,999: </span> 20% or &pound;7,500, whichever is lower
+              </li>
+              <li>
+                <span>For redress awarded &pound;50,000 or above: </span> 15% or &pound;10,000, whichever is lower
+              </li>
+            </ul>
+            <p>This fee is subject to VAT at the prevailing rate (20%). The invoice is payable within 7 days.</p>
+            <p>You have the right to apply to the court for an assessment of our bill under Part III of the Solicitors Act 1974.</p>
+            <p>You agree that any bill of costs we send to you is to be regarded as a final bill for what it covers, i.e., what is sometimes called a &apos;statute&apos; bill.</p>
+            <p>This means that the time limits for your right to object to our bills of costs under Part III of the Solicitors Act 1974 start to run from the date we deliver the bill to you.</p>
+            <p>You also have the right to object to any of our bills of costs by making a complaint to the Legal Ombudsman. Please note that the Legal Ombudsman may not deal with your complaint if you have already applied to the court for assessment of your bill.</p>
+            <p>If all or part of our bill remains unpaid while you dispute it, the firm is entitled to charge simple interest at 8% per annum on the unpaid costs</p>
+          </div>
+          <div class="doc-row">
+            <h2>Complaints Policy and Handling Procedure</h2>
+            <p>If at any point you become unhappy with the service we have provided to you or you have concerns about your bill then you should inform us immediately so that we can do our best to resolve the problem for you. We have 8 weeks to consider your complaint.</p>
+            <p>The Complaints Partner is Matthew Reynard. He can be contacted via email at: matthew&commat;lawplus.co.uk</p>
+            <p>If we are unable to resolve your complaint, then you can have the complaint independently looked at by the Legal Ombudsman, who investigates complaints about poor service from lawyers. The Legal Ombudsman can investigate complaints up to 6 years from the date of the problem happening or within 3 years of when you found out about the problem. If you wish to refer your complaint to the Legal Ombudsman, this must be done within 6 months of our final response to your complaint. If you would like more information about the Legal Ombudsman their contact details are as follows:</p>
+            <p>Visit www.legalombudsman.org.uk</p>
+            <p>Call 0300 555 0333 (between 8.30am to 5.30pm) Email enquiries&commat;legalombudsman.org.uk</p>
+            <p>Legal Ombudsman PO Box 6167, Slough, SL1 0EH</p>
+            <p>If we are unable to resolve your complaint, then you can have the complaint independently looked at by the Legal Ombudsman, who investigates complaints about poor service from lawyers. The Legal Ombudsman can investigate complaints up to 6 years from the date of the problem happening or within 3 years of when you found out about the problem. If you wish to refer your complaint to the Legal Ombudsman, this must be done within 6 months of our final response to your complaint. If you would like more information about the Legal Ombudsman their contact details are as follows:</p>
+          </div>
+          <div class="doc-row">
+            <h2>Documents</h2>
+            <p>It is important that you keep all documents which relate in any way to your claim.</p>
+            <p>After completing the work, the firm is entitled to keep all papers and documents while there is money owing for charges and expenses.</p>
+            <p>We are a paperless office which means that we will store your file electronically only, apart from original documents which we will return to you or keep in safe storage. The firm keeps papers (except for any papers you ask to be returned to you) for no more than 6 years and keeps the file on the understanding that the firm has authority to destroy it after 6 years from the date of the final bill, although documents you ask to deposit in safe custody will not, of course, be destroyed.</p>
+            <p>If it becomes necessary to retrieve papers or documents from storage in relation to continuing or new instructions to act on your behalf the firm would not normally charge for such retrieval. However, the firm may make a charge, based on time spent producing stored papers or documents to you or to another person at your request, in other circumstances including reading correspondence or other work necessary to comply with instructions given by you or on your behalf in this regard.</p>
+          </div>
+          <div class="doc-row">
+            <h2>Identification</h2>
+            <p>We are obliged to inform you that we will be carrying out electronic identification searches to verify your identity. This is a simple search that we carry out for all clients. If we require any further information or forms of identity from you then we will contact you in due course. This search must be carried out by law firms to comply with anti&hyphen;money laundering, anti&hyphen;terrorism, and fraud prevention legislation.</p>
+          </div>
+          <div class="doc-row">
+            <h2>Termination</h2>
+            <p>Under the Consumer Contract Regulations 2013 you may have the right to withdraw, without charge, within 14 days of the date on which you entered into a retainer with this firm but in the event that you expressly request us to commence work in relation to your claim before the end of the cancellation period, you may lose that right to withdraw if your claim then concludes within that period. Further, if you do seek to exercise your right to withdraw, you may be liable to pay this firm’s reasonable costs for any work undertaken prior to notification to us of your cancellation of the agreement. Please confirm any cancellation in writing to claims&commat;lawplus.co.uk to our registered office.</p>
+          </div>
+          <div class="doc-row">
+            <h2>Returning Documentation</h2>
+            <p>Please now read and electronically sign the enclosed documents where appropriate at your earliest convenience to allow us to continue with your claim. If you wish to received documents by post or have one of our staff or agents give you a home visit to explain these documents then please advise us of this and it will be arranged.</p>
+            <p>I hope this letter and attachments usefully confirm the advice given and action agreed upon, as well as dealing with any immediate queries about the day&hyphen;to&hyphen;day handling of the matter and the firm&apos;s terms of business.</p>
+          </div>
+          <div class="doc-row">
+            <p>Yours sincerely,</p>
+          </div>
+          <div class="doc-row">
+            <span class="data-entry">{{fee_earner_name}}</span>
+            <h2><strong>LawPlus Solicitors</strong></h2>
+          </div>
+          </section>
+          <div class="footer">
+            LawPlus Solicitors is a trading style of Consumer Legal Costs Services Limited. Registered under the Data Protection Act 2018, Reference ZA775443. Consumer Legal Costs Services Limited is registered in England and Wales company number 12490780. Trading address: Dale House, Stockport, SK1 1TA. Consumer Legal Costs Services Limited is an alternative business structure regulated by the SRA
+          </div>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,218 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <style>
+        :root{
+            --blue: #292864;
+        }
+        /*Base styles */
+        .sign-html-form{
+            max-width:850px;
+            margin:auto;
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: normal;	
+            font-size: 14px;
+        }
+        .sign-html-form form div.signature-tag{
+            float:right;
+            border-radius:4px;
+            padding:11px 22px;
+            margin-right:10px;
+            background:#FFC74D;
+      }
+      .sign-html-form div.signature-block{
+          float:right;
+          font-style:italic;
+          clear:left;
+          font-family: Arial,Helvetica Neue,Helvetica,sans-serif;	
+      }
+      .blue{
+        color: var(--blue);
+      }
+      /* header */
+      .sign-html-form h1{
+        font-size: 28px;
+      }
+      .sign-html-form h2{
+        font-size: 22px;
+      }
+      .sign-html-form form div.header{
+        text-align: right;
+      }
+      .sign-html-form form div.header img{
+        width: 150px;
+      }
+      /* Tables */
+      .sign-html-form form .section-1 .table{
+            border: black 1px solid;
+            text-align: left;
+            display: table;
+            width: 80%;
+      }
+      .sign-html-form form .section-1 .table-row{
+        display: table-row;
+      }
+      .sign-html-form .section-1 .table-cell{
+        border: black 1px solid;
+        padding: 10px;
+        display: table-cell;
+      }
+      .sign-html-form form .section-1 .left{
+        color: var(--blue);
+        font-weight: bold;
+        background-color: rgb(247,247,247);
+        width: 40%;
+      }
+      .sign-html-form form .section-1 .right{
+        width: calc(55% - 5px);
+      }
+      .sign-html-form form .section-3 h3{
+        color: var(--blue);
+      }
+      /*removestart */
+      @media  (max-width:850px) {
+        .sign-html-form form .section-1 .table-cell{
+            display: block;
+            width: inherit;
+        }
+        .sign-html-form form .section-1 .table{
+            width:calc(100% - 20px);
+        }
+      }
+      /*removeend*/
+    </style>
+    <div class="sign-html-form">
+        <form>
+            <div class="header">
+                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjg4IDEzNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik05Ni4xIDQwLjRoMTQuMnY0aC05LjR2NS43aDguMXY0aC04LjF2OS4xaC00LjhWNDAuNFptMTguMiAyLjJjLS41LS41LS44LTEuMS0uOC0xLjhzLjItMS40LjgtMS44Yy42LS40IDEuMS0uNyAxLjktLjcuOCAwIDEuNC4yIDEuOS43LjUuNS44IDEuMS44IDEuOHMtLjIgMS40LS44IDEuOGMtLjYuNC0xLjIuNy0xLjkuN3MtMS40LS4zLTEuOS0uN1ptLS40IDMuNGg0Ljh2MTcuM2gtNC44VjQ2Wm05LjUgMGgzLjlsLjMgMi4yaC4xYy44LS44IDEuNy0xLjUgMi42LTEuOS45LS40IDEuOS0uNyAzLS43IDEuOCAwIDMuMi42IDQgMS44LjkgMS4yIDEuMyAyLjkgMS4zIDUuMnYxMC44aC00LjhWNTMuMmMwLTEuMy0uMi0yLjItLjUtMi43LS40LS41LTEtLjgtMS44LS44YTMgMyAwIDAgMC0xLjcuNGMtLjUuMy0xLjEuNy0xLjggMS40djExLjhoLTQuOFY0NmguMlptMjAuNSAxNi4zYy0uOS0xLTEuNC0yLjItMS40LTMuN2E1IDUgMCAwIDEgMi4zLTQuM2MxLjYtMSA0LjEtMS43IDcuNS0yLjEtLjEtMS45LTEtMi44LTIuOS0yLjgtLjcgMC0xLjUuMS0yLjIuNGwtMi40IDEuMi0xLjctMy4xYzIuNC0xLjUgNC45LTIuMyA3LjMtMi4zIDIuMiAwIDMuOS42IDUgMS45IDEuMSAxLjMgMS43IDMuMiAxLjcgNS44djEwaC0zLjlsLS40LTEuOGgtLjFhNy43IDcuNyAwIDAgMS01LjEgMi4yIDUgNSAwIDAgMS0zLjctMS40Wm02LjgtMi43IDEuNi0xLjJ2LTMuM2MtMS45LjMtMy4yLjYtNC4xIDEuMi0uOC41LTEuMiAxLjItMS4yIDEuOSAwIC42LjIgMS4xLjYgMS40LjQuMy45LjUgMS42LjUuNS0uMSAxLjEtLjIgMS41LS41Wk0xNjEuNiA0NmgzLjlsLjQgMi4yaC4xYy44LS44IDEuNy0xLjUgMi42LTEuOS45LS40IDEuOS0uNyAzLS43IDEuOCAwIDMuMi42IDQgMS44LjkgMS4yIDEuMyAyLjkgMS4zIDUuMnYxMC44aC00LjhWNTMuMmMwLTEuMy0uMi0yLjItLjUtMi43LS40LS41LS45LS44LTEuOC0uOGEzIDMgMCAwIDAtMS43LjRjLS41LjMtMS4xLjctMS44IDEuNHYxMS44aC00LjhWNDZoLjFabTIzIDE2LjZhNy41IDcuNSAwIDAgMS0zLTMuMWMtLjctMS40LTEuMS0zLTEuMS00LjhhOSA5IDAgMCAxIDQuNC04LjFjMS40LS43IDIuOS0xIDQuNC0xLjEgMS45IDAgMy42LjYgNS4xIDEuOWwtMi4zIDMuMWMtLjQtLjQtLjktLjYtMS4zLS44LS40LS4yLS44LS4zLTEuMy0uM2E0IDQgMCAwIDAtMy4xIDEuNGMtLjguOS0xLjIgMi4yLTEuMiAzLjggMCAxLjYuNCAyLjggMS4xIDMuOC44LjkgMS43IDEuNCAzIDEuNCAxIDAgMi4xLS40IDMuMy0xLjNsMS45IDMuMWMtLjguNy0xLjcgMS4yLTIuNyAxLjYtMSAuNC0yIC41LTMgLjUtMS41IDAtMi45LS4zLTQuMi0xLjFabTEzLjYtMjBjLS41LS41LS44LTEuMS0uOC0xLjhzLjItMS40LjgtMS44Yy42LS40IDEuMi0uNyAxLjktLjdzMS40LjIgMS45LjdjLjUuNS44IDEuMS44IDEuOHMtLjMgMS40LS44IDEuOGEzIDMgMCAwIDEtMy44IDBabS0uNCAzLjRoNC44djE3LjNoLTQuOFY0NlptMTAuMSAxNi4zYy0uOS0xLTEuNC0yLjItMS40LTMuN2E1IDUgMCAwIDEgMi4zLTQuM2MxLjYtMSA0LjEtMS43IDcuNS0yLjEtLjEtMS45LTEtMi44LTIuOS0yLjgtLjcgMC0xLjUuMS0yLjIuNGwtMi40IDEuMi0xLjctMy4xYzIuNC0xLjUgNC45LTIuMyA3LjMtMi4zIDIuMiAwIDMuOS42IDUgMS45IDEuMSAxLjMgMS43IDMuMiAxLjcgNS44djEwaC0zLjlsLS40LTEuOGgtLjFhNy43IDcuNyAwIDAgMS01LjEgMi4yYy0xLjUgMC0yLjgtLjUtMy43LTEuNFptNi45LTIuNyAxLjYtMS4ydi0zLjNjLTEuOS4zLTMuMi42LTQuMSAxLjItLjguNS0xLjIgMS4yLTEuMiAxLjkgMCAuNi4yIDEuMS42IDEuNC40LjMuOS41IDEuNi41LjUtLjEgMS0uMiAxLjUtLjVabTExLjkgMi43Yy0uNy0xLTEuMS0yLjMtMS4xLTQuMVYzOC43aDQuOHYxOS43YzAgLjUuMS44LjMgMS4xbC42LjMuNi0uMS42IDMuNmMtLjcuMy0xLjUuNC0yLjUuNC0xLjUgMC0yLjYtLjUtMy4zLTEuNFptLTEyNi44IDM0YTkgOSAwIDAgMS0zLjYtNC4xIDE0IDE0IDAgMCAxLTEuMy02LjRjMC0yLjUuNC00LjYgMS4zLTYuM2E5LjQgOS40IDAgMCAxIDktNS40YzIuMSAwIDMuOC41IDUuNCAxLjQgMS42LjkgMi44IDIuMyAzLjYgNC4xYTE0IDE0IDAgMCAxIDEuMyA2LjNjMCAyLjQtLjQgNC41LTEuMyA2LjRhOS4xIDkuMSAwIDAgMS0zLjYgNC4xIDkuNyA5LjcgMCAwIDEtNS40IDEuNGMtMi4xIDAtMy45LS42LTUuNC0xLjVabTkuMi00LjhjMS0xLjQgMS41LTMuMyAxLjUtNS43IDAtMi40LS41LTQuMi0xLjUtNS42LTEtMS40LTIuMy0yLTMuOS0yLTEuNyAwLTMgLjctMy45IDJhOS44IDkuOCAwIDAgMC0xLjQgNS42YzAgMi40LjUgNC4zIDEuNSA1LjcgMSAxLjQgMi4zIDIuMSAzLjkgMi4xczIuOS0uNyAzLjgtMi4xWk0xMTkuNSA4MGgzLjlsLjQgMi4zaC4xYTExIDExIDAgMCAxIDIuNS0yIDUgNSAwIDAgMSAyLjgtLjdjMS4yIDAgMi4yLjMgMyAuOC44LjUgMS40IDEuMiAxLjggMi4yYTE2IDE2IDAgMCAxIDIuNi0yLjJjLjktLjUgMS44LS44IDIuOC0uOCAxLjggMCAzLjIuNiA0LjEgMS44IDEgMS41IDEuNCAzLjMgMS4zIDUuMXYxMC44SDE0MFY4Ny4xYzAtMS4zLS4yLTIuMi0uNS0yLjctLjQtLjUtMS0uOC0xLjgtLjgtLjkgMC0yIC42LTMuMiAxLjh2MTEuOGgtNC44Vjg3YzAtMS4zLS4yLTIuMi0uNS0yLjctLjQtLjUtMS0uOC0xLjgtLjgtLjkgMC0yIC42LTMuMiAxLjh2MTEuOGgtNC44VjgwaC4xWm0zNi40IDE3LjFjLS44LS40LTEuNS0xLTIuMi0xLjdoLS4xbC0uNCAxLjloLTMuN1Y3Mi43aDQuOHY2LjFsLS4xIDIuN2MuNy0uNiAxLjUtMS4xIDIuMy0xLjUuOC0uNCAxLjYtLjUgMi40LS41YTYgNiAwIDAgMSA1IDIuNGMxLjIgMS42IDEuOCAzLjcgMS44IDYuNCAwIDEuOS0uMyAzLjYtMSA1YTkgOSAwIDAgMS0yLjcgMy4zYy0xIC43LTIuMyAxLTMuNiAxLjEtMSAwLTEuOC0uMi0yLjUtLjZabTMuOC00LjdjLjctLjkgMS0yLjMgMS00IDAtMy4zLTEuMS00LjktMy4zLTQuOS0xLjEgMC0yLjIuNi0zLjMgMS43djcuNGMuOS44IDEuOSAxLjIgMyAxLjJzMS45LS41IDIuNi0xLjRabTEwLjggMy41Yy0uOS0xLjItMS4zLTIuOS0xLjMtNS4yVjc5LjloNC44djEwLjJjMCAxLjMuMiAyLjIuNiAyLjcuNC41IDEgLjggMS44LjguNyAwIDEuMy0uMiAxLjctLjVhNiA2IDAgMCAwIDEuNi0xLjZWNzkuOWg0Ljh2MTcuM2gtMy45bC0uMy0yLjVoLS4xYy0uOC45LTEuNiAxLjYtMi41IDIuMWE2IDYgMCAwIDEtMyAuN2MtMiAuMi0zLjQtLjQtNC4yLTEuNlptMTkuNi0uNmMtMS40LTItMi00LjItMS45LTYuNiAwLTEuOC4zLTMuNCAxLTQuOGE4LjYgOC42IDAgMCAxIDIuNy0zLjJjMS0uNyAyLjMtMSAzLjUtMS4xLjkgMCAxLjcuMiAyLjMuNS43LjMgMS4zLjggMiAxLjRsLS4yLTIuN3YtNmg0Ljh2MjQuNmgtMy45bC0uMy0xLjhoLS4xYy0uNy43LTEuNCAxLjItMi4yIDEuNi0uOC40LTEuNy42LTIuNS42LTIuMy0uMS00LS45LTUuMi0yLjVabTgtMS45Yy41LS4zIDEtLjcgMS40LTEuM3YtNy40Yy0uOC0uOC0yLTEuMi0zLjEtMS4yLTEgMC0xLjguNC0yLjQgMS4zLS43LjktMSAyLjEtMSAzLjggMCAxLjcuMyAzIC45IDMuOS42LjkgMS40IDEuMyAyLjUgMS4zLjYgMCAxLjItLjEgMS43LS40Wm0xMi41IDMuN2MtMS4yLS40LTIuMi0xLTMuMS0xLjhsMi4yLTNjLjguNiAxLjYgMS4xIDIuMyAxLjRhNiA2IDAgMCAwIDIuMy41Yy44IDAgMS40LS4xIDEuOC0uNC40LS4zLjYtLjcuNi0xLjIgMC0uNC0uMi0uNy0uNS0xbC0xLjMtLjgtMS44LS43Yy0xLjQtLjUtMi41LTEuMi0zLjQtMmEzLjkgMy45IDAgMCAxLTEuMy0zLjFjMC0xLjYuNi0yLjkgMS44LTMuOSAxLjItMSAyLjgtMS41IDQuNy0xLjUgMi4xIDAgNC4xLjcgNiAyLjJsLTIuMSAyLjljLTEtLjktMi4zLTEuNC0zLjctMS41LS43IDAtMS4zLjEtMS42LjQtLjQuMy0uNS43LS41IDEuMSAwIC40LjIuOC43IDEuMWwxLjYuOCAxLjIuNGMxLjUuNSAyLjYgMS4yIDMuNSAxLjkuOS44IDEuMyAxLjggMS4zIDMuM2E1LjEgNS4xIDAgMCAxLTMuMiA0LjhjLTEgLjUtMi4zLjctMy44LjdhMTEgMTEgMCAwIDEtMy43LS42Wk0yMjQuNCA4MGgzLjlsLjMgMi4zaC4xYTExIDExIDAgMCAxIDIuNS0yIDUgNSAwIDAgMSAyLjgtLjdjMS4yIDAgMi4yLjMgMyAuOC44LjUgMS40IDEuMiAxLjggMi4yYTE2IDE2IDAgMCAxIDIuNi0yLjJjLjktLjUgMS44LS44IDIuOC0uOCAxLjggMCAzLjIuNiA0LjEgMS44YTguNCA4LjQgMCAwIDEgMS4zIDUuMXYxMC44aC00LjhWODcuMWMwLTEuMy0uMi0yLjItLjUtMi43LS40LS41LTEtLjgtMS44LS44LS45IDAtMiAuNi0zLjIgMS44djExLjhoLTQuOFY4N2MwLTEuMy0uMi0yLjItLjUtMi43LS40LS41LTEtLjgtMS44LS44LS45IDAtMiAuNi0zLjIgMS44djExLjhoLTQuOFY4MGguMlptMzAuNCAxNi4zYy0uOS0xLTEuNC0yLjItMS40LTMuN2E1IDUgMCAwIDEgMi4zLTQuM2MxLjYtMSA0LjEtMS43IDcuNS0yLjEtLjEtMS45LTEtMi44LTIuOS0yLjgtLjcgMC0xLjUuMS0yLjIuNGwtMi41IDEuMi0xLjctMy4xYzIuNS0xLjUgNC45LTIuMyA3LjMtMi4zIDIuMiAwIDMuOS42IDUgMS45IDEuMSAxLjMgMS43IDMuMiAxLjcgNS44djEwSDI2NGwtLjMtMS44aC0uMWE3LjcgNy43IDAgMCAxLTUuMSAyLjJjLTEuNSAwLTIuNy0uNS0zLjctMS40Wm02LjktMi43IDEuNi0xLjJ2LTMuM2MtMS45LjMtMy4yLjYtNC4xIDEuMi0uOC41LTEuMiAxLjItMS4yIDEuOSAwIC42LjIgMS4xLjYgMS40LjQuMy45LjUgMS42LjUuNS0uMSAxLjEtLjIgMS41LS41Wk0yNzIuNiA4MGgzLjlsLjQgMi4yaC4xYy44LS44IDEuNy0xLjUgMi42LTEuOS45LS40IDEuOS0uNyAzLS43IDEuOCAwIDMuMi42IDQgMS44LjkgMS4yIDEuMyAyLjkgMS4zIDUuMnYxMC44aC00LjhWODcuMmMwLTEuMy0uMi0yLjItLjUtMi43LS40LS41LS45LS44LTEuOC0uOGEzIDMgMCAwIDAtMS43LjRjLS41LjMtMS4xLjctMS44IDEuNHYxMS44aC00LjhWODBoLjFaTTk4LjQgMTMwLjljLTEuNS0uNi0yLjgtMS40LTMuOS0yLjVsMi44LTMuM2MuOC43IDEuOCAxLjMgMi44IDEuOCAxIC40IDIgLjcgMyAuNyAxLjEgMCAyLS4yIDIuNi0uNi42LS40LjktMSAuOS0xLjggMC0uNS0uMS0uOS0uNC0xLjJsLTEtLjgtMi0uOS0zLTEuM2E3LjUgNy41IDAgMCAxLTMuMy0yLjRjLS45LTEtMS4zLTIuMy0xLjMtMy44IDAtMS4yLjMtMi40IDEtMy40YTcgNyAwIDAgMSAyLjktMi40YzEuMi0uNiAyLjYtLjkgNC4xLS45IDEuMyAwIDIuNi4zIDMuOS44IDEuMy41IDIuNCAxLjMgMy4zIDIuMmwtMi40IDNjLS44LS42LTEuNi0xLjEtMi4zLTEuNGE3IDcgMCAwIDAtMi41LS41IDQgNCAwIDAgMC0yLjMuNmMtLjYuNC0uOC45LS44IDEuNiAwIC41LjEuOS40IDEuMmwxLjEuOCAyIC45IDIuOSAxLjJhOCA4IDAgMCAxIDMuNCAyLjQgNiA2IDAgMCAxIDEuMiAzLjggNiA2IDAgMCAxLTEgMy41IDcgNyAwIDAgMS0yLjkgMi41Yy0xLjMuNi0yLjguOS00LjUuOS0xLjcuMS0zLjItLjItNC43LS43Wm0zMC43LTYuOWgtMTAuN2MuMiAxLjQuOCAyLjQgMS43IDMgLjkuNyAxLjkgMSAzLjEgMWE4IDggMCAwIDAgMy45LTEuMmwxLjYgMi45Yy0uOS42LTEuOCAxLjEtMi45IDEuNC0xLjEuMy0yLjEuNS0zLjIuNS0xLjYgMC0zLjEtLjQtNC40LTEuMWE3LjQgNy40IDAgMCAxLTMuMS0zLjJjLS44LTEuNC0xLjEtMy0xLjEtNC44IDAtMS44LjQtMy40IDEuMS00LjhhOS4zIDkuMyAwIDAgMSAzLTMuMiA4IDggMCAwIDEgNC0xLjFjMi40IDAgNC4yLjggNS40IDIuM2E5LjQgOS40IDAgMCAxIDEuOSA2Yy0uMSAxLS4xIDEuOC0uMyAyLjNabS0zLjgtMy4yYTQgNCAwIDAgMC0uOC0yLjYgMyAzIDAgMCAwLTIuMy0xYy0uOSAwLTEuNi4zLTIuMy45LS43LjYtMS4xIDEuNS0xLjMgMi43aDYuN1ptNy43LTYuOGgzLjlsLjQgM2guMWMuNi0xLjEgMS4zLTIgMi4yLTIuNmE0LjggNC44IDAgMCAxIDQuNy0uNWwtLjggNC4xLS42LS4yLTEuMi0uMWE0IDQgMCAwIDAtMi4yLjhjLS43LjUtMS4zIDEuNC0xLjggMi41djEwLjJoLTQuOFYxMTRoLjFabTEyIDBoNC44bDIuNCA4LjQgMS40IDUuM2guMWwxLjQtNS4zIDIuNC04LjRoNC42bC01LjcgMTcuM2gtNS41TDE0NSAxMTRabTIwLjQtMy40Yy0uNS0uNS0uOC0xLjEtLjgtMS44cy4yLTEuNC44LTEuOGMuNi0uNCAxLjEtLjcgMS45LS43LjggMCAxLjQuMiAxLjkuNy41LjUuOCAxLjEuOCAxLjhzLS4yIDEuNC0uOCAxLjhjLS42LjQtMS4yLjctMS45LjdzLTEuNC0uMy0xLjktLjdabS0uNCAzLjRoNC44djE3LjNIMTY1VjExNFptMTIuNiAxNi42YTcuNSA3LjUgMCAwIDEtMy0zLjFjLS43LTEuNC0xLjEtMy0xLjEtNC44YTkgOSAwIDAgMSA0LjQtOC4xYzEuNC0uNyAyLjktMSA0LjQtMS4xIDEuOSAwIDMuNi42IDUuMSAxLjlsLTIuMyAzLjFjLS40LS40LS45LS42LTEuMy0uOC0uNC0uMi0uOC0uMy0xLjMtLjNhNCA0IDAgMCAwLTMuMSAxLjRjLS44LjktMS4yIDIuMi0xLjIgMy44IDAgMS42LjQgMi44IDEuMSAzLjguOC45IDEuNyAxLjQgMyAxLjQgMSAwIDIuMS0uNCAzLjMtMS4zbDEuOSAzLjFjLS44LjctMS43IDEuMi0yLjcgMS42LTEgLjQtMiAuNS0zIC41LTEuNSAwLTIuOS0uMy00LjItMS4xWk0yMDQgMTI0aC0xMC43Yy4yIDEuNC44IDIuNCAxLjcgMyAuOS43IDEuOSAxIDMuMSAxIDEuMiAwIDIuNS0uNCAzLjgtMS4ybDEuNiAyLjljLS45LjYtMS44IDEuMS0yLjkgMS40LTEuMS4zLTIuMS41LTMuMi41LTEuNiAwLTMuMS0uNC00LjQtMS4xYTcuNCA3LjQgMCAwIDEtMy4xLTMuMmMtLjgtMS40LTEuMS0zLTEuMS00LjggMC0xLjguNC0zLjQgMS4xLTQuOGE5LjMgOS4zIDAgMCAxIDMtMy4yIDggOCAwIDAgMSA0LTEuMWMyLjQgMCA0LjIuOCA1LjQgMi4zYTkuNCA5LjQgMCAwIDEgMS45IDZsLS4yIDIuM1ptLTMuOS0zLjJhNCA0IDAgMCAwLS44LTIuNiAzIDMgMCAwIDAtMi4zLTFjLS45IDAtMS42LjMtMi4zLjktLjcuNi0xLjEgMS41LTEuMyAyLjdoNi43WiIgZmlsbD0iIzAwMCIvPgogICAgPHBhdGggZD0iTTIyLjMgNTAuM0MyNC44IDE3IDQxLjQgMS43IDY4IC4zVjBIMHY1MC4zaDIyLjNaIiBmaWxsPSIjMkIyQTZEIi8+CiAgICA8cGF0aCBkPSJNMjIgNTcuNkgwdjQ2YzE4LjQtOS43IDIxLjEtMTguNCAyMi00NloiIGZpbGw9IiM1MTkxQ0QiLz4KICAgIDxwYXRoIGQ9Ik0zOC4yIDU3LjZDMzcuMyA4OS41IDI3IDk5LjkgNC44IDExMC4ybC4xLjJhNDkgNDkgMCAwIDEgMTEuOC0xLjVjMjUuNyAwIDI4IDI2LjUgNTUuMSAyNi41IDIuMSAwIDMuOC0uMyA1LjMtLjhWNTcuNUgzOC4ydi4xWiIgZmlsbD0iIzJCMkE2RCIvPgogICAgPHBhdGggZD0iTTcxLjUgNS41Yy0xOS4zIDAtMzIuMyAxMy44LTMzLjIgNDQuOWgzOC44VjUuOGMtMS4zLS4yLTMuNi0uMy01LjYtLjMiIGZpbGw9IiM1MTkxQ0QiLz4KPC9zdmc+Cg=="/>
+            </div>
+            <div class="section-1">
+                <h1 class="blue">Professional representatives - customer declaration form</h1>
+                <h2>To be completed by your customer:</h2>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-cell left">Name</div>
+                        <div class="table-cell right"><span class="data-entry">{{client_name}}</span></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell left">Name (joint complainant)</div>
+                        <div class="table-cell right">{{client_name_2}}</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell left">The business you're complaining about</div>
+                        <div class="table-cell right">{{business_name}}</div>
+                    </div>
+                </div>
+                <p>Before the Financial Ombudsman Service can look into your complaint, you need to agree to this declaration. By signing below, you are agreeing to it. </p>
+                <p><em>&quot;I would like the Financial Ombudsman Service to look into my complaint. I confirm to the best of my knowledge everything I have told you is correct.&quot;</em></p>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-cell left">
+                            Signature
+                        </div>
+                        <div class="table-cell right">
+                            <div class="signature-block-1">Party to sign here</div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell left">
+                            Todays Date
+                        </div>
+                        <div class="table-cell right">
+                            <span class="data-entry">
+                                <span class="auto-date">Auto Date</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-cell left">
+                            Signature (joint complainant)
+                        </div>
+                        <div class="table-cell right">
+                            <div class="signature-block-2">Party to sign here</div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell left">
+                            Todays Date
+                        </div>
+                        <div class="table-cell right">
+                            <span class="data-entry">
+                                <span class="auto-date">Auto Date</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p>If you're complaining on behalf of a business, charity or trust, please provide your job title:</p>
+                <div class="table">
+                    <div class="table-row">
+                        <div class="table-cell left">Job Title</div>
+                        <div class="table-cell right"><span class="data-entry">{{job_title}}</span></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell left">Job title (joint complainant)</div>
+                        <div class="table-cell right">{{job_title_jc}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-2">
+                <p>For complaints involving accounts or policies held jointly, we usually need each person to provide their names above - and we may share details about the complaint with both complainants. Please tell your representative to let us know if there&apos;s any reason this might be a problem for you.</p>
+                <p>If more than two people are bringing the complaint, please complete additional declaration forms as needed.</p>
+                <p>You can find a copy of our privacy notice at:</p>
+                <p>
+                    <a href="https://www.financial-ombudsman.org.uk/privacy-policy/consumer-privacy-notice">https://www.financial-ombudsman.org.uk/privacy-policy/consumer-privacy-notice</a></p>
+                <p>Additionally, for customers unable to access a copy of our privacy notice online, please find it attached below. </p>
+            </div>
+            <div class="section-3">
+                <h3>Complainant privacy notice</h3>
+                <p>This privacy notice summarises what to expect us to do with your personal information when you contact us or bring a complaint to our service. A more detailed version of this privacy notice is available on our website.</p>
+                <h4>About us</h4>
+                <p>The Financial Ombudsman Service is a free and easy-to-use service that settles complaints between complainants and businesses that provide financial services. You can contact us <a href="https://www.financial-ombudsman.org.uk/contact-us">here.</a></p>
+                <p><strong>We use your personal information to investigate and resolve individual complaints and prevent unfairness. We also analyse complaints data to make our services and processes more effective for you and others. More detail is set out in the &apos;Why we process your personal information&apos; section.</strong></p>
+                <h4>The personal information we use</h4>
+                <p>Personal information means information that is about an individual or can identify them in some way. The amount and type of personal information we process varies depending on the individual circumstances of the complaint and why we are processing personal information. Examples of the type of information we process are your name, date of birth, financial details, phone recordings and special category data, such as health information.</p>
+                <h4>How we collect personal data</h4>
+                <p>We have a range of channels that individuals can use to get in contact with us. Generally, we receive personal information from the individual directly, their representative or from the financial business the complaint is against. But sometimes, where it is necessary for resolving a complaint or fulfilling our legal functions, we may also gather information from other individuals or organisations, such as a loss adjuster hired by an insurance company, a medical expert or a credit reference agency.</p>
+                <h4>Why we process personal information</h4>
+                <p>We primarily collect and process personal information to investigate and resolve individual complaints brought to our service and respond to enquiries and redirect individuals to the correct organisation if necessary. In addition to this we also process personal data in the following way:</p>
+                <ul>
+                    <li>Prevent complaints and unfairness</li>
+                    <li>Improve the effectiveness of our service and processes</li>
+                    <li>Meeting your needs and making adjustments</li>
+                    <li>Work with the regulator and other bodies</li>
+                    <li>Dealing with contact you may make with us through social media</li>
+                    <li>Complying with a legal duty.</li>
+                </ul>
+                <p>We have a legal obligation to publish final decisions made by our ombudsmen. These are published on our website. We remove the name of the person making the complaint as well as any other personal information that would be likely to identify them.</p>
+                <p>We conduct regular surveys to understand your views on the service we have provided to you. You can let your Investigator know at any time if you do not want us to contact you for our surveys.</p>
+                <h4>Who we share personal information with?</h4>
+                <p>We will not share your information with anyone for the purpose of direct marketing. We will not sell your data.</p>
+                <p>When an enquiry is brought to us, we need to contact the financial business and make them aware that an enquiry has been received and ask them what has happened so far. The personal details of the complainant, any representative and details of the complaint are shared during this initial process.</p>
+                <p>In order to investigate a complaint, we need to share information with both parties of the complaint to get both sides of the story. Sometimes, depending on the nature of the complaint, we may also need to share relevant information with other individuals or organisations, for example: another financial business, medical experts or credit reference agencies.</p>
+                <p>If you have a complaint about the standard of service we&apos;ve provided to you, and we&apos;ve not been able to resolve this, you can ask the Independent Assessor to investigate this complaint. We will pass on relevant details to the Independent Assessor so that they can investigate and respond to your service complaint.</p>
+                <h4>Lawful bases for processing personal information</h4>
+                <p>The law on data protection sets out a number of different reasons for which an organisation may collect and process your personal information.</p>
+                <p>Our lawful basis for processing personal information will usually be because it's necessary for our statutory function, a reason of substantial public interest or compliance with our legal obligations. On those occasions where we are not relying on any of the above, we will ensure that a suitable alternative lawful basis is used, which is likely to be where the processing is in our legitimate interests.</p>
+                <h4>Where your data is processed and stored</h4>
+                <p>We store your personal information in the UK or the European Union (EU). Our technical support teams in India may process your information to provide technical advice and assistance.</p>
+                <p>Where we allow access to your information from countries outside the UK, we ensure that we comply with all our data protection obligations.</p>
+                <h4>How we store personal information and for how long</h4>
+                <p>We know that data security is important to us all. When we receive personal information, we take steps to ensure that it is stored securely, both physically and electronically, in accordance with the internal policies that we have in place for the effective and secure processing of your personal information. We will keep your case file for 6 years after your case closes (or 3 years if we did not go on to fully investigate your case or if we transferred your case to another organisation). Paper documents sent by post are destroyed 6 months after the date they are scanned into our system. More information is in Annex A <a href="https://www.financial-ombudsman.org.uk/privacy-policy/consumer-privacy-notice">here.</a></p>
+                <h4>What are your rights over your personal information?</h4>
+                <p>Under data protection law, you have rights we need to make you aware of. The rights available to you depend on our reason for processing your information. Details of each of these rights are set out in Annex B <a href="https://www.financial-ombudsman.org.uk/privacy-policy/consumer-privacy-notice">here.</a></p>
+                <h4>What to do if you&apos;re unhappy with how we&apos;ve handled your personal information</h4>
+                <p>If you have any questions about this notice or are concerned about how we are processing your personal data, you can contact our Data Protection Officer at: data.protection&commat;financial-ombudsman.org.uk. Details of how to raise a complaint are available here.</p>
+                <p>We hope we&apos;ll be able to resolve your concerns, but if you still remain unhappy with our response, you can contact the Information Commissioner&apos;s Office at casework&commat;ico.org.uk or 01625 545 745. </p>
+                <h4>Changes to this privacy notice</h4>
+                <p>We may change this privacy policy. In that case, the &apos;last updated&apos; date at the bottom of this page will also change. Any changes to this privacy policy will apply to you and your data immediately.</p>
+                <p>Last updated February 2022</p>
+            </div>
+        </form>
+    </div>
+</body>
