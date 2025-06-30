@@ -59,6 +59,14 @@
         float: right;
         color: lightgray;
       }
+      .sig-block form .conditional{
+        display: none;
+      }
+      @media print {
+        .sign-html-form form input, textarea{
+            border: none;
+        }
+      }
     </style>
     <div class="sign-html-form">
         <form>
@@ -68,43 +76,45 @@
             <p>As part of our digital verification services and drive to improve efficiency, we would like to contact your bank electronically for bank account information and we would like your permission to do so.</p>
             <h2>Please select an option:</h2>
             <!-- Ask Matt Kersey's bank validation thing -->
-            <p>Yes, I am happy to use the electronic bank verification service    [  ]  (If yes, auto request bank account data fields) <br>
-            No, I do not wish to use the electronic bank verification service  [  ] (if no, proceed with manual process)</p>
-            <h2>Please complete the following information</h2>
-            <div class="table">
-                <div class="th">
-                    <div class="tc">
-                        #1 Bank Account Details
-                    </div>
-                    <div class="tc">
-                        &nbsp;
+            <label>Yes, I am happy to use the electronic bank verification service </label><input type="radio" name="bankval" id="yes"> [  ]  (If yes, auto request bank account data fields) <br>
+            No, I do not wish to use the electronic bank verification service <input type="radio" name="bankval" id="1"> (if no, proceed with manual process)</p>
+           <div class="conditional" data-conditional-switch="1"> 
+                <h2>Please complete the following information</h2>
+                    <div class="table">
+                        <div class="th">
+                            <div class="tc">
+                                #1 Bank Account Details
+                            </div>
+                            <div class="tc">
+                                &nbsp;
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Name of Bank</div>
+                            <div class="tc">
+                                <input type="text" name="holder-name-1" id="holder-name-1">
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Account Name</div>
+                            <div class="tc">
+                                <input type="text" name="accountname" id="accountname">
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Sort Code</div>
+                            <div class="tc">
+                                <input type="text" name="sortcode" id="sortcode">
+                            </div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Bank Account Number</div>
+                            <div class="tc">
+                                <input type="text" name="accountnumber" id="accountnumber">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tr">
-                    <div class="tc">Name of Bank</div>
-                    <div class="tc">
-                        <input type="text" name="holder-name-1" id="holder-name-1">
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="tc">Account Name</div>
-                    <div class="tc">
-                        <input type="text" name="accountname" id="accountname">
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="tc">Sort Code</div>
-                    <div class="tc">
-                        <input type="text" name="sortcode" id="sortcode">
-                    </div>
-                </div>
-                <div class="tr">
-                    <div class="tc">Bank Account Number</div>
-                    <div class="tc">
-                        <input type="text" name="accountnumber" id="accountnumber">
-                    </div>
-                </div>
-            </div>
             <p><strong>IMPORTANT |</strong> If you are unable to provide electronic bank source of funds AND/OR funds are coming from a different source, please enclose documentary evidence i.e. copy of bank statement, to support this form</p>
             <p>
                 + Bank statements  | Last 6 months <br>
