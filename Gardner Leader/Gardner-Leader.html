@@ -50,9 +50,13 @@
       .sign-html-form form div.green-container{
             border: 3px solid var(--light-green);
       }
-      .sign-html-form form input[type="text"], input[type="email"], input[type="telephone"], textarea{
+      .sign-html-form form input[type="text"], textarea{
         background-color: #DDE4FF;
         border: #DDE4FF;
+      }
+      .sign-html-form form input.email{
+        width: 250px;
+
       }
       .sign-html-form form a.button{
         color: var(--dark-green);
@@ -70,7 +74,7 @@
         justify-content: space-around;
       }
 
-      .sign-html-form form div.address-box{
+      .sign-html-form form span.address-box{
         flex-basis: min-content;
       }
       .sign-html-form form span.small-only{
@@ -96,6 +100,7 @@
         .sign-html-form form span.row{
             display: flex;
             justify-content: space-around;
+            align-items: center;
         }
         .sign-html-form form div.flex-row span.row.address-box{
                 display: flex;
@@ -110,7 +115,7 @@
         .sign-html-form form div.flex-row span.row.address-box textarea{
             width: 100%;
         }
-        .sign-html-form form div.flex-row div.signature-block{
+        .sign-html-form form div.flex-row div[class^="signature-block-"]{
             text-align: center;
         }
       }
@@ -163,20 +168,24 @@
                     <div class="flex-row">
                         <span class="row">
                             <label for="1email">Email:</label>
-                            <input type="email" name="1email" id="1email">
+                            <input type="text" name="1email" id="1email" class="email">
                         </span>
                         <span class="row">
                             <label for="1phone">Telphone:</label>
-                            <input type="telephone" name="1phone" id="1phone">
+                            <input type="text" name="1phone" id="1phone">
                         </span>
                     </div>
                     <div class="flex-row">
                         <span class="row address-box">
                             <p>Main Address</p>
-                            <label class="hide-print">Postcode:</label>
-                            <input type="text" name="1postcode" id="1postcode" class="postcode">
-                            <a class="find-address button hide-print">Find Address</a>
-                            <div class="address-result form-row">
+							<div class="form-row">
+								<label class="hide-print">Postcode:</label>
+								<input type="text" name="1postcode" id="1postcode" class="postcode">
+							</div>
+                            <div class="form-row">
+                                <a class="find-address button hide-print">Find Address</a>
+                            </div>
+                            <div class="form-row">
                                 <textarea name="1address" id="1address" class="address"></textarea>
                             </div>
                         </span>
@@ -214,26 +223,29 @@
                     <div class="flex-row">
                         <span class="row">
                             <label for="2email">Email:</label>
-                            <input type="email" name="2email" id="2email">
+                            <input type="text" name="2email" id="2email" class="email">
                         </span>
                         <span class="row">
                             <label for="2phone">Telphone:</label>
-                            <input type="telephone" name="2phone" id="2phone">
+                            <input type="text" name="2phone" id="2phone">
                         </span>
                     </div>
                     <div class="flex-row">
                         <span class="row address-box">
                             <p>Main Address</p>
-                            <label class="hide-print">Postcode:</label>
-                            <input type="text" name="2postcode" id="2postcode" class="postcode">
-                            <a class="find-address button hide-print">Find Address</a>
-                            <div class="address-result form-row">
+							<div class="form-row">
+								<label class="hide-print">Postcode:</label>
+								<input type="text" name="2postcode" id="2postcode" class="postcode">
+							</div>
+                            <div class="form-row">
+                                <a class="find-address button hide-print">Find Address</a>
+                            </div>
+                            <div class="form-row">
                                 <textarea name="2address" id="2address" class="address"></textarea>
                             </div>
                         </span>
                         <div class="signature-block-2">Sign Here</div>
-                    </div>
-                </div>
+                    </div>                </div>
                 <div class="client-details">
                     <div class="flex-row">
                         <span class="row">
@@ -250,35 +262,39 @@
                             </select>
                         </span>
                         <span class="row">
-                            <label for="2fname">First Name:</label>
-                            <input type="text" name="2fname">
+                            <label for="3fname">First Name:</label>
+                            <input type="text" name="3fname">
                         </span>
                         <span class="row">
-                            <label for="2mname">Middle Name:</label>
-                            <input type="text" name="2mname">
+                            <label for="3mname">Middle Name:</label>
+                            <input type="text" name="3mname">
                         </span>
                         <span class="row">
-                            <label for="2lname">Last Name:</label>
-                            <input type="text" name="2lname">
+                            <label for="3lname">Last Name:</label>
+                            <input type="text" name="3lname">
                         </span>
                     </div>
                     <div class="flex-row">
                         <span class="row">
-                            <label for="2email">Email:</label>
-                            <input type="email" name="2email" id="2email">
+                            <label for="3email">Email:</label>
+                            <input type="text" name="3email" id="3email" class="email">
                         </span>
                         <span class="row">
-                            <label for="2phone">Telphone:</label>
-                            <input type="telephone" name="2phone" id="2phone">
+                            <label for="phone">Telphone:</label>
+                            <input type="text" name="3phone" id="3phone">
                         </span>
                     </div>
                     <div class="flex-row">
                         <span class="row address-box">
                             <p>Main Address</p>
-                            <label class="hide-print">Postcode:</label>
-                            <input type="text" name="3postcode" id="3postcode" class="postcode">
-                            <a class="find-address button hide-print">Find Address</a>
-                            <div class="address-result form-row">
+							<div class="form-row">
+								<label class="hide-print">Postcode:</label>
+								<input type="text" name="3postcode" id="3postcode" class="postcode">
+							</div>
+                            <div class="form-row">
+                                <a class="find-address button hide-print">Find Address</a>
+                            </div>
+                            <div class="form-row">
                                 <textarea name="3address" id="3address" class="address"></textarea>
                             </div>
                         </span>
@@ -316,21 +332,25 @@
                     <div class="flex-row">
                         <span class="row">
                             <label for="4email">Email:</label>
-                            <input type="email" name="4email" id="4email">
+                            <input type="text" name="4email" id="4email" class="email">
                         </span>
                         <span class="row">
                             <label for="4phone">Telphone:</label>
-                            <input type="telephone" name="4phone" id="4phone">
+                            <input type="text" name="4phone" id="4phone">
                         </span>
                     </div>
                     <div class="flex-row">
                         <span class="row address-box">
                             <p>Main Address</p>
-                            <label class="hide-print">Postcode:</label>
-                            <input type="text" name="4postcode" id="4postcode" class="postcode">
-                            <a class="find-address button hide-print">Find Address</a>
-                            <div class="address-result form-row">
-                                <textarea name="4address" id="4address" class="address"></textarea>
+							<div class="form-row">
+								<label class="hide-print limit-party4">Postcode:</label>
+								<input type="text" name="4postcode" id="4postcode" class="postcode">
+							</div>
+                            <div class="form-row">
+                                <a class="find-address button hide-print limit-party4">Find Address</a>
+                            </div>
+                            <div class="form-row">
+                                <textarea name="4address" id="4address" class="address limit-party4"></textarea>
                             </div>
                         </span>
                         <div class="signature-block-4">Sign Here</div>
