@@ -51,7 +51,8 @@
         .sign-html-form form .tc{
             display: table-cell;
             border: 1px solid black;
-            padding: 5px
+            padding: 5px;
+            box-sizing: border-box;
         }
         .sign-html-form form .col-1{
             width: 29%;
@@ -68,6 +69,35 @@
         }
         .sign-html-form form .conditional{
             display: none;
+        }
+        .sign-html-form form .table .small-only{
+            display: none;
+        }
+        /*removestart*/
+        @media (max-width:600px) {
+            .sign-html-form form .table, .sign-html-form form > .table div, .sign-html-form form .table .th, .sign-html-form form .table .tr{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .sign-html-form form .table{
+                border: none;
+            }
+            .sign-html-form form .table .large-only{
+                display: none;
+            }
+            .sign-html-form form .break{
+                background-color: lightgrey;
+            }
+            .sign-html-form form .table .small-only{
+                display: revert;
+            }
+        }
+        /*remove end*/
+        @media print {
+            .sign-html-form form input, textarea{
+                border: none;
+            }
         }
         @media print {
             .sign-html-form form input, textarea{
@@ -130,7 +160,12 @@
                 + Other source | If applicable <br>
             </p>
             <div class="table">
-                <div class="th">
+                <div class="th small-only">
+                    <div class="tc">
+                        Other Sources
+                    </div>
+                </div>
+                <div class="th large-only">
                     <div class="tc col-1">Source</div>
                     <div class="tc">Amount</div>
                     <div class="tc">Other information</div>
@@ -145,15 +180,24 @@
                         Additional information: <textarea name="saleofhomeadditional" id="saleofhomeadditional"></textarea>
                     </div>
                 </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
+                </div>
                 <div class="tr">
                     <div class="tc col-1">Mortgage loan on new property</div>
                     <div class="tc">
                         &pound;<input type="text" name="mortgageloan">
                     </div>
+                    <div class="tr small-only break">
+                        <div class="tc"></div>
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">Name of Lender</div>
                             <div class="tc"><input type="text" name="lendername" id="lendername"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Name of broker:(if applicable)</div>
@@ -161,14 +205,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
+                </div>
                 <div class="tr">
                     <div class="tc col-1">Savings from employment <br> Please provide copies of your latest payslip evidencing your salary and a copy of the bank statement showing the funds in your account.
                     </div>
                     <div class="tc">&pound;<input type="text" name="savingamount" id="savingamount"></div>
+                    <div class="tr small-only break">
+                        <div class="tc"></div>
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">What is your occupation?</div>
                             <div class="tc"><input type="text" name="occupation" id="occupation"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Are the funds in an account in your name?</div>
@@ -177,9 +230,15 @@
                                 <input type="radio" name="funds" id="fundsno"> No
                             </div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Name and address of your employer(s):</div>
                             <div class="tc"><input type="text" name="employerdetails" id="employerdetails"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Your salary / salaries: (per annum)</div>
@@ -196,6 +255,9 @@
                             <div class="tc">What is your occupation?</div>
                             <div class="tc"><input type="text" name="occupation2" id="occupation2"></div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Are the funds in an account in your name?</div>
                             <div class="tc">
@@ -203,9 +265,15 @@
                                 <input type="radio" name="funds2" id="funds2no"> No
                             </div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Name and address of your employer(s):</div>
                             <div class="tc"><input type="text" name="employerdetails2" id="employerdetails2"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Your salary / salaries: (per annum)</div>
@@ -219,6 +287,9 @@
                 <div class="tr">
                     <div class="tc col-1">Divorce settlement <br>Please provide a copy of the financial order/settlement agreement detailing the funds due to you together with a copy of your bank statement showing these funds arriving in your account.</div>
                     <div class="tc">&pound;<input type="text" name="divorce" id="divorce"></div>
+                    <div class="tr small-only break">
+                        <div class="tc"></div>
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">Are the funds in an account in your name?</div>
@@ -227,9 +298,15 @@
                                 <input type="radio" name="divorcefunds" id="fundsno"> No
                             </div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Solicitors who acted for you:</div>
                             <div class="tc"><input type="text" name="divorcelawyer" id="divorcelawyer"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Date of divorce:</div>
@@ -240,6 +317,9 @@
                 <div class="tr">
                     <div class="tc">Inheritance<br>Please provide a copy of any correspondence received from the solicitors dealing with the probate confirming your inheritance together with your bank statement showing the funds arriving in your account.  If no solicitors were instructed please provide confirmation direct from the executor together with your bank statement.</div>
                     <div class="tc">&pound;<input type="text" name="inheritance" id="inheritance"></div>
+                    <div class="tr small-only break">
+                        <div class="tc"></div>
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">Are the funds in an account in your name?</div>
@@ -248,19 +328,31 @@
                                 <input type="radio" name="inheritancefunds" id="fundsno"> No
                             </div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Who were the funds inherited from:</div>
                             <div class="tc"><input type="text" name="inheritedfrom" id="inheritedfrom"></div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Date of inheritance:</div>
                             <div class="tc"><input type="text" name="divorcedate" id="divorcedate"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Solicitors who dealt with the probate:</div>
                             <div class="tc"><input type="text" name="inheritancesolicitor" id="inheritancesolicitor"></div>
                         </div>
                     </div>
+                </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
                 </div>
                 <div class="tr">
                     <div class="tc">Other:</div>
@@ -273,10 +365,16 @@
                 <div class="tr">
                     <div class="tc">Third party providing funds</div>
                     <div class="tc">&pound;<input type="text" name="thirdparty" id="thirdparty"></div>
+                    <div class="tr small-only break">
+                        <div class="tc"></div>
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">Name and relationship to you e.g. Mother, Edna Harris:</div>
                             <div class="tc"><input type="text" name="thirdpartyname" id="thirdpartyname"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Email address and mobile number for third party so that we can request evidence of identification and source of funds information from them:</div>
@@ -285,6 +383,9 @@
                                 Telephone: <input type="tel" name="thirdpartytel" id="thirdpartytel">
                             </div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Is this money a gift?</div>
                             <div class="tc">
@@ -292,12 +393,18 @@
                                 <input type="radio" name="moneygift" id="giftno"> No
                             </div>
                         </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
                         <div class="tr">
                             <div class="tc">Is the money a loan?</div>
                             <div class="tc">
                                 <input type="radio" name="moneyloan" id="loanyes"> Yes
                                 <input type="radio" name="moneyloan" id="loanno"> No
                             </div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
                         </div>
                         <div class="tr">
                             <div class="tc">Is the money for an interest in the property?</div>
