@@ -49,6 +49,7 @@
       }
       .sign-html-form form div.green-container{
             border: 3px solid var(--light-green);
+            break-inside: avoid;
       }
       .sign-html-form form input[type="text"], textarea{
         background-color: #DDE4FF;
@@ -80,6 +81,10 @@
       .sign-html-form form span.small-only{
         display: none;
       }
+      .sign-html-form form .longer{
+        min-width: 400px;
+      }
+    
       /*removestart*/
       @media (max-width:700px){
         .sign-html-form form div.header h1, .sign-html-form form div.header img{
@@ -99,7 +104,7 @@
         }
         .sign-html-form form span.row{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
         .sign-html-form form div.flex-row span.row.address-box{
@@ -181,10 +186,9 @@
 							<div class="form-row">
 								<label class="hide-print">Postcode:</label>
 								<input type="text" name="1postcode" id="1postcode" class="postcode">
-							</div>
-                            <div class="form-row">
+                                <br>
                                 <a class="find-address button hide-print">Find Address</a>
-                            </div>
+							</div>
                             <div class="form-row">
                                 <textarea name="1address" id="1address" class="address"></textarea>
                             </div>
@@ -236,8 +240,7 @@
 							<div class="form-row">
 								<label class="hide-print">Postcode:</label>
 								<input type="text" name="2postcode" id="2postcode" class="postcode">
-							</div>
-                            <div class="form-row">
+                                <br>
                                 <a class="find-address button hide-print">Find Address</a>
                             </div>
                             <div class="form-row">
@@ -290,8 +293,7 @@
 							<div class="form-row">
 								<label class="hide-print">Postcode:</label>
 								<input type="text" name="3postcode" id="3postcode" class="postcode">
-							</div>
-                            <div class="form-row">
+                                <br>
                                 <a class="find-address button hide-print">Find Address</a>
                             </div>
                             <div class="form-row">
@@ -343,14 +345,13 @@
                         <span class="row address-box">
                             <p>Main Address</p>
 							<div class="form-row">
-								<label class="hide-print limit-party4">Postcode:</label>
+								<label class="hide-print">Postcode:</label>
 								<input type="text" name="4postcode" id="4postcode" class="postcode">
-							</div>
-                            <div class="form-row">
-                                <a class="find-address button hide-print limit-party4">Find Address</a>
+                                <br>
+                                <a class="find-address button hide-print">Find Address</a>
                             </div>
                             <div class="form-row">
-                                <textarea name="4address" id="4address" class="address limit-party4"></textarea>
+                                <textarea name="4address" id="4address" class="address"></textarea>
                             </div>
                         </span>
                         <div class="signature-block-4">Sign Here</div>
@@ -363,19 +364,19 @@
                 </div>
                 <div class="flex-row">
                     <label for="orgname">Name of Organisation e.g. Company Name, Charity Name</label>
-                    <input type="text" name="orgname" id="orgname">
+                    <input class="longer" type="text" name="orgname" id="orgname">
                 </div>
                 <div class="flex-row">
                      <label for="orgaddress">Registered address of Organisation</label>
-                    <input type="text" name="orgaddress" id="orgaddress">
+                    <input class="longer"  type="text" name="orgaddress" id="orgaddress">
                 </div>
                 <div class="flex-row">
                     <label for="orgweb">Website Address of Organisation</label>
-                    <input type="text" name="orgweb" id="orgweb">
+                    <input class="longer"  type="text" name="orgweb" id="orgweb">
                 </div>
                 <div class="flex-row">
                      <label for="orgphone">Organisation Main Telephone</label>
-                    <input type="text" name="orgphone" id="orgphone">
+                    <input class="longer"  type="text" name="orgphone" id="orgphone">
                 </div>
                 <div class="flex-row">
                     <label for="orgnumber">Organisation Registration Number; e.g. Company Registration of Charity</label>
@@ -383,11 +384,11 @@
                 </div>
                <div class="flex-row">
                     <label for="person1">Person from page 1 giving instructions on behalf of the Organisation</label>
-                    <input type="text" name="person1" id="person1">
+                    <input class="longer"  type="text" name="person1" id="person1">
                </div>
                 <div class="flex-row">
                     <label for="">Any additional relevant notes or comments to add.</label>
-                    <textarea name="othercomments" id="othercomments"></textarea>
+                    <textarea class="longer" name="othercomments" id="othercomments"></textarea>
                 </div>
             </div>
         </form>
