@@ -237,6 +237,9 @@ div.grey-bg{
 div.signature-block{
 	float:left;
 }
+.tooltip:not(a)::after{
+	margin: 0px 0px 0px 15px;
+}
 
 /*removestart*/
 /*CSS Adjustments for Mobile*/
@@ -265,10 +268,10 @@ div.signature-block{
 		<h1>Law Society Property Information Form (4th edition)</h1>
 		
 		<div class="form-row">
-			<span class="label">Postcode of property</span><div style="float:left;"><input class="postcode" name="postcode" style="width:110px; float:left;" type="text"/><a class="find-address">Find Address</a></div>
+			<span class="label">Postcode of property</span><div style="float:left;"><input class="postcode limit-party1" name="postcode" style="width:110px; float:left;" type="text"/><a class="find-address">Find Address</a></div>
 		</div>		
 		<div class="form-row">			
-			<span class="label">Address of the property</span><textarea style="height:100px;" class="address" name="address"></textarea>
+			<span class="label">Address of the property</span><textarea style="height:100px;" class="address limit-party1" name="address"></textarea>
 		</div>			
 		
 		<div class="form-row">
