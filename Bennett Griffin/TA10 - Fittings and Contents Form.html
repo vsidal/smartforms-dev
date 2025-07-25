@@ -1,0 +1,1431 @@
+<body>
+<style type="text/css">
+.sign-html-form{
+	max-width:850px;
+	margin:auto;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size:15px;
+	padding:10px;
+	box-sizing:border-box;
+}
+.sign-html-form h2.center{
+	width:280px;
+	margin:10px auto 10px;
+	text-align:center;
+	float:none;
+}
+.sign-html-form h3, .sign-html-form h4{
+	color:#000;
+	clear:both;
+	float:left;
+	margin:6px 0;
+}
+.sign-html-form h3.section-header{
+	background: #e6e6e6;
+	width: 100%;
+	padding: 8px;
+	box-sizing:border-box;
+}
+.sign-html-form ol{
+	color:#2BBBE7;
+}
+.sign-html-form ol span{
+	color:#000;
+}
+.sign-html-form li{
+	line-height:18px;
+}
+.sign-html-form form h1, .sign-html-form form h2{
+	color:#000;
+	clear:left;
+	display:block;
+	float:left;
+	width:100%;
+	margin:10px 0 15px;
+}
+.sign-html-form form label{
+	font-weight:bold;
+	float:left;
+	line-height:32px;
+	min-width:80px;
+}
+.sign-html-form form input, .sign-html-form form textarea, .sign-html-form form select{
+	float:left;
+	padding:0 10px;
+	border:1px solid #CCC;
+	border-radius:4px;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+	font-size:13px;
+	width:500px;
+	height:25px;
+	line-height:25px;
+	margin-right:10px;
+	max-width:100%;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+
+.sign-html-form form textarea.comments{
+	margin-right:0;
+	width:300px;
+}
+.sign-html-form form textarea.comments.small{
+	width:170px;
+}
+
+.sign-html-form form input.price{
+	width:120px;
+}
+
+.sign-html-form form textarea{
+	min-height:50px;
+}
+.sign-html-form form textarea.full-width{
+	width:100%;
+}
+.sign-html-form form input:focus, .sign-html-form form textarea:focus, .sign-html-form form select:focus{
+	box-shadow: 0 0 5px #2BBBE7;
+    border: 1px solid #2BBBE7;
+}
+.sign-html-form form input.spaced, .sign-html-form form textarea.spaced, .sign-html-form form select.spaced{
+	margin:0 10px;
+}
+
+.sign-html-form form .form-row textarea:last-child{
+	margin-right:0;
+}
+
+.sign-html-form form input[type='checkbox'],
+.sign-html-form form input[type='radio']{
+	width:auto;
+	float:none;
+	height:auto;
+}
+
+.sign-html-form form .dob-selector select{
+	width:73px;
+	padding:4px;
+}
+
+.sign-html-form form textarea{
+	resize:none;
+	overflow:auto;
+}
+.sign-html-form form textarea.specify{
+	width:150px;
+	margin:0;
+}
+
+.sign-html-form form input[type='checkbox']{
+	margin:15px;
+}
+.sign-html-form form div.form-row{
+	float:left;
+	clear:left;
+	margin:5px 0;
+	width:100%;
+}
+.sign-html-form form div.form-row p{
+	float:left;
+	width:100%;
+}
+
+.sign-html-form form .bold{
+	font-weight:bold;
+}
+.sign-html-form form .full-width{
+	width:100%;
+}
+
+.sign-html-form form p{
+	float:left;
+	clear:left;
+	margin:8px 0;
+	text-align:left;
+}
+.sign-html-form form p.center{
+	text-align:center;
+	width:100%;
+}
+.sign-html-form form p.right{
+	text-align:right;
+	width:100%;
+}
+.sign-html-form form p span{
+	float:left;
+}
+.sign-html-form span.label{
+	float:left;
+	width:150px;
+	line-height:25px;
+	font-size:13px;
+	font-weight:bold;
+	margin-right:5px;
+}
+
+.sign-html-form form ul{
+	float:left; 
+	clear:left;
+}
+
+.sign-html-form .line{
+	height:0px;
+	display:block;
+	float:left;
+	width:100%;
+	border-top:1px solid #D0D0D0;
+	margin:5px 0;
+}
+
+.sign-html-form .radio{
+	float:left;
+	width:75px;
+	text-align:center;
+	line-height:40px;
+	font-size:13px;
+	min-height:1px;
+}
+.sign-html-form .radio.textarea{
+	line-height:50px;
+}
+.sign-html-form .radio input{
+	margin:9px 5px;
+}
+.sign-html-form form div.signature-tag{
+	float:left;
+	border-radius:4px;
+	padding:11px 22px;
+	margin-right:10px;
+	background:#FFC74D;
+}
+.sign-html-form form .signature-row span{
+	line-height:45px;
+}
+	
+.sign-html-form form .signature-row input{
+	margin:8px 0;
+}
+.sign-html-form form .signature{
+	min-width:200px;
+	float:left;
+}
+.sign-html-form .relax{
+	clear:both;
+}
+.sign-html-form a.find-address{
+	background: #0159A3;
+	color: #FFF;
+	padding: 5px 8px;
+	margin: 0 7px;
+	line-height: 24px;
+	border-radius:4px;
+	cursor:pointer;
+	white-space:nowrap;
+	font-size:12px;
+}
+
+div.grey-bg{
+	background:#E6E6E6;
+	float:left;
+}
+
+div.signature-block{
+	float:left;
+}
+
+div.textbox-row{
+	float:left;
+	margin-bottom:10px;
+}
+div.textbox-row span{
+	float:left;
+	margin-right:10px;
+}
+div.contact-details textarea{
+	width:330px;
+}
+ul.list-header{
+	margin:0 0 10px 0;
+	padding:6px 0 6px 150px;
+	width:100%;
+	float:left;
+	list-style:none;
+	border-bottom:1px solid #D0D0D0;
+	box-sizing:border-box;
+}
+ul.list-header li{
+	float:left;
+	width:75px;
+	font-weight:bold;
+	font-size:13px;
+	text-align:center;
+}
+.sign-html-form .selection-list .selection-list-label{
+	display:none;
+}
+.tooltip:not(a)::after{
+	margin: 0px 0px 0px 15px;
+}
+/*removestart*/
+/*CSS Adjustments for Mobile*/
+@media (max-width: 800px) {
+	.sign-html-form{
+		font-size:13px;
+		box-sizing:border-box;
+	}
+	.sign-html-form div.radio{
+		width:50%;
+		font-size:12px;
+	}	
+	ul.list-header{
+		display:none;
+	}
+	.sign-html-form .selection-list div.radio{
+		width: 100%;
+		text-align: left;
+		font-size: 14px;
+	}
+	.sign-html-form .selection-list .selection-list-label{
+		display:block;
+		float:left;
+		line-height:32px;
+		font-size: 14px;
+		clear: left;
+		min-width: 90px;
+	}
+	.sign-html-form .radio-spacer{
+		display:none;
+	}
+	.sign-html-form span.label{
+		width:100%;
+	}	
+}
+/*removeend*/
+</style>
+<div class="sign-html-form">
+    <form>
+	
+		<h1>Law Society Fittings and Contents Form (3rd edition)</h1>
+		
+		<div class="form-row">
+			<span class="label">Postcode of property</span><div style="float:left;"><input class="postcode limit-party1" name="postcode" style="width:110px; float:left;" type="text"/><a class="find-address">Find Address</a></div>
+		</div>		
+		<div class="form-row">			
+			<span class="label">Address of the property</span><textarea style="height:100px;" class="address limit-party1" name="address"></textarea>
+		</div>			
+		
+		<div class="form-row">
+			<span class="label">Full names of the seller</span><textarea class="limit-party1" style="height:50px;" name="seller-names"></textarea>
+		</div>
+		
+		<h3>Seller&apos;s conveyancer</h3>
+		
+		<div class="form-row">
+			<span class="label">Name of conveyancers firm</span><input class="limit-party1" type="text" name="conveyancer-name"/>
+		</div>
+		<div class="form-row">
+			<span class="label">Address</span><textarea class="limit-party1" style="height:50px;" name="conveyancer-address"></textarea>
+		</div>
+		<div class="form-row">
+			<span class="label">Email</span><input class="limit-party1" type="text" name="conveyancer-email"/>
+		</div>
+		<div class="form-row">
+			<span class="label">Reference Number</span><input class="limit-party1" type="text" name="conveyancer-reference"/>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">About this form</p>
+			<p>The aim of this form is to make clear to the buyer which items are included in the sale. It must be completed accurately by the seller as the form may become part of the contract between the buyer and seller.</p>
+			<p>It is important that sellers and buyers check the information in this form carefully.</p>
+			
+			<p class="bold">Definitions</p>
+			<ul>
+				<li>&apos;Seller&apos; means all sellers together where the property is owned by more than one person.</li>
+				<li>&apos;Buyer&apos; means all buyers together where the property is being bought by more than one person.</li>
+				<li>&apos;Property&apos; means the leasehold property being sold</li>
+				<li>&apos;Building&apos; means the building containing the property</li>
+				<li>&apos;Neighbour&apos; means those occupying the flats in the building</li>
+			</ul>
+		</div>
+		<div class="form-row">
+			<p class="bold">Instructions to the seller and the buyer</p>
+			<p>In each row, the seller should tick the appropriate box to show whether:</p>
+			<ul>
+				<li>the item is included in the sale ('Included');</li>
+				<li> the item is excluded from the sale ('Excluded');</li>
+				<li>there is no such item at the property ('None').</li>
+			</ul>
+			<p>Where an item is excluded from the sale the seller may offer it for sale by inserting a price in the appropriate box. The buyer can then decide whether to accept the seller's offer.</p>
+			<p>A seller who inserts a price in this form is responsible for negotiating the sale of that item directly with the buyer or through their estate agent. If the seller or buyer instructs their solicitor to negotiatethe sale of such an item, there may be an additional charge.</p>
+			<p>Sellers and buyers should inform their solicitors of any arrangements made about items offered for sale.</p>
+			<p>If the seller removes any fixtures, fittings or contents, the seller should be reasonably careful to ensure that any damage caused is minimised.</p>
+			<p>Unless stated otherwise, the seller will be responsible for ensuring that all rubbish is removed from the property (including from the loft, garden, outbuildings, garages and sheds), and that the property is left in a reasonably clean and tidy condition.</p>
+		</div>
+		
+		<h3 class="section-header">1 Basic fittings</h3>
+
+		<div class="form-row selection-list">
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>
+			
+			<span class="label">Boiler/immersion heater</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="boiler" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="boiler" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="boiler" value="none"/></div>
+			<span class="selection-list-label">Price</span><input class="limit-party1" name="boiler-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="boiler-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Radiators/wall heaters</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="radiators" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="radiators" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="radiators" value="none"/></div>
+			<span class="selection-list-label">Price</span><input class="limit-party1" name="radiators-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="radiators-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Night-storage heaters</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="night-storage-heaters" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="night-storage-heaters" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="night-storage-heaters" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="night-storage-heaters-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="night-storage-heaters-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Free-standing heaters</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="free-standing-heaters" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="free-standing-heaters" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="free-standing-heaters" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="free-standing-heaters-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="free-standing-heaters-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Gas fires (with surround)</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="gas-fires" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="gas-fires" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="gas-fires" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="gas-fires-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="gas-fires-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Electric fires (with surround)</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="electric-fires" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="electric-fires" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="electric-fires" value="none"/></div>
+			<span class="selection-list-label">Price</span><input class="limit-party1" name="electric-fires-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="electric-fires-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Light switches</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="light-switches" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="light-switches" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="light-switches" value="none"/></div>
+			<span class="selection-list-label">Price</span><input class="limit-party1" name="light-switches-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="light-switches-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Roof insulation</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="roof-insulation" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="roof-insulation" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="roof-insulation" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="roof-insulation-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="roof-insulation-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Window fittings</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="window-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="window-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="window-fittings" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="window-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="window-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Window shutter/grilles</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="window-shutter" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="window-shutter" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="window-shutter" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="window-shutter-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="window-shutter-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Internal door fittings</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="internal-door-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="internal-door-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="internal-door-fittings" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="internal-door-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="internal-door-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">External door fittings</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="external-door-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="external-door-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="external-door-fittings" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="external-door-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="external-door-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Doorbell/chime</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="doorbell" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="doorbell" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="doorbell" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="doorbell-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="doorbell-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Electric sockets</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="electric-sockets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="electric-sockets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="electric-sockets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="doorbell-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="doorbell-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Burglar alarm</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="burglar-alarm" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="burglar-alarm" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="burglar-alarm" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="burglar-alarm-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="burglar-alarm-comments" class="comments limit-party1"></textarea>
+			<p>Other items (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="basic-fittings-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="basic-fittings-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="basic-fittings-other-1" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="basic-fittings-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="basic-fittings-other-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="basic-fittings-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="basic-fittings-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="basic-fittings-other-2" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input class="limit-party1"name="basic-fittings-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="basic-fittings-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="basic-fittings-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="basic-fittings-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="basic-fittings-other-3" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="basic-fittings-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="basic-fittings-other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="basic-fittings-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="basic-fittings-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="basic-fittings-other-4" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="basic-fittings-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="basic-fittings-other-4-comments" class="comments limit-party1"></textarea>				
+		</div>
+		
+		<h3 class="section-header">2 Kitchen</h3>
+
+		<div class="form-row selection-list">
+			<p>Note: In this section please also indicate whether the item is fitted or freestanding.</p>
+			<ul class="list-header">
+				<li>Fitted</li>
+				<li>Free-standing</li>
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:170px;">Comments</li>
+			</ul>			
+			
+			<span class="label">Hob</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="hob-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="hob-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="hob" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="hob" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="hob" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="hob-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="hob-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Extractor Hood</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="extractor-hood-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="extractor-hood-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="extractor-hood" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="extractor-hood" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="extractor-hood" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="extractor-hood-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="extractor-hood-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Oven/grill</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="oven-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="oven-fitting" value="free-stnading"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="oven" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="oven" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="oven" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="oven-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="oven-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Cooker</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="cooker-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="cooker-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="cooker" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="cooker" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="cooker" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="cooker-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="cooker-comments" class="comments small limitparty1"></textarea>
+			<div class="line"></div>
+			<span class="label">Microwave</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="microwave-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="microwave-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="microwave" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="microwave" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="microwave" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="microwave-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="microwave-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Refrigerator/fridge-freezer</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="fridge-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="fridge-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="fridge" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="fridge" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="fridge" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="fridge-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="fridge-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Freezer</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="freezer-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="freezer-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="freezer" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="freezer" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="freezer" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="freezer-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="freezer-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dishwasher</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="dishwasher-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="dishwasher-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="dishwasher" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="dishwasher" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="dishwasher" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="dishwasher-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dishwasher-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Tumble-dryer</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="tumble-dryer-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="tumble-dryer-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="tumble-dryer" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="tumble-dryer" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="tumble-dryer" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="tumble-dryer-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="tumble-dryer-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Washing Machine</span>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="washing-machine-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="washing-machine-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="washing-machine" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="washing-machine" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input class="limit-party1" type="radio" name="washing-machine" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="washing-machine-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="washing-machine-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other items (please specify)</p>
+			<textarea class="specify limit-party1" name="kitchen-other-1-fitting-name"></textarea>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="kitchen-other-1-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="kitchen-other-1-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="kitchen-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="kitchen-other-1" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="kitchen-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-other-1-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<textarea class="specify limit-party1" name="kitchen-other-2-fitting-name"></textarea>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input class="limit-party1" type="radio" name="kitchen-other-2-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input class="limit-party1" type="radio" name="kitchen-other-2-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input class="limit-party1" type="radio" name="kitchen-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input class="limit-party1" type="radio" name="kitchen-other-2" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="kitchen-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-other-2-comments" class="comments small limit-party1"></textarea>
+			<div class="line"></div>
+			<textarea class="specify limit-party1" name="kitchen-other-3-fitting-name"></textarea>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input type="radio" class="limit-party1" name="kitchen-other-3-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input type="radio" class="limit-party1" name="kitchen-other-3-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-other-3" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="kitchen-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-other-3-comments" class="comments small"></textarea>
+			<div class="line"></div>
+			<textarea class="specify limit-party1" name="kitchen-other-4-fitting-name"></textarea>
+			<div class="radio"><span class="selection-list-label">Fitted</span><input type="radio" class="limit-party1" name="kitchen-other-4-fitting" value="fitted"/></div>
+			<div class="radio"><span class="selection-list-label">Free Standing</span><input type="radio" class="limit-party1" name="kitchen-other-4-fitting" value="free-standing"/></div>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-other-4" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="kitchen-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-other-4-comments" class="comments small"></textarea>				
+		</div>		
+		
+		<h3 class="section-header">3 Bathroom</h3>
+
+		<div class="form-row selection-list">
+		
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>		
+		
+			<span class="label">Bath</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bath" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bath" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bath" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="bath-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bath-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Shower fitting for bath</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="shower-bath" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="shower-bath" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="shower-bath" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="shower-bath-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="shower-bath-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Shower curtain</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="shower-curtain" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="shower-curtain" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="shower-curtain" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="shower-curtain-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="shower-curtain-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bathroom cabinet</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bathroom-cabinet" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bathroom-cabinet" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bathroom-cabinet" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="bathroom-cabinet-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bathroom-cabinet-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Taps</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="taps" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="taps" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="taps" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="taps-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="taps-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Seperate shower and fittings</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="shower" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="shower" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="shower" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="shower-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="shower-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Towel rail</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="towel-rail" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="towel-rail" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="towel-rail" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="towel-rail-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="towel-rail-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Soap/toothbrush holders</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="soap-holder" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="soap-holder" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="soap-holder" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="soap-holder-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="soap-holder-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Toilet roll holders</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="toilet-roll-holder" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="toilet-roll-holder" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="toilet-roll-holder" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="toilet-roll-holder-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="toilet-roll-holder-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bathroom mirror</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bathroom-mirror" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bathroom-mirror" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bathroom-mirror" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="bathroom-mirror-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bathroom-mirror-comments" class="comments limit-party1"></textarea>
+		</div>
+
+		<h3 class="section-header">4 Carpets</h3>
+
+		<div class="form-row selection-list">
+		
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>		
+		
+			<span class="label">Hall, stairs and landing</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="hall-stairs-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="hall-stairs-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="hall-stairs-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="hall-stairs-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="hall-stairs-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Living room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="living-room-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="living-room-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="living-room-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="living-room-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="living-room-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dining room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="dining-room-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="dining-room-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="dining-room-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="dining-room-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dining-room-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Kitchen</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="kitchen-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="kitchen-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 1</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-1-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-1-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-1-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="bedroom-1-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-1-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 2</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-2-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-2-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-2-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="bedroom-2-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-2-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 3</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-3-carpets" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-3-carpets" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-3-carpets" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="bedroom-3-carpets-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-3-carpets-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other rooms (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="carpets-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="carpets-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="carpets-other-1" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="carpets-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="carpets-other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="carpets-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="carpets-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="carpets-other-2" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="carpets-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="carpets-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="carpets-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="carpets-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="carpets-other-3" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="carpets-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="carpets-other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="carpets-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="carpets-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="carpets-other-4" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="carpets-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="carpets-other-4-comments" class="comments limit-party1"></textarea>				
+		</div>
+
+		<h3 class="section-header">5 Curtains and curtain rails</h3>
+
+		<div class="form-row selection-list">
+			<p class="bold">Curtain rails/poles/pelmets</p>
+			
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>			
+			
+			<span class="label">Hall, stairs and landing</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="hall-stairs-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="hall-stairs-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="hall-stairs-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="hall-stairs-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="hall-stairs-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Living room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="living-room-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="living-room-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="living-room-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="living-room-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="living-room-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dining room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="dining-room-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="dining-room-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="dining-room-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="dining-room-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dining-room-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Kitchen</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="kitchen-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="kitchen-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 1</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-1-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-1-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-1-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-1-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-1-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 2</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-2-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-2-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-2-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-2-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-2-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 3</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-3-curtain-poles" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-3-curtain-poles" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-3-curtain-poles" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-3-curtain-poles-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-3-curtain-poles-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other items (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="curtain-poles-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtain-poles-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtain-poles-other-1" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtain-poles-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtain-poles-other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="curtain-poles-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtain-poles-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtain-poles-other-2" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtain-poles-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtain-poles-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="curtain-poles-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtain-poles-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtain-poles-other-3" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtain-poles-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtain-poles-other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="curtain-poles-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtain-poles-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtain-poles-other-4" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtain-poles-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtain-poles-other-4-comments" class="comments limit-party1"></textarea>
+			
+			<p class="bold">Curtain/blinds</p>
+			<span class="label">Hall, stairs and landing</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="hall-stairs-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="hall-stairs-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="hall-stairs-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="hall-stairs-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="hall-stairs-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Living room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="living-room-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="living-room-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="living-room-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="living-room-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="living-room-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dining room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="dining-room-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="dining-room-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="dining-room-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="dining-room-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dining-room-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Kitchen</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="kitchen-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="kitchen-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 1</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-1-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-1-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-1-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-1-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-1-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 2</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-2-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-2-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-2-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-2-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-2-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 3</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-3-curtains" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-3-curtains" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-3-curtains" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-3-curtains-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-3-curtains-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other items (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="curtains-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtains-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtains-other-1" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtains-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtains-other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="curtains-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtains-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtains-other-2" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtains-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtains-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="curtains-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtains-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtains-other-3" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtains-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtains-other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="curtains-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="curtains-other-4" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="curtains-other-4" value="none"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="curtains-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="curtains-other-4-comments" class="comments limit-party1"></textarea>
+		</div>
+
+		<h3 class="section-header">6 Light fittings</h3>
+
+		<div class="form-row selection-list">
+			<p class="bold">Note: If the seller removes a light fitting, it is assumed that the seller will replace the fitting with a ceiling rose, a flex, bulb holder and bulb and that they will be left in a safe condition</p>
+		
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>			
+		
+			<span class="label">Hall, stairs and landing</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="hall-stairs-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="hall-stairs-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="hall-stairs-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="hall-stairs-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="hall-stairs-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Living room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="living-room-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="living-room-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="living-room-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="living-room-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="living-room-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dining room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="dining-room-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="dining-room-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="dining-room-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="dining-room-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dining-room-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Kitchen</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="kitchen-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="kitchen-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 1</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-1-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-1-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-1-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-1-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-1-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 2</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-2-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-2-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-2-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-2-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-2-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 3</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-3-light-fittings" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-3-light-fittings" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-3-light-fittings" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-3-light-fittings-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-3-light-fittings-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other items (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="light-fittings-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="light-fittings-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="light-fittings-other-1" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="light-fittings-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="light-fittings-other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="light-fittings-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="light-fittings-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="light-fittings-other-2" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="light-fittings-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="light-fittings-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="light-fittings-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="light-fittings-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="light-fittings-other-3" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="light-fittings-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="light-fittings-other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="light-fittings-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="light-fittings-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="light-fittings-other-4" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="light-fittings-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="light-fittings-other-4-comments" class="comments limit-party1"></textarea>
+		</div>
+
+		<h3 class="section-header">7 Fitted units</h3>
+
+		<div class="form-row selection-list">
+			<p class="bold">Note: Fitted units include, for example, fitted cupboards, fitted shelves, and fitted wardrobes.</p>
+			
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>			
+			
+			<span class="label">Hall, stairs and landing</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="hall-stairs-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="hall-stairs-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="hall-stairs-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="hall-stairs-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="hall-stairs-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Living room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="living-room-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="living-room-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="living-room-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="living-room-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="living-room-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dining room</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="dining-room-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="dining-room-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="dining-room-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="dining-room-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dining-room-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Kitchen</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="kitchen-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="kitchen-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="kitchen-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="kitchen-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="kitchen-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 1</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-1-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-1-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-1-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-1-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-1-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 2</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-2-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-2-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-2-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-2-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-2-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Bedroom 3</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="bedroom-3-fitted-units" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="bedroom-3-fitted-units" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="bedroom-3-fitted-units" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="bedroom-3-fitted-units-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="bedroom-3-fitted-units-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other items (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="fitted-units-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="fitted-units-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="fitted-units-other-1" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="fitted-units-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="fitted-units-other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="fitted-units-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="fitted-units-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="fitted-units-other-2" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="fitted-units-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="fitted-units-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="fitted-units-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="fitted-units-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="fitted-units-other-3" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="fitted-units-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="fitted-units-other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="fitted-units-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="fitted-units-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="fitted-units-other-4" value="excluded"/></div>			
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="fitted-units-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="fitted-units-other-4-comments" class="comments limit-party1"></textarea>
+		</div>
+		
+		<h3 class="section-header">8 Outdoor area</h3>
+
+		<div class="form-row selection-list">
+		
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>		
+		
+			<span class="label">Garden furniture</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="garden-furniture" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="garden-furniture" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="garden-furniture" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="garden-furniture-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="garden-furniture-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Garden ornaments</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="garden-ornaments" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="garden-ornaments" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="garden-ornaments" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="garden-ornaments-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="garden-ornaments-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Trees, plants, shrubs</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="trees-plants" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="trees-plants" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="trees-plants" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="trees-plants-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="trees-plants-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Barbecue</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="barbecue" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="barbecue" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="barbecue" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="barbecue-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="barbecue-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Dustbins</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="dustbins" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="dustbins" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="dustbins" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="dustbins-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="dustbins-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Garden shed</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="garden-shed" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="garden-shed" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="garden-shed" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="garden-shed-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="garden-shed-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Greenhouse</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="greenhouse" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="greenhouse" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="greenhouse" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="greenhouse-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="greenhouse-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Outdoor heater</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="outdoor-heater" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="outdoor-heater" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="outdoor-heater" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="outdoor-heater-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="outdoor-heater-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Outside lights</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="outside-lights" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="outside-lights" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="outside-lights" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="outside-lights-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="outside-lights-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>						
+			<span class="label">Water butt</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="water-butt" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="water-butt" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="water-butt" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="water-butt-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="water-butt-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>			
+			<span class="label">Clothes line</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="clothes-line" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="clothes-line" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="clothes-line" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="clothes-line-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="clothes-line-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Rotary line</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="rotary-line" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="rotary-line" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="rotary-line" value="none"/></div>			
+			<span class="selection-list-label">Price</span><input name="rotary-line-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="rotary-line-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<p>Other items (please specify)</p>
+			<span class="selection-list-label">Name</span><textarea name="outdoor-other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="outdoor-other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="outdoor-other-1" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="outdoor-other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="outdoor-other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="outdoor-other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="outdoor-other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="outdoor-other-2" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="outdoor-other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="outdoor-other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="outdoor-other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="outdoor-other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="outdoor-other-3" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="outdoor-other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="outdoor-other-3-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>			
+			<span class="selection-list-label">Name</span><textarea name="outdoor-other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="outdoor-other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="outdoor-other-4" value="excluded"/></div>
+			<div class="radio radio-spacer"></div>
+			<span class="selection-list-label">Price</span><input name="outdoor-other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="outdoor-other-4-comments" class="comments limit-party1"></textarea>
+		</div>
+
+		<h3 class="section-header">9 Television and telephone</h3>
+
+		<div class="form-row selection-list">
+		
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>					
+		
+			<span class="label">Telephone receivers</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="telephone" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="telephone" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="telephone" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="telephone-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="telephone-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Television aerial</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="television-aerial" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="television-aerial" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="television-aerial" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="television-aerial-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="television-aerial-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Radio aerial</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="radio-aerial" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="radio-aerial" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="radio-aerial" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="radio-aerial-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="radio-aerial-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Satellite dish</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="satellite-dish" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="satellite-dish" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="satellite-dish" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="satellite-dish-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="satellite-dish-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+		</div>
+
+		<h3 class="section-header">10 Stock of fuel</h3>
+
+		<div class="form-row selection-list">
+		
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li>None</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>		
+		
+			<span class="label">Oil</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="oil" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="oil" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="oil" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="oil-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="oil-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Wood</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="wood" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="wood" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="wood" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="wood-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="wood-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="label">Liquefied Petroleum Gas (LPG)</span>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="lpg" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="lpg" value="excluded"/></div>
+			<div class="radio"><span class="selection-list-label">None</span><input type="radio" class="limit-party1" name="lpg" value="none"/></div>
+			<span class="selection-list-label">Price</span><input name="lpg-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="lpg-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+		</div>
+
+		<h3 class="section-header">11 Other items</h3>
+
+		<div class="form-row selection-list">
+			
+			<ul class="list-header">
+				<li>Included</li>
+				<li>Excluded</li>
+				<li style="width:120px;">Price</li>
+				<li style="width:300px;">Comments</li>
+			</ul>			
+			
+			<span class="selection-list-label">Name</span><textarea name="other-1-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="other-1" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="other-1" value="excluded"/></div>
+			<span class="selection-list-label">Price</span><input name="other-1-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="other-1-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="other-2-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="other-2" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="other-2" value="excluded"/></div>
+			<span class="selection-list-label">Price</span><input name="other-2-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="other-2-comments" class="comments limit-party1"></textarea>
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="other-3-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="other-3" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="other-3" value="excluded"/></div>
+			<span class="selection-list-label">Price</span><input name="other-3-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="other-3-comments" class="comments limit-party1"></textarea>	
+			<div class="line"></div>
+			<span class="selection-list-label">Name</span><textarea name="other-4-name" class="specify limit-party1"></textarea>
+			<div class="radio"><span class="selection-list-label">Included</span><input type="radio" class="limit-party1" name="other-4" value="included"/></div>
+			<div class="radio"><span class="selection-list-label">Excluded</span><input type="radio" class="limit-party1" name="other-4" value="excluded"/></div>
+			<span class="selection-list-label">Price</span><input name="other-4-price" type="text" class="price limit-party1"/>
+			<span class="selection-list-label">Comments</span><textarea name="other-4-comments" class="comments limit-party1"></textarea>
+		</div>			
+		
+		<div class="line"></div>
+		
+		<div class="signature-block">
+			<span>Each party to electronically sign here</span>
+		</div>		
+	                
+        <div class="relax"></div>
+    </form>
+</div>
+</body>

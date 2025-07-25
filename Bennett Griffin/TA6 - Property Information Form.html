@@ -1,0 +1,1187 @@
+<body>
+<style type="text/css">
+.sign-html-form{
+	max-width:850px;
+	margin:auto;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size:15px;
+	padding:10px;
+	box-sizing:border-box;
+}
+.sign-html-form h2.center{
+	width:280px;
+	margin:10px auto 10px;
+	text-align:center;
+	float:none;
+}
+.sign-html-form h3, .sign-html-form h4{
+	color:#000;
+	clear:both;
+	float:left;
+	margin:6px 0;
+}
+.sign-html-form h3.section-header{
+	background: #e6e6e6;
+	width: 100%;
+	padding: 8px;
+	box-sizing:border-box;	
+}
+
+.sign-html-form hr{
+	float: left;
+	clear: left;
+	width: 100%;
+	border-top: 1px solid #CACACA;
+	border-bottom: none;
+}
+
+.sign-html-form ol{
+	color:#2BBBE7;
+}
+.sign-html-form ol span{
+	color:#000;
+}
+.sign-html-form li{
+	line-height:18px;
+}
+.sign-html-form form h1, .sign-html-form form h2{
+	color:#000;
+	clear:left;
+	display:block;
+	float:left;
+	width:100%;
+	margin:10px 0 15px;
+}
+.sign-html-form form label{
+	font-weight:bold;
+	float:left;
+	line-height:32px;
+	min-width:80px;
+}
+.sign-html-form form input, .sign-html-form form textarea, .sign-html-form form select{
+	float:left;
+	padding:0 10px;
+	border:1px solid #CCC;
+	border-radius:4px;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+	font-size:13px;
+	width:500px;
+	height:25px;
+	line-height:25px;
+	margin-right:10px;
+	max-width:100%;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+.sign-html-form form input.small, .sign-html-form form textarea.small, .sign-html-form form select.small{
+	width:150px;
+}
+.sign-html-form form textarea{
+	min-height:50px;
+}
+.sign-html-form form textarea.full-width{
+	width:100%;
+}
+.sign-html-form form input:focus, .sign-html-form form textarea:focus, .sign-html-form form select:focus{
+	box-shadow: 0 0 5px #2BBBE7;
+    border: 1px solid #2BBBE7;
+}
+.sign-html-form form input.spaced, .sign-html-form form textarea.spaced, .sign-html-form form select.spaced{
+	margin:0 10px;
+}
+
+.sign-html-form form input[type='checkbox'],
+.sign-html-form form input[type='radio']{
+	width:auto;
+	float:none;
+	height:auto;
+}
+
+.sign-html-form form .dob-selector select{
+	width:73px;
+	padding:4px;
+}
+
+.sign-html-form form textarea{
+	resize:none;
+	overflow:auto;
+}
+.sign-html-form form input[type='checkbox']{
+	margin:15px;
+}
+.sign-html-form form div.form-row{
+	float:left;
+	clear:left;
+	margin:5px 0;
+	width:100%;
+}
+.sign-html-form form div.form-row p{
+	float:left;
+	width:100%;
+	text-align:left;
+}
+
+.sign-html-form form .bold{
+	font-weight:bold;
+}
+.sign-html-form form .full-width{
+	width:100%;
+}
+
+.sign-html-form form p{
+	float:left;
+	clear:left;
+	margin:8px 0;
+	text-align:justify;
+}
+.sign-html-form form p.center{
+	text-align:center;
+	width:100%;
+}
+.sign-html-form form p.right{
+	text-align:right;
+	width:100%;
+}
+.sign-html-form form p span{
+	float:left;
+}
+.sign-html-form span.label{
+	float:left;
+	width:150px;
+	line-height:25px;
+	font-size:13px;
+	font-weight:bold;
+	margin-right:5px;
+}
+
+.sign-html-form form ul{
+	float:left; 
+	clear:left;
+}
+
+.sign-html-form .line{
+	height:0px;
+	display:block;
+	float:left;
+	width:100%;
+	border-top:1px solid #D0D0D0;
+	margin:5px 0;
+}
+
+.sign-html-form .radio{
+	float:left;
+	width:150px;
+	text-align:center;
+	background:#E6E6E6;
+	line-height:40px;
+	font-size:13px;
+}
+.sign-html-form .radio input{
+	margin:9px 5px;
+}
+.sign-html-form form div.signature-tag{
+	float:left;
+	border-radius:4px;
+	padding:11px 22px;
+	margin-right:10px;
+	background:#FFC74D;
+}
+.sign-html-form form .signature-row span{
+	line-height:45px;
+}
+	
+.sign-html-form form .signature-row input{
+	margin:8px 0;
+}
+.sign-html-form form .signature{
+	min-width:200px;
+	float:left;
+}
+.sign-html-form .relax{
+	clear:both;
+}
+.sign-html-form a.find-address{
+	background: #0159A3;
+	color: #FFF;
+	padding: 5px 8px;
+	margin: 0 7px;
+	line-height: 24px;
+	border-radius:4px;
+	cursor:pointer;
+	white-space:nowrap;
+	font-size:12px;
+}
+
+.col-2-block{
+	width:46%;
+	float:left;
+	box-sizing:border-box;
+	border:1px solid #D0D0D0;
+	margin:2%;
+}
+.col-2-block h3.section-header{
+	margin:0 0 5px 0;
+	box-sizing:border-box;
+}
+.col-2-block .col-body{
+	padding:10px;
+}
+
+div.grey-bg{
+	background:#E6E6E6;
+	float:left;
+}
+
+div.signature-block{
+	float:left;
+}
+.tooltip:not(a)::after{
+	margin: 0px 0px 0px 15px;
+}
+
+/*removestart*/
+/*CSS Adjustments for Mobile*/
+@media (max-width: 800px) {
+	.sign-html-form{
+		font-size:13px;
+		box-sizing:border-box;
+	}
+	.sign-html-form div.radio{
+		width:50%;
+	}	
+	.col-2-block{
+		width:100%;
+		margin:5px 0;
+	}
+	.sign-html-form span.label{
+		width:100%;
+	}	
+}
+/*removeend*/
+
+</style>
+<div class="sign-html-form">
+    <form>
+	
+		<h1>Law Society Property Information Form (4th edition)</h1>
+		
+		<div class="form-row">
+			<span class="label">Postcode of property</span><div style="float:left;"><input class="postcode limit-party1" name="postcode" style="width:110px; float:left;" type="text"/><a class="find-address">Find Address</a></div>
+		</div>		
+		<div class="form-row">			
+			<span class="label">Address of the property</span><textarea style="height:100px;" class="address limit-party1" name="address"></textarea>
+		</div>			
+		
+		<div class="form-row">
+			<span class="label">Full names of the seller</span><textarea style="height:50px;" name="seller-names"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<span class="label">About this form</span>
+			<p>This form is completed by the seller to supply the detailed information and documents which may be relied upon for the conveyancing process.</p>
+			<p>It is important that sellers and buyers read the notes below</p>
+		</div>
+		
+		<div class="form-row">
+			<span class="label">Definitions</span>
+			<ul>
+				<li>&apos;Seller&apos; means all sellers together where the property is owned by more than one person.</li>
+				<li>&apos;Buyer&apos; means all buyers together where the property is being bought by more than one person.</li>
+				<li>&apos;Property&apos; includes all buildings and land within its boundaries.</li>
+				<li>The answers should be prepared by the person or persons who are named as owner on the deeds or Land Registry title or by the owner&apos;s legal representative(s) if selling under a power of attorney or grant of probate or representation. If there is more than one seller, you should prepare the answers together or, if only one seller prepares the form, the other(s) should check the answers given and all sellers should sign the form.</li>
+				<li>If you do not know the answer to any question, you must say so. If you are unsure of the meaning of any questions or answers, please ask your solicitor. Completing this form is not mandatory, but omissions or delay in providing some information may delay the sale.</li>
+				<li>If you later become aware of any information which would alter any replies you have given, you must inform your solicitor immediately. This is as important as giving the right answers in the first place. Do not change any arrangements concerning the property with anyone (such as a tenant or neighbour) without first consulting your solicitor.</li>
+				<li>It is very important that your answers are accurate. If you give incorrect or incomplete information to the buyer (on this form or otherwise in writing or in conversation, whether through your estate agent or solicitor or directly to the buyer), the buyer may make a claim for compensation from you or refuse to complete the purchase.</li>
+				<li>You should answer the questions based upon information known to you (or, in the case of legal representatives, you or the owner). You are not expected to have expert knowledge of legal or technical matters, or matters that occurred prior to your ownership of the property.</li> 
+				<li>Please give your solicitor any letters, agreements or other papers which help answer the questions. If you are aware of any which you are not supplying with the answers, tell your solicitor. If you do not have any documentation you may need to obtain copies at your own expense. Also pass to your solicitor any notices you have received concerning the property.</li>				
+			</ul>
+		</div>
+		<div class="form-row">
+			<span class="label">Instructions to the buyer</span>
+			<ul>
+				<li>If the seller gives you, separately from this form, any information concerning the property (in writing or in conversation, whether through an estate agent or solicitor or directly to you) on which you wish to rely when buying the property, you should tell your solicitor.</li>
+				<li>You are entitled to rely on the replies given to enquiries but in relation to the physical condition of the property, the replies should not be treated as a substitute for undertaking your own survey or making your own independent enquiries, which you are recommended to do.</li>
+				<li>The seller is only obliged to give answers based on their own information. They may not have knowledge of legal or technical matters. You should not expect the seller to have knowledge of, or give information about, matters prior to their ownership of the property.</li>
+			</ul>
+		</div>
+		
+		<hr/>
+		
+		<h3 class="section-header">1 Boundaries</h3>
+		<p>If the property is leasehold this section, or parts of it, may not apply.</p>
+		<p class="bold">1.1 Looking towards the property from the road, who owns or accepts responsibility to maintain or
+repair the boundary features:</p>
+
+		<div class="form-row">
+			<span class="label">(a) on the left?</span>
+			<div class="radio">Seller<input type="radio" class="limit-party1" name="boundaries-left" value="seller"/></div>
+			<div class="radio">Shared<input type="radio" class="limit-party1" name="boundaries-left" value="shared"/></div>
+			<div class="radio">Neighbour<input type="radio" class="limit-party1" name="boundaries-left" value="neighbour"/></div>
+			<div class="radio">Not known<input type="radio" class="limit-party1" name="boundaries-left" value="not-known"/></div>
+		</div>
+		<div class="line"></div>		
+		<div class="form-row">
+			<span class="label">(b) on the right?</span>
+			<div class="radio">Seller<input type="radio" class="limit-party1" name="boundaries-right" value="seller"/></div>
+			<div class="radio">Shared<input type="radio" class="limit-party1" name="boundaries-right" value="shared"/></div>
+			<div class="radio">Neighbour<input type="radio" class="limit-party1" name="boundaries-right" value="neighbour"/></div>
+			<div class="radio">Not known<input type="radio" class="limit-party1" name="boundaries-right" value="not-known"/></div>
+		</div>
+		<div class="line"></div>
+		<div class="form-row">
+			<span class="label">(c) at the rear?</span>
+			<div class="radio">Seller<input type="radio" class="limit-party1" name="boundaries-rear" value="seller"/></div>
+			<div class="radio">Shared<input type="radio" class="limit-party1" name="boundaries-rear" value="shared"/></div>
+			<div class="radio">Neighbour<input type="radio" class="limit-party1" name="boundaries-rear" value="neighbour"/></div>
+			<div class="radio">Not known<input type="radio" class="limit-party1" name="boundaries-rear" value="not-known"/></div>
+		</div>
+		<div class="line"></div>
+		<div class="form-row">
+			<span class="label">(d) at the front?</span>
+			<div class="radio">Seller<input type="radio" class="limit-party1" name="boundaries-front" value="seller"/></div>
+			<div class="radio">Shared<input type="radio" class="limit-party1" name="boundaries-front" value="shared"/></div>
+			<div class="radio">Neighbour<input type="radio" class="limit-party1" name="boundaries-front" value="neighbour"/></div>
+			<div class="radio">Not known<input type="radio" class="limit-party1" name="boundaries-front" value="not-known"/></div>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">1.2 If the boundaries are irregular please indicate ownership by written description or by reference to a plan:</p>
+			<textarea class="full-width" class="limit-party1" name="irregular-boundaries" style="height:50px;"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">1.3 Is the seller aware of any boundary feature having been moved in the last 20 years? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input type="radio" class="limit-party1" name="boundaries-moved" value="yes"/></div>
+			<div class="radio textarea">No<input type="radio" class="limit-party1" name="boundaries-moved" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="boundaries-moved-details" style="height:50px;"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">1.4 During the seller&apos;s ownership, has any land previously forming part of the property been sold or has any adjacent property been purchased? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input type="radio" class="limit-party1" name="land-sold" value="yes"/></div>
+			<div class="radio textarea">No<input type="radio" class="limit-party1" name="land-sold" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="land-sold-details" style="height:50px;"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">1.5 Does any part of the property or any building on the property overhang, or project under, the boundary of the neighbouring property or road? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="property-overhang" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="property-overhang" value="no"/></div>			
+			<textarea class="limit-party1 full-width" name="property-overhang-details" style="height:50px;"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">1.6 Has any notice been received under the Party Wall Act 1996 in respect of any shared/party boundaries? If Yes, please supply a copy, and give details of any works carried out or agreed:</p>
+			<div class="radio textarea add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="party-wall-notice" value="enclosed"/></div>
+			<div class="radio textarea">Yes - To Follow<input class="limit-party1" type="radio" name="party-wall-notice" value="to-follow"/></div>	
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="party-wall-notice" value="no"/></div>
+			<textarea class="full-width limit-party1" name="party-wall-notice-details"></textarea>
+		</div>
+		
+		<h3 class="section-header">2 Disputes and complaints</h3>
+		
+		<div class="form-row">
+			<p class="bold">2.1 Have there been any disputes or complaints regarding this property or a property nearby? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="disputes" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="disputes" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="disputes-details" style="height:50px;"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">2.2 Is the seller aware of anything which might lead to a dispute about the property or a property nearby? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="possible-disputes" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="possible-disputes" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="possible-disputes-details" style="height:50px;"></textarea>
+		</div>				
+		
+		<h3 class="section-header">3 Notices and proposals</h3>
+		<div class="form-row">
+			<p class="bold">3.1 Have any notices or correspondence been received or sent (e.g. from or to a neighbour, council or government department), or any negotiations or discussions taken place, which affect the property or a property nearby? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="notices" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="notices" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="notices-details" style="height:50px;"></textarea>
+		</div>
+		<div class="form-row">
+			<p class="bold">3.2 Is the seller aware of any proposals to develop property or land nearby, or of any proposals to make alterations to buildings nearby? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="development-proposals" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="development-proposals" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="development-proposals-details" style="height:50px;"></textarea>
+		</div>		
+		
+		<h3 class="section-header">4 Alterations, planning and building control</h3>
+		
+		<p><span class="bold">Note to seller</span>: All relevant approvals and supporting paperwork referred to in section 4 of this form, such as listed building consents, planning permissions, Building Regulations consents and completion certificates should be provided. If the seller has had works carried out the seller should produce the documentation authorising this. Copies may be obtained from the relevant local authority website. Competent Persons Certificates may be obtained from the contractor or the scheme provider (e.g. FENSA or Gas Safe Register). Further information about Competent Persons Certificates can be found at: www.gov.uk.</p>
+		
+		<p><span class="bold">Note to buyer</span>: If any alterations or improvements have been made since the property was last  valued for council tax, the sale of the property may trigger a revaluation. This may mean that following completion of the sale, the property will be put into a higher council tax band. Further information about council tax valuation can be found at: www.voa.gov.uk.</p>		
+		
+		<p class="bold">4.1 Have any of the following changes been made to the whole or any part of the property (including the garden)?</p>
+		<div class="form-row">
+			<p>(a) Building works (e.g. extension, loft or garage conversion, removal of internal walls). If Yes, please give details including dates of all work undertaken:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="building-changes" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="building-changes" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="building-changes-details" style="height:50px;"></textarea>
+		</div>
+		<div class="line"></div>
+		<div class="form-row">
+			<p>(b) Change of use (e.g. from an office to a residence)</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="use-changes" value="1"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="use-changes" value="2"/></div>			
+			<textarea class="full-width limit-party1" name="use-changes-details" style="height:50px;"></textarea>
+		</div>
+		<div class="line"></div>
+		<div class="form-row">
+			<p>(c) Installation of replacement windows, roof windows, roof lights, glazed doors since 1 April 2002</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="window-installation" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="window-installation" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="window-installation-details" style="height:50px;"></textarea>
+		</div>
+		<div class="line"></div>
+		<div class="form-row">
+			<p>(d) Addition of a conservatory</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="conservatory-addition" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="conservatory-addition" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="conservatory-addition-details" style="height:50px;"></textarea>
+		</div>		
+		
+		<p class="bold">4.2 If Yes to any of the questions in 4.1 and if the work was undertaken during the seller&apos;s ownership of the property:</p>
+		<p>(a) please supply copies of the planning permissions, Building Regulations approvals and  Completion Certificates, OR:</p>
+		<p>(b) if none were required, please explain why these were not required - e.g. permitted development rights applied or the work was exempt from Building Regulations:</p>
+		<textarea class="full-width limit-party1" name="planning-not-required-details" style="height:50px;"></textarea>
+		<p>Further information about permitted development can be found at: www.planningportal.gov.uk.</p>
+		
+		<div class="form-row">
+			<p class="bold">4.3 Are any of the works disclosed in 4.1 above unfinished? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="works-unfinished" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="works-unfinished" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="works-unfinished-details" style="height:50px;"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">4.4 Is the seller aware of any breaches of planning permission conditions or Building Regulations consent conditions, unfinished work or work that does not have all necessary consents? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="planning-breach" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="planning-breach" value="no"/></div>			
+			<textarea class="full-width limit-party1" name="planning-breach-details" style="height:50px;"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">4.5 Are there any planning or building control issues to resolve? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input type="radio" class="limit-party1" name="planning-issues" value="1"/></div>
+			<div class="radio textarea">No<input type="radio" class="limit-party1" name="planning-issues" value="2"/></div>			
+			<textarea class="full-width limit-party1" name="planning-issues-details" style="height:50px;"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">4.6 Have solar panels been installed?</p>
+			<div class="radio">Yes<input type="radio" class="limit-party1" name="solar-panels" value="yes"/></div>
+			<div class="radio">No<input type="radio" class="limit-party1" name="solar-panels" value="no"/></div>			
+		</div>
+		<div class="form-row">
+			<p>If Yes:</p>
+			<div>In what year were the solar panels installed?<input class="limit-party1" type="text" name="solar-panels-year"/></div>
+			<div class="line"></div>
+			<p>Are the solar panels owned outright?</p>
+			<div class="radio">Yes<input type="radio" class="limit-party1" name="solar-panels-owned" value="yes"/></div>
+			<div class="radio">No<input type="radio" class="limit-party1" name="solar-panels-owned" value="no"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>Has a long lease of the roof/air space been granted to a solar panel provider? If Yes, please supply copies of the relevant documents.</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="roof-space-lease" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="roof-space-lease" value="to-follow"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="roof-space-lease" value="no"/></div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">4.7 Is the property or any part of it:</p>
+			<p>(a) a listed building?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="listed-building" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="listed-building" value="no"/></div>			
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="listed-building" value="not-known"/></div>
+			<div class="line"></div>
+			<p>(b) in a conservation area?</p>
+			<div class="radio">Yes<input type="radio" class="limit-party1" name="conservation-area" value="yes"/></div>
+			<div class="radio">No<input type="radio" class="limit-party1" name="conservation-area" value="no"/></div>			
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="conservation-area" value="not-known"/></div>
+		</div>
+		<div class="form-row">
+			<p>If Yes, please supply copies of any relevant documents.</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="listed-conservation-documents" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="listed-conservation-documents" value="to-follow"/></div>			
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">4.8 Are any of the trees on the property subject to a Tree Preservation Order?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="tree-preservation-order" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="tree-preservation-order" value="no"/></div>			
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="tree-preservation-order" value="not-known"/></div>
+			<p>If Yes:</p>
+			<p>(a) Have the terms or Order been complied with?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="tree-preservation-order-complied" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="tree-preservation-order-complied" value="no"/></div>			
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="tree-preservation-order-complied" value="not-known"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(b) Please supply copies of any relevant documents.</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="tree-preservation-order-documents" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="tree-preservation-order-documents" value="to-follow"/></div>			
+		</div>
+		
+		<h3 class="section-header">5 Guarantees and warranties</h3>
+		
+		<p>Note to seller: All available guarantees, warranties and supporting paperwork should be supplied before exchange of contracts.</p>
+		<p>Note to buyer: Some guarantees only operate to protect the person who had the work carried out or may not be valid if their terms have been breached. You may wish to contact the company to establish whether it is still trading and if so, whether the terms of the guarantee will apply to you.</p>
+		
+		<p class="bold">5.1 Does the property benefit from any of the following guarantees or warranties? If Yes, please supply a copy.</p>		
+		
+		<div class="form-row">
+			<p>(a) New home warranty (e.g. NHBC or similar)</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="new-home-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="new-home-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="new-home-warranty" value="no"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(b) Damp proofing</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="damp-proofing-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="damp-proofing-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="damp-proofing-warranty" value="no"/></div>	
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(c) Timber treatment</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="timber-treatment-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="timber-treatment-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="timber-treatment-warranty" value="no"/></div>	
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(d) Windows, roof lights, roof windows or glazed doors</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="window-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="window-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="window-warranty" value="no"/></div>		
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(e) Electrical work</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="electrical-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="electrical-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="electrical-warranty" value="no"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(f) Roofing</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="roofing-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="roofing-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="roofing-warranty" value="no"/></div>		
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(g) Central heating</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="heating-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="heating-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="heating-warranty" value="no"/></div>		
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(h) Underpinning</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="underpinning-warranty" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="underpinning-warranty" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="underpinning-warranty" value="no"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(i) Other (please state)</p>		
+			<div class="radio textarea add-attachment">Enclosed<input class="limit-party1" type="radio" name="other-warranty" value="enclosed"/></div>
+			<div class="radio textarea">To follow<input class="limit-party1" type="radio" name="other-warranty" value="to-follow"/></div>		
+			<textarea class="full-width limit-party1" name="other-warranty-details" style="height:50px;"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">5.2 Have any claims been made under any of these guarantees or warranties? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="claims-made" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="claims-made" value="no"/></div>
+			<textarea class="full-width limit-party1" name="claims-made-details"></textarea>
+		</div>
+
+		<hr/>
+				
+		<h3 class="section-header">6 Insurance</h3>
+		<div class="form-row">
+			<p class="bold">6.1 Does the seller insure the property?</p>
+			<div class="radio">Yes<input type="radio" name="seller-insure" value="yes"/></div>
+			<div class="radio">No<input type="radio" name="seller-insure" value="no"/></div>
+		</div>
+		<div class="form-row">
+			<p class="bold">6.2 Has any buildings insurance taken out by the seller ever been:</p>
+			<p>(a) subject to an abnormal rise in premiums?</p>
+			<div class="radio">Yes<input type="radio" name="insurance-premium-rise" value="yes"/></div>
+			<div class="radio">No<input type="radio" name="insurance-premium-rise" value="no"/></div>
+			<div class="line"></div>
+			<p>(b) subject to high excesses?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="insurance-high-excess" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="insurance-high-excess" value="no"/></div>
+			<div class="line"></div>
+			<p>(c) subject to unusual conditions?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="insurance-unusual-conditions" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="insurance-unusual-conditions" value="no"/></div>
+			<div class="line"></div>
+			<p>(d) refused?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="insurance-refused" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="insurance-refused" value="no"/></div>			
+			<p>If Yes, please give details:</p>
+			<textarea class="limit-party1" name="insurance-refused-details"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">6.3 Has the seller made any buildings insurance claims? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="seller-insurance-claims" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="seller-insurance-claims" value="no"/></div>
+			<textarea class="full-width limit-party1" name="seller-insurance-claims-details"></textarea>
+		</div>
+		
+		<hr/>
+		
+		<h3 class="section-header">7 Environmental matters</h3>
+		<p>Flooding</p>
+		<p>Note: Flooding may take a variety of forms: it may be seasonal or irregular or simply a one-off occurrence. The property does not need to be near a sea or river for flooding to occur. Further information about flooding can be found at: <a href="http://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">www.gov.uk/government/organisations/department-for-environment-food-rural-affairs</a>.<br/>The flood risk check can be found at: <a href="http://www.gov.uk/check-flood-risk">www.gov.uk/check-flood-risk</a>.</p>
+		<p>Read our updated Flood Risk Practice Note at <a href="https://www.lawsociety.org.uk/support-services/advice/practice-notes/flood-risk/">https://www.lawsociety.org.uk/support-services/advice/practice-notes/flood-risk/</a></p>
+		
+		<div class="form-row">
+			<p class="bold">7.1 Has any part of the property (whether buildings or surrounding garden or land) ever been flooded? If Yes, please state when the flooding occurred and identify the parts that flooded:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="property-flooded" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="property-flooded" value="no"/></div>
+			<textarea class="full-width limit-party1" name="property-flooded-details"></textarea>			
+		</div>
+		
+		<p>If No to question 7.1 please continue to 7.3 and do not answer 7.2 below</p>
+		
+		<div class="form-row">
+			<p class="bold">7.2 What type of flooding occured?</p>
+			<p>(a) Ground water</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="ground-water-flooding" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="ground-water-flooding" value="no"/></div>
+			<div class="line"></div>
+			<p>(b) Sewer flooding</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="sewer-flooding" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="sewer-flooding" value="no"/></div>
+			<div class="line"></div>
+			<p>(c) Surface water</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="surface-flooding" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="surface-flooding" value="no"/></div>
+			<div class="line"></div>
+			<p>(d) Coastal flooding</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="coastal-flooding" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="coastal-flooding" value="no"/></div>			
+			<div class="line"></div>
+			<p>(e) River flooding</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="river-flooding" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="river-flooding" value="no"/></div>			
+			<div class="line"></div>
+			<p>Other (please state):</p>
+			<textarea class="full-width limit-party1" name="other-flooding"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">7.3 Has a Flood Risk Report been prepared? If Yes, please supply a copy.</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="flood-risk-report" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow <input class="limit-party1" type="radio" name="flood-risk-report" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="flood-risk-report" value="no"/></div>			
+			<p>Further information about the types of flooding and Flood Risk Reports can be found at: www.environment-agency.gov.uk</p>
+		</div>
+		
+		<p>Radon</p>
+		<p>Note: Radon is a naturally occurring inert radioactive gas found in the ground. Some parts of
+England and Wales are more adversely affected by it than others. Remedial action is advised for
+properties with a test result above the &apos;recommended action level&apos;. Further information about Radon can be found at: <a href="http://www.gov.uk/government/organisations/public-health-england">www.gov.uk/government/organisations/public-health-england</a> and <a href="http://www.publichealthwales.wales.nhs.uk">www.publichealthwales.wales.nhs.uk</a>.</p>
+
+		<div class="form-row">
+			<p class="bold">7.4 Has a Radon test been carried out on the property?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="radon-test" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="radon-test" value="no"/></div>
+		</div>
+		<div class="form-row">
+			<p>If Yes:</p>
+			<p>(a) please supply a copy of the report</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="radon-test-report" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="radon-test-report" value="to-follow"/></div>	
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(b) was the test result below the &apos;recommended action level&apos;?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="radon-results-below-level" value="1"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="radon-results-below-level" value="2"/></div>			
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">7.5 Were any remedial measures undertaken on construction to reduce Radon gas levels in the property?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="radon-reduction-measures" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="radon-reduction-measures" value="no"/></div>			
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="radon-reduction-measures" value="not-known"/></div>			
+		</div>	
+		
+		<p>Energy efficiency</p>
+		<p>Note: An Energy Performance Certificate (EPC) is a document that gives information about a property&apos;s energy usage. Further information about EPCs can be found at: www.gov.uk.</p>
+		
+		<div class="form-row">
+			<p class="bold">7.6 Please supply a copy of the EPC for the property.</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="epc" value="enclosed"/></div>
+			<div class="radio">To Follow<input class="limit-party1" type="radio" name="epc" value="to-follow"/></div>			
+			<div class="radio">Already Supplied<input class="limit-party1" type="radio" name="epc" value="already-supplied"/></div>			
+		</div>	
+
+		<div class="form-row">
+			<p class="bold">7.7 Have any installations in the property been financed under the Green Deal scheme? If Yes, please give details of all installations and supply a copy of your last electricity bill.</p>
+			<div class="radio textarea add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="green-deal-finance" value="enclosed"/></div>
+			<div class="radio textarea">Yes - To Follow<input class="limit-party1" type="radio" name="green-deal-finance" value="to-follow"/></div>			
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="green-deal-finance" value="no"/></div>
+			<textarea  class="full-width limit-paty1" name="green-deal-finance-details"></textarea>
+		</div>
+		<p>Further information about the Green Deal can be found at: www.gov.uk/decc.</p>
+		
+		<p>Japanese knotweed</p>
+		<p>Note: Japanese knotweed is an invasive non-native plant that can cause damage to property if left untreated. The plant consists of visible above ground growth and an invisible rhizome (root) below ground in the soil. It can take several years to control and manage through a management and treatment plan and rhizomes may remain alive below the soil even after treatment.</p>
+
+		<div class="form-row">
+			<p class="bold">7.8 Is the property affected by Japanese knotweed?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="knotweed" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="knotweed" value="no"/></div>			
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="knotweed" value="not-known"/></div>
+		</div>
+		<div class="form-row">
+			<p>If Yes, please state whether there is a Japanese knotweed management and treatment plan in place and supply a copy with any insurance cover linked to the plan.</p>
+			<div class="radio">Yes - Enclosed<input class="limit-party1" type="radio" name="knotweed-management" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="knotweed-management" value="to-follow"/></div>			
+			<div class="radio">No<input class="limit-party1" type="radio" name="knotweed-management" value="no"/></div>
+			<div class="radio">Not Known<input class="limit-party1" type="radio" name="knotweed-management" value="not-known"/></div>
+		</div>
+
+		<div class="line"></div>
+		
+		<h3 class="section-header">8 Right and informal arrangements</h3>
+		
+		<p>Note: Rights and arrangements may relate to access or shared use. They may also include leases of less than seven years, rights to mines and minerals, manorial rights, chancel repair and similar matters. If you are uncertain about whether a right or arrangement is covered by this question, please ask your solicitor.</p>
+		
+		<div class="form-row">
+			<p class="bold">8.1 Does ownership of the property carry a responsibility to contribute towards the cost of any jointly used services, such as maintenance of a private road, a shared driveway, a boundary or drain? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="joint-contribution" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="joint-contribution" value="no"/></div>
+			<textarea class="full-width limit-paty1 name="joint-contribution-details"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">8.2 Does the property benefit from any rights or arrangements over any neighbouring property? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="neighbouring-rights" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="neighbouring-rights" value="no"/></div>
+			<textarea class="full-width limit-party1" name="neighbouring-rights-details"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">8.3 Has anyone taken steps to prevent access to the property, or to complain about or demand payment for access to the property? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="access-prevented" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="access-prevented" value="no"/></div>
+			<textarea class="full-width limit-party1" name="access-prevented-details"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">8.4 Does the seller know of any of the following rights or arrangements which affect the property??</p>
+			<p>(a) Rights of light</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="rights-light" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="rights-light" value="no"/></div>
+			<div class="line"></div>
+			<p>(b) Rights of support from adjoining properties</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="rights-adjoining" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="rights-adjoining" value="no"/></div>
+			<div class="line"></div>
+			<p>(c) Customary rights (e.g. rights deriving from local traditions)</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="rights-customary" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="rights-customary" value="no"/></div>
+			<div class="line"></div>
+			<p>(d) Other people&apos;s rights to mines and minerals under the land</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="rights-mines" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="rights-mines" value="no"/></div>			
+			<div class="line"></div>
+			<p>(e) Chancel repair liability</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="chancel-repair" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="chancel-repair" value="no"/></div>			
+			<div class="line"></div>
+			<p>(f) Other people&apos;s rights to take things from the land (such as timber, hay or fish)</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="others-take-things" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="others-take-things" value="no"/></div>						
+			<p>If Yes, please give details:</p>
+			<textarea class="full-width limit-party1" name="others-take-things-details"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">8.5 Are there any other rights or arrangements affecting the property? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="rights-arrangements" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="rights-arrangements" value="no"/></div>
+			<textarea class="full-width limit-party1" name="rights-arrangements-details"></textarea>
+		</div>
+		
+		<p>Services crossing the property or neighbouring property</p>
+		
+		<div class="form-row">
+			<p class="bold">8.6 Do any drains, pipes or wires serving the property cross any neighbour&apos;s property?</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="drains-cross-neighbours" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="drains-cross-neighbours" value="no"/></div>
+			<div class="radio textarea">Not known<input class="limit-party1" type="radio" name="drains-cross-neighbours" value="not-known"/></div>			
+			<textarea class="full-width limit-party1" name="drains-cross-neighbours-details"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">8.7 Do any drains, pipes or wires leading to any neighbour&apos;s property cross the property?</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="neighbours-drains-cross" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="neighbours-drains-cross" value="no"/></div>
+			<div class="radio textarea">Not known<input class="limit-party1" type="radio" name="neighbours-drains-cross" value="not-known"/></div>			
+			<textarea class="full-width limit-party1" name="neighbours-drains-cross-details"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">8.8 Is there any agreement or arrangement about drains, pipes or wires?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="drains-agreement" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="drains-agreement" value="no"/></div>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="drains-agreement" value="not-known"/></div>
+		</div>
+		<div class="form-row">
+			<p>If Yes, please supply a copy or give details</p>
+			<div class="radio textarea add-attachment">Enclosed<input class="limit-party1" type="radio" name="drains-agreement-copy" value="1"/></div>
+			<div class="radio textarea">To follow<input class="limit-party1" type="radio" name="drains-agreement-copy" value="2"/></div>			
+			<textarea class="full-width limit-party1" name="drains-agreement-details"></textarea>
+		</div>
+		
+		<hr/>
+		
+		<h3 class="section-header">9 Parking</h3>
+		<div class="form-row">
+			<p class="bold">9.1 What are the parking arrangements at the property?</p>
+			<textarea class="full-width limit-party1" name="parking-details"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">9.2 Is the property in a controlled parking zone or within a local authority parking scheme?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="controlled-parking" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="controlled-parking" value="no"/></div>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="controlled-parking" value="not-known"/></div>			
+		</div>		
+		
+		<hr/>
+		
+		<h3 class="section-header">10 Other charges</h3>
+		<p>Note: If the property is leasehold, details of lease expenses such as service charges and ground rent should be set out on the separate TA7 Leasehold Information Form. If the property is freehold, there may still be charges: for example, payments to a management company or for the use of a private drainage system.</p>
+		<div class="form-row">
+			<p class="bold">10.1 Does the seller have to pay any charges relating to the property (excluding any payments such as council tax, utility charges, etc.), for example payments to a management company? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="other-charges" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="other-charges" value="no"/></div>
+			<textarea class="full-width limit-party1" name="other-charges-details"></textarea>
+		</div>
+		
+		<hr/>
+		
+		<h3 class="section-header">11 Occupiers</h3>
+		
+		<div class="form-row">
+			<p class="bold">11.1 Does the seller live at the property?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="seller-occupy" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="seller-occupy" value="no"/></div>
+		</div>
+		<div class="form-row">
+			<p class="bold">11.2 Does anyone else, aged 17 or over, live at the property?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="seventeen-plus-occupiers" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="seventeen-plus-occupiers" value="no"/></div>
+		</div>
+		
+		<p>If No to question 11.2, please continue to section 12 &apos;Services&apos; and do not answer 11.3-11.5 below.</p>
+		
+		<div class="form-row">
+			<p class="bold">11.3 Please give the full names of any occupiers (other than the sellers) aged 17 or over:</p>
+			<textarea class="full-width limit-party1" name="seventeen-plus-occupiers-names"></textarea>
+		</div>		
+		
+		<div class="form-row">
+			<p class="bold">11.4 Are any of the occupiers (other than the sellers), aged 17 or over, tenants or lodgers?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="occupiers-tenants" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="occupiers-tenants" value="no"/></div>
+		</div>		
+		
+		<div class="form-row">
+			<p class="bold">11.5 Is the property being sold with vacant possession?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="vacant-possession" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="vacant-possession" value="no"/></div>
+			<p>If Yes, have all the occupiers aged 17 or over:</p>
+			<p>(a) agreed to leave prior to completion</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="agreed-leave" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="agreed-leave" value="no"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">		
+			<p>(b) agreed to sign the sale contract? If No, please supply other evidence that the property will be vacant on completion.</p>
+			<div class="radio">Yes - Enclosed<input class="limit-party1" type="radio" name="agreed-sale-contract" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="agreed-sale-contract" value="to-follow"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="agreed-sale-contract" value="no"/></div>
+		</div>
+		
+		<hr/>
+		
+		<h3 class="section-header">12 Services</h3>
+		<p>Note: If the seller does not have a certificate requested below this can be obtained from the relevant Competent Persons Scheme. Further information about Competent Persons Schemes can be found at: www.gov.uk.</p>
+		<p>Electricity</p>
+		
+		<div class="form-row">
+			<p class="bold">12.1 Has the whole or any part of the electrical installation been tested by a qualified and registered electrician?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="electrical-tested" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="electrical-tested" value="no"/></div>
+		</div>
+		<div class="form-row">		
+			<p>If Yes, please state the year it was tested and provide a copy of the test certificate:</p>
+			<div style="float:left; width:200px;"><input class="limit-party1" style="width:100px;" type="text" name="electrical-tested-year"/>Year</div>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="electrical-tested-certificate" value="enclosed"/></div>
+			<div class="radio">To Follow<input class="limit-party1" type="radio" name="electrical-tested-certificate" value="to-follow"/></div>		
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">12.2 Has the property been rewired or had any electrical installation work carried out since 1 January 2005?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="property-rewired" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="property-rewired" value="no"/></div>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="property-rewired" value="not-known"/></div>
+		</div>
+		<div class="form-row">
+			<p>If Yes, please supply one of the following:</p>
+			<p>(a) a copy of the signed BS7671 Electrical Safety Certificate</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="electrical-safety-certificate" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="electrical-safety-certificate" value="to-follow"/></div>			
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(b) the installer&apos;s Building Regulations Compliance Certificate</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="regulations-compliance-certificate" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="regulations-compliance-certificate" value="to-follow"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(c) the Building Control Completion Certificate</p>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="control-compliance-certificate" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="control-compliance-certificate" value="to-follow"/></div>
+		</div>
+		
+		<div class="form-row">
+			<p>Central Heating</p>
+			<p class="bold">12.3 Does the property have a central heating system?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="central-heating" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="central-heating" value="no"/></div>			
+			<p>If Yes:</p>
+			<p>(a) What type of system is it (e.g. mains gas, liquid gas, oil, electricity, etc.)?</p><input class="limit-party1" type="text" name="central-heating-type"/>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(b) When was the heating system installed? If on or after 1 April 2005 please supply a copy of the &apos;completion certificate&apos; (e.g. CORGI or Gas Safe Register) or the &apos;exceptional circumstances&apos; form.</p>
+			<p><input class="limit-party1" class="small" type="text" name="central-heating-date"/>Date</p>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="central-heating-date" value="not-known"/></div>			
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="central-heating-certificate" value="enclosed"/></div>
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="central-heating-certificate" value="to-follow"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(c) Is the heating system in good working order?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="heating-working" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="heating-working" value="no"/></div>
+			<div class="line"></div>
+		</div>
+		<div class="form-row">
+			<p>(d) In what year was the heating system last serviced/maintained? Please supply a copy of the inspection report.</p>
+			<p><input class="limit-party1" class="small" type="text" name="heating-serviced-year"/>Year</p>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="heating-serviced-year" value="not-known"/></div>
+			<div class="radio add-attachment">Enclosed<input class="limit-party1" type="radio" name="heating-serviced-report" value="enclosed"/></div>	
+			<div class="radio">To follow<input class="limit-party1" type="radio" name="heating-serviced-report" value="to-follow"/></div>	
+			<div class="radio">Not available<input class="limit-party1" type="radio" name="heating-serviced-report" value="not-available"/></div>	
+		</div>
+		
+		<p>Drainage and sewerage</p>
+		<p>Note: Further information about drainage and sewerage can be found at: www.environment-agency.gov.uk.</p>
+		
+		<div class="form-row">
+			<p class="bold">12.4 Is the property connected to mains:</p>
+			<p>(a) foul water drainage?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="mains-foul-water" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="mains-foul-water" value="no"/></div>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="mains-foul-water" value="not-known"/></div>			
+			<div class="line"></div>
+			<p>(b) surface water drainage?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="mains-surface-water" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="mains-surface-water" value="no"/></div>
+			<div class="radio">Not known<input class="limit-party1" type="radio" name="mains-surface-water" value="not-known"/></div>			
+		</div>
+		
+		<p>If Yes to both questions in 12.4, please continue to section 13 &apos;Connection to utilities and services&apos; and do not answer 12.5-12.10 below.</p>
+		
+		<div class="form-row">
+			<p class="bold">12.5 Is the property provided by:</p>
+			<p>(a) a septic tank?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="septic-tank" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="septic-tank" value="no"/></div>
+			
+			<p>If the property is in England and you answered Yes to question 12.5 and your septic tank discharges directly into surface water, you must do one of the following as soon as possible:</p>
+			<ul>
+				<li>connect to mains sewer</li>
+				<li>install a drainage field (also known as an infiltration system) so the septic tank can discharge to ground instead</li>
+				<li>replace your septic tank with a small sewage treatment plant</li>
+			</ul>
+			<p>You must have plans in place to carry out this work within a reasonable timescale, typically 12 months.</p>
+			
+			<p class="bold">12.5.1 When was the septic tank last replaced or upgraded?</p>
+			<p><input class="small limit-party1" type="text" name="septic-tank-last-replaced-month"/>Month</p>			
+			<p><input class="small limit-party1" type="text" name="septic-tank-last-replaced-year"/>Year</p>
+			
+			<div class="line"></div>
+			<p>(b) a sewage treatment plant?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="sewage-treatment" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="sewage-treatment" value="no"/></div>
+			<div class="line"></div>
+			<p>(c) cesspool?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="cesspool" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="cesspool" value="no"/></div>			
+		</div>
+
+		<div class="form-row">
+			<p class="bold">12.6 Is the use of the septic tank, sewage treatment plant or cesspool shared with other properties? If Yes, how many properties share the system?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="shared-sewage" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="shared-sewage" value="no"/></div>	
+			<p><input class="small limit-party1" type="text" name="shared-sewage-number"/>Properties share</p>			
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">12.7 When was the system last emptied?</p>
+			<p><input class="small limit-party1" type="text" name="sewage-last-emptied"/>Year</p>
+			<p class="bold">12.8 If the property is served by a sewage treatment plant, when was the treatment plant last serviced?</p>
+			<p><input class="small limit-party1" type="text" name="sewage-last-serviced"/>Year</p>
+			<p class="bold">12.9 When was the system installed?</p>
+			<p><input class="small limit-party1" type="text" name="sewage-system-installed"/>Year</p>
+			<p>Note: Some systems installed after 1 January 1991 require Building Regulations approval, environmental permits or registration. Further information about permits and registration can be found at: www.environment-agency.gov.uk.</p>
+		</div>
+		<div class="form-row">
+			<p class="bold">12.10 Is any part of the septic tank, sewage treatment plant(including any soakaway or outfall) or cesspool, or the access to it, outside the boundary of the property? If Yes, please supply a plan showing the location of the system and how access is obtained.</p>
+			<div class="radio add-attachment">Yes - Enclosed<input class="limit-party1" type="radio" name="sewage-outside-boundary" value="enclosed"/></div>
+			<div class="radio">Yes - To Follow<input class="limit-party1" type="radio" name="sewage-outside-boundary" value="to-follow"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="sewage-outside-boundary" value="no"/></div>
+		</div>
+		
+		<h3 class="section-header">13 Connection to utilities and services</h3>
+		<p>Please mark the Yes or No boxes to show which of the following utilities and services are connected to the property and give details of any providers.</p>
+		
+		<div class="form-row">
+		
+			<div class="col-2-block">
+				<h3 class="section-header">Mains electricity</h3>
+				<div class="col-body">
+					<div class="radio">Yes<input class="limit-party1" type="radio" name="electricity-connected" value="yes"/></div>
+					<div class="radio">No<input class="limit-party1" type="radio" name="electricity-connected" value="no"/></div>
+					<p><span class="label">Provider&apos;s name</span><input class="limit-party1" type="text" name="electricity-provider"/></p>
+					<p><span class="label">Location of meter</span><input class="limit-party1" type="text" name="electricity-meter"/></p>
+				</div>
+			</div>
+
+			<div class="col-2-block">
+				<h3 class="section-header">Mains gas</h3>
+				<div class="col-body">
+					<div class="radio">Yes<input class="limit-party1" type="radio" name="gas-connected" value="yes"/></div>
+					<div class="radio">No<input class="limit-party1" type="radio" name="gas-connected" value="no"/></div>
+					<p><span class="label">Provider&apos;s name</span><input class="limit-party1" type="text" name="gas-provider"/></p>
+					<p><span class="label">Location of meter</span><input class="limit-party1" type="text" name="gas-meter"/></p>	
+				</div>
+			</div>
+			
+			<div class="relax"></div>
+			
+			<div class="col-2-block">
+				<h3 class="section-header">Mains water</h3>
+				<div class="col-body">
+					<div class="radio">Yes<input type="radio" name="water-connected" value="yes"/></div>
+					<div class="radio">No<input type="radio" name="water-connected" value="no"/></div>
+					<p><span class="label">Provider&apos;s name</span><input class="limit-party1" type="text" name="water-provider"/></p>
+					<p><span class="label">Location of stopcock</span><input class="limit-party1" type="text" name="stopcock-location"/></p>	
+					<p><span class="label">Location of meter, if any</span><input class="limit-party1" type="text" name="water-meter"/></p>	
+				</div>
+			</div>
+
+			<div class="col-2-block">
+				<h3 class="section-header">Mains sewerage</h3>
+				<div class="col-body">
+					<div class="radio">Yes<input class="limit-party1" type="radio" name="sewerage-connected" value="yes"/></div>
+					<div class="radio">No<input class="limit-party1" type="radio" name="sewerage-connected" value="no"/></div>
+					<p><span class="label">Provider&apos;s name</span><input class="limit-party1" type="text" name="sewerage-provider"/></p>
+				</div>
+			</div>
+			
+			<div class="relax"></div>
+			
+			<div class="col-2-block">
+				<h3 class="section-header">Telephone</h3>
+				<div class="col-body">
+					<div class="radio">Yes<input class="limit-party1" type="radio" name="telephone-connected" value="yes"/></div>
+					<div class="radio">No<input class="limit-party1" type="radio" name="telephone-connected" value="no"/></div>
+					<p><span class="label">Provider&apos;s name</span><input class="limit-party1" type="text" name="telephone-provider"/></p>
+				</div>
+			</div>
+
+			<div class="col-2-block">
+				<h3 class="section-header">Cable</h3>
+				<div class="col-body">
+					<div class="radio">Yes<input class="limit-party1" type="radio" name="cable-connected" value="yes"/></div>
+					<div class="radio">No<input class="limit-party1" type="radio" name="cable-connected" value="no"/></div>
+					<p><span class="label">Provider&apos;s name</span><input class="limit-party1" type="text" name="cable-provider"/></p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="line"></div>
+		
+		<h3 class="section-header">14 Transaction information</h3>
+		
+		<div class="form-row">
+			<p class="bold">14.1 Is this sale dependent on the seller completing the purchase of another property on the same day?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="sale-dependent" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="sale-dependent" value="no"/></div>		
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">14.2 Does the seller have any special requirements about a moving date? If Yes, please give details:</p>
+			<div class="radio textarea">Yes<input class="limit-party1" type="radio" name="moving-date-requirements" value="yes"/></div>
+			<div class="radio textarea">No<input class="limit-party1" type="radio" name="moving-date-requirements" value="no"/></div>
+			<textarea class="full-width limit-party1" name="moving-date-requirements-details"></textarea>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">14.3 Does the sale price exceed the amount necessary to repay all mortgages and charges secured on the property?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="price-exceed-mortgage" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="price-exceed-mortgage" value="no"/></div>		
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">14.4 Will the seller ensure that:</p>
+			<p>(a) all rubbish is removed from the property (including from the loft, garden, outbuildings, garages and sheds) and that the property will be left in a clean and tidy condition?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="seller-clean-property" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="seller-clean-property" value="no"/></div>
+			<p>(b) if light fittings are removed, the fittings will be replaced with ceiling rose, flex, bulb holder and bulb?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="light-fittings-replaced" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="light-fittings-replaced" value="no"/></div>
+			<p>(c) reasonable care will be taken when removing any other fittings or contents?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="fittings-removed-care" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="fittings-removed-care" value="no"/></div>
+			<p>(d) keys to all windows and doors and details of alarm codes will be left at the property or with the estate agent?</p>
+			<div class="radio">Yes<input class="limit-party1" type="radio" name="keys-codes-left" value="yes"/></div>
+			<div class="radio">No<input class="limit-party1" type="radio" name="keys-codes-left" value="no"/></div>
+		</div>
+
+		<div class="line"></div>
+		
+		<div class="signature-block">
+			<span>Each party to electronically sign here</span>
+		</div>		
+	                
+        <div class="relax"></div>
+    </form>
+</div>
+</body>

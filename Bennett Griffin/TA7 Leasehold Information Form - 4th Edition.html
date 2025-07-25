@@ -1,0 +1,1022 @@
+<body>
+<style type="text/css">
+.sign-html-form{
+	max-width:850px;
+	margin:auto;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-size:15px;
+	padding:10px;
+	box-sizing:border-box;
+}
+.sign-html-form form h1, .sign-html-form form h2{
+	color:#000;
+	clear:left;
+	display:block;
+	float:left;
+	width:100%;
+	margin:10px 0 15px;
+}
+.sign-html-form h3, .sign-html-form h4{
+	color:#000;
+	clear:both;
+	float:left;
+	margin:6px 0;
+}
+.sign-html-form h3.section-header{
+	width: 100%;
+	box-sizing:border-box;
+	margin-top:25px;
+}
+
+.sign-html-form li{
+	line-height:20px;
+	margin:5px 0;
+}
+
+.sign-html-form form label{
+	font-weight:bold;
+	float:left;
+	line-height:32px;
+	min-width:80px;
+}
+.sign-html-form form input, .sign-html-form form textarea, .sign-html-form form select{
+	float:left;
+	padding:0 10px;
+	border:1px solid #000;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+	font-size:13px;
+	width:500px;
+	height:25px;
+	line-height:25px;
+	margin-right:10px;
+	max-width:100%;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+.sign-html-form form input.small, .sign-html-form form textarea.small, .sign-html-form form select.small{
+	width:150px;
+}
+.sign-html-form form textarea{
+	min-height:50px;
+}
+.sign-html-form form textarea.full-width{
+	width:100%;
+}
+.sign-html-form form input:focus, .sign-html-form form textarea:focus, .sign-html-form form select:focus{
+	box-shadow: 0 0 5px #2BBBE7;
+    border: 1px solid #2BBBE7;
+}
+.sign-html-form form input.spaced, .sign-html-form form textarea.spaced, .sign-html-form form select.spaced{
+	margin:0 10px;
+}
+
+.sign-html-form form input[type='radio'],
+.sign-html-form form input[type='checkbox']{
+	width:auto;
+	float:none;
+	height:auto;
+}
+
+.sign-html-form form textarea{
+	resize:none;
+	overflow:auto;
+}
+
+.sign-html-form form div.form-row{
+	float:left;
+	clear:left;
+	margin:5px 0;
+	width:100%;
+}
+.sign-html-form form div.form-row p{
+	float:left;
+	width:100%;
+	text-align:left;
+}
+
+.sign-html-form form .bold{
+	font-weight:bold;
+}
+.sign-html-form form .full-width{
+	width:100%;
+}
+
+.sign-html-form form p{
+	float:left;
+	clear:left;
+	margin:8px 0;
+	text-align:left;
+}
+
+.sign-html-form form p span{
+	float:left;
+}
+.sign-html-form span.label{
+	float:left;
+	width:150px;
+	line-height:25px;
+	font-size:13px;
+	font-weight:bold;
+	margin-right:5px;
+}
+
+.sign-html-form form ul{
+	float: left;
+	clear: left;
+	margin: 0;
+	padding-left: 0px;
+	list-style: none;
+}
+
+.sign-html-form .radio{
+	float:left;
+	width:155px;
+	text-align:left;
+	background:#EEEEEE;
+	line-height:25px;
+	font-size:12px;
+	padding:5px;
+}
+.sign-html-form .radio.textarea{
+	line-height:50px;
+}
+.sign-html-form .radio input{
+	margin:2px 5px;
+}
+.sign-html-form form div.signature-tag{
+	float:left;
+	border-radius:4px;
+	padding:11px 22px;
+	margin-right:10px;
+	background:#FFC74D;
+}
+.sign-html-form form .signature-row span{
+	line-height:45px;
+}
+	
+.sign-html-form form .signature-row input{
+	margin:8px 0;
+}
+.sign-html-form form .signature{
+	min-width:200px;
+	float:left;
+}
+.sign-html-form .relax{
+	clear:both;
+}
+.sign-html-form .gap20{
+	clear:both;
+	height:20px;
+}
+
+.sign-html-form a.find-address{
+	background: #0159A3;
+	color: #FFF;
+	padding: 5px 8px;
+	margin: 0 7px;
+	line-height: 24px;
+	border-radius:4px;
+	cursor:pointer;
+	white-space:nowrap;
+	font-size:12px;
+}
+
+.grey-bg{
+	background:#FCFCFC;
+	float:left;
+	padding:2px 5px;
+	border:1px solid #000;
+}
+
+div.signature-block{
+	float:left;
+}
+
+div.textbox-row{
+	float:left;
+	margin:5px 0;
+	clear:left;
+}
+div.textbox-row span{
+	float:left;
+	margin-right:10px;
+}
+div.contact-details textarea{
+	width:330px;
+}
+.bold{
+	font-weight:bold;
+}
+div.input-border{
+	border: 1px solid;
+	float: right;
+	width:350px;
+	background:#EEE;
+}
+div.input-border input[type='text']{
+	margin:5px;
+}
+.sign-html-form div.details-block input.filled,
+.sign-html-form div.input-border input.filled{
+	background:#FFF;
+}
+div.input-border .input-year{
+	line-height:33px;
+	float:left;
+	width:165px;
+	font-size:13px;
+}
+div.input-border .input-year input[type='text']{
+	width:100px;
+}
+.sign-html-form form div.form-row p.question{
+	width:calc(100% - 375px);
+	margin-top:0;
+}
+
+.details-block{
+	background:#eee;
+	border:1px solid #000;
+	float:left;
+	padding:10px;
+	margin-bottom:10px;
+}
+.tooltip:not(a)::after{
+	margin: 0px 0px 0px 15px;
+}
+
+/*removestart*/
+/*CSS Adjustments for Mobile*/
+@media (max-width: 800px) {
+	.sign-html-form{
+		font-size:13px;
+		box-sizing:border-box;
+	}
+	.sign-html-form div.radio{
+		font-size:12px;
+	}
+	.sign-html-form span.label{
+		width:100%;
+	}
+	.details-block{
+		width:100%;
+		box-sizing:border-box;
+	}
+	.sign-html-form form input, .sign-html-form form textarea, .sign-html-form form select{
+		width:100%;
+	}
+	.sign-html-form form div.form-row p.question{
+		width:100%;
+	}
+	div.input-border{
+		float:left;
+		width:100%;
+		box-sizing:border-box;
+	}
+}
+/*removeend*/
+</style>
+<div class="sign-html-form">
+    <form>
+	
+		<h1>Leasehold Information Form (4th edition) (2024) </h1>
+		
+		<p class="bold">Address of the property</p>
+		<div class="details-block">
+			<div class="form-row">			
+				<span class="label">Address line 1</span><input type="text" class="required limit-party1" name="address-line-1"/>
+			</div>			
+			<div class="form-row">			
+				<span class="label">Address line 2</span><input type="text" class="required limit-party1" name="address-line-2"/>
+			</div>
+			<div class="form-row">			
+				<span class="label">Address line 3</span><input class="limit-party1" type="text" name="address-line-3"/>
+			</div>
+			<div class="form-row">			
+				<span class="label">Town/City</span><input type="text" class="required limit-party1" name="address-town"/>
+			</div>
+			<div class="form-row">			
+				<span class="label">Postcode</span><input type="text" class="required limit-party1" name="address-postcode"/>
+			</div>						
+		</div>
+		
+		<h3>Full names of the seller(s)</h3>
+		<p class="bold">Please supply full names of the seller(s) of the property.</p>
+		
+		<p>Individual seller(s) complete (a). If the seller is a company, complete (b)</p>
+		
+		<div class="gap20"></div>
+		
+		<p>(a) Name of seller(s) if individual(s)</p>
+		
+		<div class="details-block">
+			<p class="bold grey-bg">1</p>
+			<div class="form-row">
+				<span class="label">First name</span><input class="limit-party1" type="text" name="seller-1-fname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Middle name(s)</span><input class="limit-party1" type="text" name="seller-1-mname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Last name</span><input class="limit-party1" type="text" name="seller-1-lname"/>
+			</div>
+		</div>
+		
+		<div class="details-block">
+			<p class="bold grey-bg">2</p>
+			<div class="form-row">
+				<span class="label">First name</span><input class="limit-party1" type="text" name="seller-2-fname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Middle name(s)</span><input class="limit-party1" type="text" name="seller-2-mname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Last name</span><input class="limit-party1" type="text" name="seller-2-lname"/>
+			</div>
+		</div>
+
+		<div class="details-block">
+			<p class="bold grey-bg">3</p>
+			<div class="form-row">
+				<span class="label">First name</span><input class="limit-party1" type="text" name="seller-3-fname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Middle name(s)</span><input class="limit-party1" type="text" name="seller-3-mname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Last name</span><input class="limit-party1" type="text" name="seller-3-lname"/>
+			</div>
+		</div>
+
+		<div class="details-block">
+			<p class="bold grey-bg">4</p>
+			<div class="form-row">
+				<span class="label">First name</span><input class="limit-party1" type="text" name="seller-4-fname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Middle name(s)</span><input class="limit-party1" type="text" name="seller-4-mname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Last name</span><input class="limit-party1" type="text" name="seller-4-lname"/>
+			</div>		
+		</div>
+		
+		<div class="gap20"></div>		
+		<p>(b) Name of seller if a company</p>
+		
+		<div class="details-block">		
+			<div class="form-row">
+				<span class="label">Company name</span><input class="limit-party1" type="text" name="seller-cname"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Company number</span><input class="limit-party1" type="text" name="seller-cno"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Director/authorised person</span><input class="limit-party1" type="text" name="seller-dir"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Country of incorporation</span><input class="limit-party1" type="text" name="seller-country"/>
+			</div>		
+		</div>
+				
+		<h3 class="section-header">Seller&apos;s solicitor</h3>
+		
+		<div class="details-block">		
+			<div class="form-row">
+				<span class="label">Name of solicitor&apos;s firm</span><input class="limit-party1" type="text" name="solicitor-name"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Address line 1</span><input class="limit-party1" type="text" name="solicitor-address-line-1"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Address line 2</span><input class="limit-party1" type="text" name="solicitor-address-line-2"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Address line 3</span><input class="limit-party1" type="text" name="solicitor-address-line-3"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Town/City</span><input class="limit-party1" type="text" name="solicitor-address-town"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Postcode</span><input class="limit-party1" type="text" name="solicitor-address-postcode"/>
+			</div>		
+			<div class="form-row">
+				<span class="label">Contact name</span><input class="limit-party1" type="text" name="solicitor-contact"/>
+			</div>		
+			<div class="form-row">
+				<span class="label">Email</span><input class="limit-party1" type="text" name="solicitor-email"/>
+			</div>
+			<div class="form-row">
+				<span class="label">Reference Number</span><input class="limit-party1" type="text" name="solicitor-reference"/>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">Definitions</p>
+			<ul>
+				<li><span class="bold">&apos;building&apos;</span> means the building containing the property.</li>
+				<li><span class="bold">&apos;buyer&apos;</span> means all buyers together where the property is being bought by more than one person.</li>
+				<li><span class="bold">&apos;headlease&apos;</span> means any lease of the Building held by the landlord (including a superior landlord).</li>
+				<li><span class="bold">&apos;landlord&apos;</span> includes any person who has a right under the lease to enforce payment of a service charge.</li>
+				<li><span class="bold">&apos;landlord&apos;s certificate&apos;</span> is the certificate set out in Schedule 1 of The Building Safety (Leaseholder Protections) (England) Regulations 2022.</li>
+				<li><span class="bold">&apos;leaseholder&apos;</span> means a tenant under a lease of a dwelling in a building.</li>
+				<li><span class="bold">&apos;leaseholder deed of certificate&apos;</span> means the certificate set out in the Schedule to The Building Safety (Leaseholder Protections) (Information etc.) (England) Regulations 2022.</li>
+				<li><span class="bold">&apos;neighbour&apos;</span> means those occupying flats in the building.</li>
+				<li><span class="bold">&apos;property&apos;</span> means the leasehold property being sold.</li>
+				<li><span class="bold">&apos;qualifying lease&apos;</span> has the meaning given in <span class="bold">section 119 of the Building Safety Act 2022.</span></li>
+				<li><span class="bold">&apos;remediation&apos;</span> means remediation of certain defects in buildings as provided for under sections 116 to 125 of, and Schedule 8 to, the Building Safety Act 2022. In particular, those provisions include protections from liability for leaseholders in specific circumstances.</li>
+				<li><span class="bold">&apos;right to manage&apos;</span> means a collective right, given by the Commonhold and Leasehold Reform Act 2002, which leaseholders in a building containing flats have the right to exercise, allowing them to take over management of their building.</li>
+				<li><span class="bold">&apos;seller&apos;</span> means all sellers together where the property is owned by more than one person.</li>
+				
+			</ul>
+		</div>
+		<div class="form-row">
+			<p class="bold">Instructions to the seller</p>
+			<p>The seller should provide all relevant documentation relating to the lease when they return this completed form to their solicitor. This may include documents given to the seller when they purchased the property, or documents subsequently given to the seller by those managing the property.</p>
+			<p>The TA6 Property Information Form should be completed with the TA7 Leasehold Information Form.</p>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold">Instructions to the seller and buyer</p>
+			<p>Please read the notes on the TA6 Property Information Form</p>
+		</div>		
+								
+		<h3 class="section-header">1 Ownership and management</h3>		
+		
+		<p class="bold">1.1 Who owns the freehold?</p>
+		<div class="form-row">
+			<p class="question">(a) A person or company that is not controlled by the tenants</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="freehold-not-tenants" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="freehold-not-tenants" value="no"/>No</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<p class="question">(b) A person or company that the tenants control</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="freehold-tenants" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="freehold-tenants" value="no"/>No</div>
+			</div>
+		</div>		
+		
+		<div class="form-row">
+			<p class="bold question">1.2 Is there a headlease?</p>		
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="headlease" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="headlease" value="no"/>No</div>
+			</div>
+		</div>		
+		<div class="form-row">
+			<p class="question">If Yes, is the head leaseholder a person or company that is controlled by the tenants?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="headlease-tenants" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="headlease-tenants" value="no"/>No</div>
+			</div>
+		</div>
+
+		<p class="bold">1.3 Who is responsible for managing the building?</p>
+		<div class="form-row">
+			<p class="question">(a) The freeholder</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="freeholder-manage" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="freeholder-manage" value="no"/>No</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<p class="question">(b) The head leaseholder</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="leaseholder-manage" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="leaseholder-manage" value="no"/>No</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<p class="question">(c) A management company named in the lease of the property</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="company-manage" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="company-manage" value="no"/>No</div>
+			</div>
+		</div>		
+		<div class="form-row">
+			<p class="question">(d) A Right to Manage company set up by the tenants under statutory rights</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="rtm-manage" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="rtm-manage" value="no"/>No</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<p>(e) Other (please specify)</p>
+			<textarea class="full-width limit-party1" name="manage-other"></textarea>
+		</div>		
+		
+		<div class="form-row">
+			<p class="question bold">1.4 Has any tenants&apos; management company been dissolved or struck off the register at Companies House?</p>		
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="dissolve-management-company" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="dissolve-management-company" value="no"/>No</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="question bold">1.5 Does the landlord, tenants&apos; management company or Right to Manage company employ a managing agent to collect rent or manage the building?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="agent-management-company" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="agent-management-company" value="no"/>No</div>
+			</div>
+		</div>
+		
+		<h3 class="section-header">2 Relevant Documents</h3>
+
+		<p class="bold">2.1 Please supply a copy of:</p>		
+		<div class="form-row">
+			<p class="question">(a) the lease and any supplemental deeds</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="lease-copy" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="lease-copy" value="to-follow"/>To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="lease-copy" value="already-supplied"/>Already Supplied</div>
+			</div>			
+		</div>		
+		
+		<div class="form-row">
+			<p class="question">(b) any regulations made by the landlord or by the tenants&apos; management company additional to those in the lease</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="additional-regulations" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="additional-regulations" value="to-follow"/>To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="additional-regulations" value="not-applicable"/>Not Applicable</div>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold question">2.2 Please supply a copy of any correspondence from the landlord, the management company and the managing agent.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="correspondence" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="correspondence" value="to-follow"/>To Follow</div>			
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold">2.3 Please supply a copy of any invoices or demands and any statements and receipts for the payment of:</p>
+			<p class="question">(a) maintenance or service charges for the last three years</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="maintenance-copy" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="maintenance-copy" value="to-follow"/>To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="maintenance-copy" value="not-applicable"/>Not Applicable</div>
+			</div>			
+		</div>
+		
+		<div class="form-row">
+			<p class="question">(b) ground rent for the last three years</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="ground-rent-copy" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="ground-rent-copy" value="to-follow"/>To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="ground-rent-copy" value="not-applicable"/>Not Applicable</div>
+			</div>		
+		</div>
+
+		<div class="form-row">
+			<p class="bold">2.4 Please supply a copy of the buildings insurance policy:</p>
+			<p class="question">(a) arranged by the seller and a receipt for payment of the last premium, or</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="copy-seller-buildings-insurance" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="copy-seller-buildings-insurance" value="to-follow"/>To Follow</div>			
+			</div>			
+		</div>
+		
+		<div class="form-row">
+			<p class="question">(b) arranged by the landlord or management company and the schedule for the current year</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="copy-landlord-buildings-insurance" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="copy-landlord-buildings-insurance" value="to-follow"/>To Follow</div>
+			</div>		
+		</div>
+
+		<div class="form-row">
+			<p class="bold">2.5 If a landlord is a company controlled by the tenants and/or if a tenants&apos; management company or Right to Manage company is managing the building, please supply a copy of:</p>
+		</div>
+		
+		<div class="form-row">
+			<p class="question">(a) the Memorandum and Articles of Association</p>
+			<div class="input-border">			
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="tenants-management-memorandum" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="tenants-management-memorandum" value="to-follow"/>To Follow</div>			
+			</div>		
+		</div>
+		
+		<div class="form-row">
+			<p class="question">(b) the share or membership certificate</p>
+			<div class="input-border">			
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="tenants-management-certificate" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="tenants-management-certificate" value="to-follow"/>To Follow</div>			
+			</div>		
+		</div>
+
+		<div class="form-row">
+			<p class="question">(c) the company accounts for the past three years</p>
+			<div class="input-border">			
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="tenants-management-accounts" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="tenants-management-accounts" value="to-follow"/>To Follow</div>
+			</div>		
+		</div>
+		
+		<h3 class="section-header">3 Contact Details</h3>
+		<p>3.1 Please supply contact details for the following, where appropriate. (The landlord may be, for example, a private individual, a housing association, or a management company owned by the residents. A managing agent may be employed by the landlord or by the tenants' management company to collect the rent and/or manage the building.)</p>		
+		
+		<div class="form-row">
+			<span class="bold">Landlord:</span>
+		</div>
+		
+		<div class="details-block">
+			<div class="form-row contact-details">
+				<span class="label">Name</span><input class="limit-party1" type="text" name="landlord-name"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 1</span><input class="limit-party1" type="text" name="landlord-address-line-1"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 2</span><input class="limit-party1" type="text" name="landlord-address-line-2"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 3</span><input class="limit-party1" type="text" name="landlord-address-line-3"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Town/City</span><input class="limit-party1" type="text" name="landlord-address-town"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Postcode</span><input class="limit-party1" type="text" name="landlord-address-postcode"/>
+			</div>		
+			<div class="form-row contact-details">
+				<span class="label">Telephone</span><input class="limit-party1" type="text" name="landlord-tel"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Email</span><input class="limit-party1" type="text" name="landlord-email"/>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<span class="bold">Management or Right to Manage Company:</span>
+		</div>
+		
+		<div class="details-block">
+			<div class="form-row contact-details">
+				<span class="label">Name</span><input class="limit-party1" type="text" name="landlord-agent-name"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 1</span><input class="limit-party1" type="text" name="landlord-agent-address-line-1"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 2</span><input class="limit-party1" type="text" name="landlord-agent-address-line-2"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 3</span><input class="limit-party1" type="text" name="landlord-agent-address-line-3"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Town/City</span><input class="limit-party1" type="text" name="landlord-agent-address-town"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Postcode</span><input class="limit-party1" type="text" name="landlord-agent-address-postcode"/>
+			</div>		
+			<div class="form-row contact-details">
+				<span class="label">Telephone</span><input class="limit-party1" type="text" name="landlord-agent-tel"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Email</span><input class="limit-party1" type="text" name="landlord-agent-email"/>
+			</div>		
+		</div>
+		
+		<div class="form-row">
+			<span class="bold">Managing agent:</span>
+		</div>
+		
+		<div class="details-block">
+			<div class="form-row contact-details">
+				<span class="label">Name</span><input class="limit-party1" type="text" name="tenants-agent-name"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 1</span><input class="limit-party1" type="text" name="tenants-agent-address-line-1"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 2</span><input class="limit-party1" type="text" name="tenants-agent-address-line-2"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Address line 3</span><input class="limit-party1" type="text" name="tenants-agent-address-line-3"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Town/City</span><input class="limit-party1" type="text" name="tenants-agent-address-town"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Postcode</span><input class="limit-party1" type="text" name="tenants-agent-address-postcode"/>
+			</div>		
+			<div class="form-row contact-details">
+				<span class="label">Telephone</span><input class="limit-party1" type="text" name="tenants-agent-tel"/>
+			</div>
+			<div class="form-row contact-details">
+				<span class="label">Email</span><input class="limit-party1" type="text" name="tenants-agent-email"/>
+			</div>
+		</div>
+		<h3 class="section-header">4 Maintenance and service charges</h3>
+		
+		<div class="form-row">
+			<p class="question">4.1 Who is responsible for arranging the buildings insurance on the property?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="arranging-buildings-insurance" value="seller"/>Seller</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="arranging-buildings-insurance" value="management-company"/>Management Company</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="arranging-buildings-insurance" value="landlord"/>Landlord</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="question">4.2 In what year was the outside of the building last decorated?</p>
+			<div class="input-border">
+				<div class="input-year"><input class="limit-party1" type="text" name="outside-last-decorated"/>Year</div>
+				<div class="radio"><input class="limit-party1" type="checkbox" name="outside-last-decorated-nk"/>Not Known</div>			
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="question">4.3 In what year were any internal communal parts last decorated?</p>
+			<div class="input-border">
+				<div class="input-year"><input class="limit-party1" type="text" name="communal-last-decorated"/>Year</div>
+				<div class="radio"><input class="limit-party1" type="checkbox" name="communal-last-decorated-nk"/>Not Known</div>			
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="question">4.4 Does the seller contribute to the cost of maintaining the building?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-contribute-maintenance" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-contribute-maintenance" value="no"/>No</div>		
+			</div>
+		</div>
+
+		<div class="gap20"></div>
+		<p class="bold">If No to question 4.4, please continue to section 5 &apos;Notices&apos; and do not answer questions 4.5 &#8211; 4.10 below.</p>
+		
+		<div class="form-row">
+			<p class="question">4.5 Does the seller know of any expense (e.g. the cost of redecoration of outside or communal areas not usually incurred annually) likely to be shown in the service charge accounts within the next three years? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="expenses-3-years" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="expenses-3-years" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="expenses-3-years-details"></textarea>			
+		</div>
+		
+		<div class="form-row">
+			<p class="question">4.6 Does the seller know of any problems in the last three years regarding the level of service charges or with the management? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="service-charge-problems" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="service-charge-problems" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="service-charge-problems-details"></textarea>			
+		</div>
+
+		<div class="form-row">
+			<p class="question">4.7 Has the seller challenged the service charge or any expense in the last three years? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="service-charge-challenge" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="service-charge-challenge" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="service-charge-challenge-details"></textarea>			
+		</div>
+		
+		<div class="form-row">
+			<p class="question">4.8 Does the seller know of the existence or suspected existence in the building of cladding or any defects that may create a building safety risk? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="building-cladding" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="building-cladding" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="building-cladding-details"></textarea>			
+		</div>		
+		
+		<div class="form-row">
+			<p class="question">4.9 Is the seller aware of any difficulties encountered in collecting the service charges from other flat owners? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="service-charge-collection-difficulties" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="service-charge-collection-difficulties" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="service-charge-collection-difficulties-details"></textarea>			
+		</div>
+		
+		<div class="form-row">
+			<p class="question">4.10 Does the seller owe any service charges, rent, insurance premium or other financial contribution? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-owe-contributions" value="yes"/>Yes</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-owe-contributions" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="seller-owe-contributions-details"></textarea>			
+		</div>		
+				
+		<h3 class="section-header">5 Notices</h3>
+		<p><span class="bold">Note:</span>&#160;A notice may be in a printed form or in the form of a letter.</p>
+		<div class="form-row">
+			<p class="bold question">5.1 Has the seller received a notice that the landlord wants to sell the building? If Yes, please supply a copy.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="landlord-sell-notice" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="landlord-sell-notice" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="landlord-sell-notice" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="landlord-sell-notice" value="lost"/>Lost</div>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold question">5.2 Has the seller received any other notice about the building, its use, its condition or its repair and maintenance? If Yes, please supply a copy.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="building-notice" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="building-notice" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="building-notice" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="building-notice" value="lost"/>Lost</div>
+			</div>
+		</div>		
+				
+		<h3 class="section-header">6 Consents</h3>
+		<p><span class="bold">Note:</span>&#160;A consent may be given in a formal document, a letter or orally.</p>
+		<div class="form-row">
+			<p class="bold question">6.1 Is the seller aware of any changes in the terms of the lease or of the landlord giving any consents under the lease?</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="lease-changes" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="lease-changes" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="lease-changes" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="lease-changes" value="lost"/>Lost</div>
+			</div>			
+			<div class="relax"></div>
+			<p class="bold question">If Yes, please supply a copy or, if not in writing, please give details:</p>
+			<textarea class="full-width limit-party1" name="lease-changes-details"></textarea>
+		</div>		
+		
+		<h3 class="section-header">7 Complaints</h3>
+		<div class="form-row">
+			<p class="bold question">7.1 Has the seller received any complaint from the landlord, the management company or any neighbour about anything the seller has or has not done? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-received-complaints" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-received-complaints" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="seller-received-complaints-details"></textarea>
+		</div>
+		<div class="form-row">
+			<p class="bold question">7.2 Has the seller complained or had cause to complain to or about the landlord, the management company, or any neighbour? If Yes, please give details:</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-made-complaints" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-made-complaints" value="no"/>No</div>
+			</div>
+			<textarea class="full-width limit-party1" name="seller-made-complaints-details"></textarea>
+		</div>
+				
+		<h3 class="section-header">8 Alterations</h3>
+		<div class="form-row">
+			<p class="bold question">8.1 Is the seller aware of any alterations having been made to the property since the lease was originally granted?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="alterations" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="alterations" value="no"/>No</div>
+			</div>
+		</div>
+
+		<p>If No, please go to section 9 &apos;Enfranchisement&apos; and do not answer 8.2 and 8.3 below.</p>
+		
+		<div class="form-row">
+			<p class="bold">8.2 Please give details of these alterations:</p>
+			<textarea class="full-width limit-party1" name="alterations-details"></textarea>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold question">8.3 Was the landlord&apos;s consent for the alterations obtained? If Yes, please supply a copy.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="alterations-consent" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="alterations-consent" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="alterations-consent" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="alterations-consent" value="not-known"/>Not Known</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="alterations-consent" value="not-required"/>Not Required</div>
+			</div>
+		</div>			
+				
+		<h3 class="section-header">9 Enfranchisement</h3>
+		<p><span class="bold">Note:</span>&#160;&apos;enfranchisement&apos; is the right of a tenant to purchase the freehold from their landlord and the right of the tenant to extend the term of the lease.</p>
+		
+		<div class="form-row">
+			<p class="bold question">9.1 Has the seller owned the property for at least two years?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-owned-2-years" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-owned-2-years" value="no"/>No</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold question">9.2 Has the seller served on the landlord a formal notice stating the seller's wish to buy the freehold or be granted an extended lease? If Yes, please supply a copy.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="seller-formal-notice" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-formal-notice" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-formal-notice" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-formal-notice" value="not-known"/>Not Known</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-formal-notice" value="not-required"/>Not Required</div>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="bold question">9.3 Is the seller aware of the service of any notice relating to the possible collective purchase of the freehold of the building or part of it by a group of tenants? If Yes, please supply a copy.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="collective-purchase-notice" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="collective-purchase-notice" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="collective-purchase-notice" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="collective-purchase-notice" value="not-known"/>Not Known</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="collective-purchase-notice" value="not-required"/>Not Required</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold question">9.4 Is the seller aware of any response to a notice disclosed in replies to 9.2 and 9.3 above? If Yes, please supply a copy.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="notice-response" value="attached"/>Yes - Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="notice-response" value="to-follow"/>Yes - To Follow</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="notice-response" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="notice-response" value="not-known"/>Not Known</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="notice-response" value="not-required"/>Not Required</div>
+			</div>
+		</div>
+		
+		<h3 class="section-header">10. Building safety, cladding and the leaseholder deed of certificate</h3>
+		<p><span class="bold">Note:</span>&#160;The Building Safety Act 2022 introduced leaseholder protections for qualifying leaseholders. Guidance about the protections for leaseholders is available at: <a href="https://www.gov.uk/guidance/building-safety-leaseholder-protections-guidance-for-leaseholders">https://www.gov.uk/guidance/building-safety-leaseholder-protections-guidance-for-leaseholders</a></p>
+		<p><span class="bold">Note:</span>&#160;A deed of certificate confirms whether the leaseholder is eligible for the leaseholder protections. Guidance about the leaseholder deed of certificate is available at: <a href="https://www.gov.uk/guidance/mandatory-information-required-from-leaseholders-and-building-owners">https://www.gov.uk/guidance/mandatory-information-required-from-leaseholders-and-building-owners</a> and frequently asked questions about the leaseholder deed of certificate is available at: <a href="https://www.gov.uk/guidance/leaseholder-protections-deed-of-certificate-frequently-asked-questions">https://www.gov.uk/guidance/leaseholder-protections-deed-of-certificate-frequently-asked-questions</a></p>
+		
+		<div class="form-row">
+			<p class="bold question">10.1 Have any remediation works on the building been proposed or carried out?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="remediation-works" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="remediation-works" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="remediation-works" value="na"/>Not Applicable</div>										
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="question">If Yes, please provide details of the remediation works proposed and evidence of any carried out.</p>		
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="remediation-detail" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="remediation-detail" value="to-follow"/>To Follow</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold question">10.2 Is the lease of the property a qualifying lease?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="qualifying-lease" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="qualifying-lease" value="no"/>No</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold question">10.3 Is there a Leaseholder Deed of Certificate for the property?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="leaseholder-dos" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="leaseholder-dos" value="no"/>No</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="leaseholder-dos" value="na"/>Not Applicable</div>						
+			</div>
+		</div>
+		
+		<p>If Yes:</p>
+		
+		<div class="form-row">
+			<p class="question">(a) Did the seller (the current leaseholder) complete the deed of certificate or was it completed by a previous leaseholder?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-dos" value="yes"/>Current leaseholder</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="seller-dos" value="no"/>Previous leaseholder</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="question">(b) Please supply a copy of the leaseholder deed of certificate and the accompanying evidence.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="lease-dos-copy" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="lease-dos-copy" value="to-follow"/>To Follow</div>					
+			</div>
+		</div>		
+		
+		<div class="form-row">
+			<p class="bold question">10.4 Has the freeholder / landlord been notified of the intention to sell?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="intent-to-sell" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="intent-to-sell" value="no"/>No</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<p class="bold question">10.5 Has the seller received a Landlord's Certificate and the accompanying evidence?</p>
+			<div class="input-border">
+				<div class="radio"><input class="limit-party1" type="radio" name="landlord-certificate" value="yes"/>Yes</div>			
+				<div class="radio"><input class="limit-party1" type="radio" name="landlord-certificate" value="no"/>No</div>
+			</div>
+		</div>
+		
+		<div class="form-row">
+			<p class="question">If Yes, please supply a copy of the Landlord's Certificate and the accompanying evidence.</p>
+			<div class="input-border">
+				<div class="radio add-attachment"><input class="limit-party1" type="radio" name="landlord-certificate-supply" value="attached"/>Attached</div>
+				<div class="radio"><input class="limit-party1" type="radio" name="landlord-certificate-supply" value="to-follow"/>To Follow</div>					
+			</div>
+		</div>		
+					
+		<div class="signature-block">
+			<span>Each party to electronically sign here</span>
+		</div>		
+	                
+        <div class="relax"></div>
+    </form>
+</div>
+</body>
