@@ -58,9 +58,8 @@
             width: 29%;
         }
         .sign-html-form form .sig-block{
-            width: 40%;
-            display: inline-block;
-            margin: 15px;
+            width: 60%;
+            margin: auto;
             padding: 10px;
         }
         .sign-html-form form footer{
@@ -72,6 +71,11 @@
         }
         .sign-html-form form .table .small-only{
             display: none;
+        }
+        .sign-html-form form .button-holder{
+            width: fit-content;
+            margin: auto;
+            padding: 15px;
         }
         /*removestart*/
         @media (max-width:600px) {
@@ -159,6 +163,9 @@
                 + Loan agreements | If applicable <br>
                 + Other source | If applicable <br>
             </p>
+            <div class="button-holder">
+                <button class="add-attachment">Upload Evidence</button>
+            </div>
             <div class="table">
                 <div class="th small-only">
                     <div class="tc">
@@ -418,13 +425,13 @@
            </div>
            <div class="sig-block">
                 <div class="signature-block">Sign Here</div> <br>
-                Print Name: <input type="text" name="nameparty1" id="nameparty1"> <br>
-                Date: <span class="data-entry"><span class="auto-date">Auto Date</span></span>
+                <label>Print Name: </label><input type="text" name="nameparty1" id="nameparty1"> <br>
+                <label for="">Date: </label><span class="data-entry"><span class="auto-date">Auto Date</span></span>
            </div>
            <div class="sig-block">
-                <div class="signature-block">Sign Here</div> <br>
-                Print Name: <input type="text" name="nameparty2" id="nameparty2"> <br>
-                Date: <span class="data-entry"><span class="auto-date">Auto Date</span></span>
+                <div class="signature-block2">Sign Here</div> <br>
+                <label for="">Print Name: </label><input class="limit-party2"="text" name="nameparty2" id="nameparty2"> <br>
+               <label for="">Date: </label> <span class="data-entry"><span class="auto-date">Auto Date</span></span>
            </div>
            <footer>LY/LY/DEV100-1 (6583670)</footer>
         </form>
