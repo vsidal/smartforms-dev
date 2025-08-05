@@ -10,7 +10,7 @@
             font-family: Geneva, Tahoma, sans-serif;
             font-weight: 300;
             font-style: normal;	
-            font-size: 14px;
+            font-size: 13px;
         }
         .sign-html-form form div.signature-tag{
             float:left;
@@ -96,7 +96,23 @@
         }
         @media print{
             .sign-html-form form .page-2{
+                margin-top: 20px;
                 break-inside: avoid;
+            }
+            .sign-html-form form .page-2 *{
+                padding: 5px;
+            }
+            .sign-html-form form .page-2 hr{
+                padding: 0px;
+            }
+            .sign-html-form form .page-2 h2{
+                font-size: 18px;
+            }
+            .sign-html-form form .page-2 h3{
+                font-size: 17px;
+            }
+            .sign-html-form form .page-2 p{
+                font-size: 15px;
             }
             .sign-html-form form .print-only{
                 display: block;
@@ -180,31 +196,31 @@
                 <div class="tr">
                     <div class="tc"><label for="name">Name: </label></div>
                     <div class="tc">
-                        <input type="text" name="name" id="name">
+                        {{name}}
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc"><label for="address1">Address: </label></div>
                     <div class="tc">
-                        <input type="text" name="address1" id="address1">
+                        {{address}}
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc"><label for="clientref">Ref Number: </label></div>
                     <div class="tc">
-                        <input type="text" name="clientref" id="clientref">
+                        {{client_ref}}
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc"><label for="email">Email: </label></div>
                     <div class="tc">
-                        <input type="text" name="email" id="email">
+                        {{email}}
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc"><label for="phone">Direct Line: </label></div>
                     <div class="tc">
-                        <input type="text" name="phone" id="phone">
+                        {{phone}}
                     </div>
                 </div>
             </div>
@@ -381,7 +397,7 @@
                     </li>
                 </ol>
                 <p>This Engagement Letter forms part of the Agreement (together with the LOA and the Privacy Notice), the terms of which are acknowledged and agreed below.</p>
-                <div class="signature-block"><div class="signature-tag"></div></div>
+                <div class="signature-block"></div>
                 <div class="right">
                     <label for="autodate">Date:</label>
                 <span class=data-entry>
@@ -389,8 +405,8 @@
                 </span>
                 </div>
                 <hr style="clear: both;">
-                <label for="name1">Name</label>
-                <input type="name1" name="name1">
+                <label for="name">Name</label>
+                {{name}}
             </div>
             <div class="page-2">
                 <div class="text">
@@ -401,27 +417,27 @@
                 <h2>Letter of Authority to Act</h2>
                  <div class="table table-2">
                     <div class="tr">
-                        <div class="tc"><label for="name2">Name: </label></div>
+                        <div class="tc"><label for="name">Name: </label></div>
                         <div class="tc">
-                            <input type="text" name="name2">
+                            {{name}}
                         </div>
                     </div>
                     <div class="tr">
                         <div class="tc"><label for="address1">Current Address: </label></div>
                         <div class="tc">
-                            <input type="text" name="address1" id="address1">
+                            {{address}}
                         </div>
                     </div>
                     <div class="tr">
                         <div class="tc"><label for="dob">Date of Birth: </label></div>
                         <div class="tc">
-                            <input type="text" name="dob" id="dob">
+                            {{dob}}
                         </div>
                     </div>
                     <div class="tr">
                         <div class="tc"><label for="clientref">Client Reference: </label></div>
                         <div class="tc">
-                            <input type="text" name="clientref" id="clientref">
+                            {{client_ref}}
                         </div>
                     </div>
                     </div>
@@ -446,7 +462,7 @@
                     </ol>
                     <h3>Important Notice</h3>
                     <p>This Letter of Authority forms part of my Agreement with CCL. It is signed electronically and my intention is that has the same effect as if signed with a pen.</p>
-                    <div class="signature-block"><div class="signature-tag"></div></div>
+                    <div class="signature-block"></div>
                     <div class="right">
                         <label for="autodate">Date:</label>
                     <span class=data-entry>
@@ -454,8 +470,8 @@
                     </span>
                     </div>
                     <hr style="clear: both;">
-                    <label for="name3">Name</label>
-                    <input type="text" name="name3">
+                    <label for="name">Name</label>
+                    {{name}}
                 </div>
                 <div class="footer">
                     <p><em>DOC ID - 5116425.10</em></p>
