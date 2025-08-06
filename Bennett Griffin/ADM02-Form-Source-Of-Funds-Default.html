@@ -117,7 +117,6 @@
             <h2>Bank Account Ownership & Source of Funds Validation:</h2>
             <p>As part of our digital verification services and drive to improve efficiency, we would like to contact your bank electronically for bank account information and we would like your permission to do so.</p>
             <h2>Please select an option:</h2>
-            <!-- Ask Matt Kersey's bank validation thing -->
             <label>Yes, I am happy to use the electronic bank verification service </label><input type="radio" name="bankval" id="2"> (If yes, auto request bank account data fields) <br>
             No, I do not wish to use the electronic bank verification service <input type="radio" name="bankval" data-conditional-case="1"> (if no, proceed with manual process)</p>
            <div class="conditional" data-conditional-switch="1"> 
@@ -254,6 +253,11 @@
                             <div class="tc">Your salary / salaries: (per annum)</div>
                             <div class="tc">&pound;<input type="text" class="required" name="salaries" id="salaries"></div>
                         </div>
+                        <div class="tr">
+                            <div class="button-holder">
+                                <button class="add-attachment">Upload Evidence</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tr">
@@ -364,6 +368,9 @@
                             <div class="tc">Solicitors who dealt with the probate:</div>
                             <div class="tc"><input type="text" name="inheritancesolicitor" id="inheritancesolicitor"></div>
                         </div>
+                        <div class="button-holder">
+                                <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr small-only break">
@@ -372,7 +379,11 @@
                 <div class="tr">
                     <div class="tc">Other:</div>
                     <div class="tc">&pound;<input type="text" class="required" name="other" id="other"></div>
-                    <div class="tc">Please provide details: <textarea name="other" id="other"></textarea></div>
+                    <div class="tc">Please provide details: <textarea name="other" id="other"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
+                    </div>
                 </div>
            </div>
            <br>
@@ -387,6 +398,15 @@
                         <div class="tr">
                             <div class="tc">Name and relationship to you e.g. Mother, Edna Harris:</div>
                             <div class="tc"><input type="text" name="thirdpartyname" id="thirdpartyname"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Home Address of Third Party:</div>
+                            <div class="tc">
+                                <textarea></textarea>
+                            </div>
                         </div>
                         <div class="tr small-only break">
                             <div class="tc"></div>
@@ -427,6 +447,11 @@
                                 <input type="radio" name="moneyinterest" id="interestyes"> Yes
                                 <input type="radio" name="moneyinterest" id="interestno"> No
                             </div>
+                        </div>
+                        <div class="tr">
+                            <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                         </div>
                     </div>
                 </div>
