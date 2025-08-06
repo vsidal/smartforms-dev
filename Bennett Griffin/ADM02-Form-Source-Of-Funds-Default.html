@@ -181,10 +181,13 @@
                     <div class="tc col-1">Sale of current home (net of mortgage and other costs of sale - approximately)<br>If we are not acting in relation to your sale or if this has already completed through another firm please provide a letter from that firm confirming completion, financial statement showing the net sale proceeds and your bank statement showing the funds arriving in your account.
                     </div>
                     <div class="tc">
-                        &pound; <input type="text" name="saleofhome" id="saleofhome">
+                        &pound; <input type="text" class="required" name="saleofhome" id="saleofhome">
                     </div>
                     <div class="tc">
                         Additional information: <textarea name="saleofhomeadditional" id="saleofhomeadditional"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr small-only break">
@@ -193,7 +196,7 @@
                 <div class="tr">
                     <div class="tc col-1">Mortgage loan on new property</div>
                     <div class="tc">
-                        &pound;<input type="text" name="mortgageloan">
+                        &pound;<input type="text" class="required" name="mortgageloan">
                     </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
@@ -218,7 +221,7 @@
                 <div class="tr">
                     <div class="tc col-1">Savings from employment <br> Please provide copies of your latest payslip evidencing your salary and a copy of the bank statement showing the funds in your account.
                     </div>
-                    <div class="tc">&pound;<input type="text" name="savingamount" id="savingamount"></div>
+                    <div class="tc">&pound;<input type="text" class="required" name="savingamount" id="savingamount"></div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -249,14 +252,14 @@
                         </div>
                         <div class="tr">
                             <div class="tc">Your salary / salaries: (per annum)</div>
-                            <div class="tc">&pound;<input type="text" name="salaries" id="salaries"></div>
+                            <div class="tc">&pound;<input type="text" class="required" name="salaries" id="salaries"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc">Savings from employment <br> (Cont...)
                     </div>
-                    <div class="tc">&pound;<input type="text" name="savingamount2" id="savingamount2"></div>
+                    <div class="tc">&pound;<input type="text" class="required" name="savingamount2" id="savingamount2"></div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">What is your occupation?</div>
@@ -284,7 +287,7 @@
                         </div>
                         <div class="tr">
                             <div class="tc">Your salary / salaries: (per annum)</div>
-                            <div class="tc">&pound;<input type="text" name="salaries2" id="salaries2"></div>
+                            <div class="tc">&pound;<input type="text" class="required" name="salaries2" id="salaries2"></div>
                         </div>
                     </div>
                 </div>
@@ -293,7 +296,7 @@
            <div class="table">
                 <div class="tr">
                     <div class="tc col-1">Divorce settlement <br>Please provide a copy of the financial order/settlement agreement detailing the funds due to you together with a copy of your bank statement showing these funds arriving in your account.</div>
-                    <div class="tc">&pound;<input type="text" name="divorce" id="divorce"></div>
+                    <div class="tc">&pound;<input type="text" class="required" name="divorce" id="divorce"></div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -319,11 +322,16 @@
                             <div class="tc">Date of divorce:</div>
                             <div class="tc"><input type="text" name="divorcedate" id="divorcedate"></div>
                         </div>
+                        <div class="tr">
+                            <div class="button-holder">
+                                <button class="add-attachment">Upload Evidence</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc">Inheritance<br>Please provide a copy of any correspondence received from the solicitors dealing with the probate confirming your inheritance together with your bank statement showing the funds arriving in your account.  If no solicitors were instructed please provide confirmation direct from the executor together with your bank statement.</div>
-                    <div class="tc">&pound;<input type="text" name="inheritance" id="inheritance"></div>
+                    <div class="tc">&pound;<input type="text" class="required" name="inheritance" id="inheritance"></div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -363,7 +371,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc">Other:</div>
-                    <div class="tc">&pound;<input type="text" name="other" id="other"></div>
+                    <div class="tc">&pound;<input type="text" class="required" name="other" id="other"></div>
                     <div class="tc">Please provide details: <textarea name="other" id="other"></textarea></div>
                 </div>
            </div>
@@ -371,7 +379,7 @@
            <div class="table">
                 <div class="tr">
                     <div class="tc">Third party providing funds</div>
-                    <div class="tc">&pound;<input type="text" name="thirdparty" id="thirdparty"></div>
+                    <div class="tc">&pound;<input type="text" class="required" name="thirdparty" id="thirdparty"></div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
