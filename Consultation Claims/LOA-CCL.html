@@ -3,11 +3,12 @@
 </head>
 <body>
     <style>
+        @import url("https://use.typekit.net/rbz6sgg.css");
         .sign-html-form{
             max-width:850px;
             margin:auto;
             padding:10px;
-            font-family: Geneva, Tahoma, sans-serif;
+            font-family: "avenir-next-lt-pro", sans-serif;
             font-weight: 300;
             font-style: normal;	
             font-size: 13px;
@@ -28,7 +29,7 @@
             float: right;
         }
         .sign-html-form .header img{
-            width: 300px;
+            width: 250px;
             float: right;
         }
         .sign-html-form .relax{
@@ -45,7 +46,7 @@
         counter-increment: section;
         }
         ol > li::before {
-            margin: 5px;
+            margin: 0 5px 0 -35px;
             content: counter(section) ". ";
         }
         ol > li > ol {
@@ -94,31 +95,34 @@
         .sign-html-form form input{
             border: none;
         }
-        @media print{
+       
+        .sign-html-form form .page-2 *::not(.table){
+            padding: 5px;
+        }
+        .sign-html-form form .page-2 hr{
+            padding: 0px;
+        }
+        .sign-html-form form .page-2 h2{
+            font-size: 19px;
+        }
+        .sign-html-form form .page-2 h3{
+            font-size: 17px;
+            margin-bottom: 0%;
+        }
+        .sign-html-form form .page-2 li{
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .sign-html-form form .page-2 p{
+            font-size: 15px;
+        }
+        .sign-html-form form .print-only{
+            display: block;
+        }
+         @media print{
             .sign-html-form form .page-2{
                 margin-top: 20px;
                 break-inside: avoid;
-            }
-            .sign-html-form form .page-2 *{
-                padding: 5px;
-            }
-            .sign-html-form form .page-2 hr{
-                padding: 0px;
-            }
-            .sign-html-form form .page-2 h2{
-                font-size: 18px;
-            }
-            .sign-html-form form .page-2 h3{
-                font-size: 17px;
-            }
-            .sign-html-form form .page-2 p{
-                font-size: 15px;
-            }
-            .sign-html-form form .print-only{
-                display: block;
-            }
-            .sign-html-form form input{
-                border: none;
             }
         }
     </style>
@@ -192,33 +196,33 @@
                 <h2>Statutory Compensation Schemes</h2>
                 <p>You do not need to use a claims management company to make your claim to the Lender (you can make a claim to the Lender yourself), and if your claim is not successful you can refer it to the FOS yourself for free. Subject to the terms of any additional or further statutory redress scheme, you may also be able to make a claim yourself under such a scheme for free.</p>
             </div>
-            <div class="table table-2">
+            <div class="text table table-2">
                 <div class="tr">
-                    <div class="tc"><label for="name">Name: </label></div>
+                    <div class="tc"><label for="name"><h3>Name: </h3></label></div>
                     <div class="tc">
                         {{name}}
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="tc"><label for="address1">Address: </label></div>
+                    <div class="tc"><label for="address1"><h3>Address: </h3></label></div>
                     <div class="tc">
                         {{address}}
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="tc"><label for="clientref">Ref Number: </label></div>
+                    <div class="tc"><label for="clientref"><h3>Ref Number: </h3></label></div>
                     <div class="tc">
                         {{client_ref}}
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="tc"><label for="email">Email: </label></div>
+                    <div class="tc"><label for="email"><h3>Email: </h3></label></div>
                     <div class="tc">
                         {{email}}
                     </div>
                 </div>
                 <div class="tr">
-                    <div class="tc"><label for="phone">Direct Line: </label></div>
+                    <div class="tc"><label for="phone"><h3>Line: </h3></label></div>
                     <div class="tc">
                         {{phone}}
                     </div>
@@ -415,32 +419,32 @@
                 </div>
                 <div class="relax"></div>
                 <h2>Letter of Authority to Act</h2>
-                 <div class="table table-2">
+                <div class="table table-2">
                     <div class="tr">
-                        <div class="tc"><label for="name">Name: </label></div>
+                        <div class="tc"><label for="name"><h3>Name: </h3></label></div>
                         <div class="tc">
                             {{name}}
                         </div>
                     </div>
                     <div class="tr">
-                        <div class="tc"><label for="address1">Current Address: </label></div>
+                        <div class="tc"><label for="address1"><h3>Address: </h3></label></div>
                         <div class="tc">
                             {{address}}
                         </div>
                     </div>
                     <div class="tr">
-                        <div class="tc"><label for="dob">Date of Birth: </label></div>
+                        <div class="tc"><label for="dob"><h3>Date of Birth: </h3></label></div>
                         <div class="tc">
                             {{dob}}
                         </div>
                     </div>
                     <div class="tr">
-                        <div class="tc"><label for="clientref">Client Reference: </label></div>
+                        <div class="tc"><label for="clientref"><h3>Client Reference:</h3> </label></div>
                         <div class="tc">
                             {{client_ref}}
                         </div>
                     </div>
-                    </div>
+                </div>
                     <ol>
                         <li>This authority relates to all accounts and credit agreements I hold (or have previously held) with your firm and supersedes any previous letter of authority you may hold on file from myself. I authorise the extension of this authority to all outstanding claims which you are currently processing on my behalf.</li>
                         <li>Please take this authority as my instruction for you to deal exclusively with Consultation Claims Ltd (CCL) in relation to my complaint against your firm (within the meaning as set out in the Dispute Resolution: Complaints sourcebook of the Financial Conduct Authority (FCA) Handbook (DISP)) in respect of the potential mis-sale of my vehicle finance agreement(s) and any associated motor finance commission payments and such authority shall cover all accounts and agreements I have held with you both past and present.</li>
