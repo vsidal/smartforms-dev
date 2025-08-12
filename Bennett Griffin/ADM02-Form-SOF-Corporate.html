@@ -96,6 +96,7 @@
             .sign-html-form form .table .small-only{
                 display: revert;
             }
+            
         }
         /*remove end*/
         @media print {
@@ -103,7 +104,7 @@
                 border: none;
             }
             .sign-html-form form .conditional{
-                display: block;
+                display: revert;
             }
         }
     </style>
@@ -231,7 +232,11 @@
                     <div class="tc col-1">Company Reserves/Profit
                     </div>
                     <div class="tc">
-                        &pound; <input type="text" name="profit" id="profit">
+                        <input type="radio" data-conditional-case="3" name="companyprofit" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="4" name="companyprofit" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="3">
+                                <div class="tc">&pound;<input type="text" class="required" name="companyprofit" id="companyprofit"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional information: <textarea name="profitadditional" id="profitadditional"></textarea>
@@ -246,7 +251,11 @@
                 <div class="tr">
                     <div class="tc">Loan/Business Financing</div>
                     <div class="tc">
-                        &pound;<input type="text" class="required" name="businessloan">
+                        <input type="radio" data-conditional-case="5" name="loans" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="6" name="loans" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="5">
+                                <div class="tc">&pound;<input type="text" class="required" name="loans" id="loans"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="loanadditional"></textarea>
@@ -258,7 +267,11 @@
                 <div class="tr">
                     <div class="tc">Investment Income</div>
                     <div class="tc">
-                        &pound;<input type="text" class="required" name="investmentincome">
+                        <input type="radio" data-conditional-case="7" name="investmentincome" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="8" name="investmentincome" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="7">
+                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="investmentincomeadditional"></textarea>
@@ -270,7 +283,11 @@
                 <div class="tr">
                     <div class="tc">Sale of Company Assets</div>
                     <div class="tc">
-                        &pound;<input type="text" class="required" name="saleassets">
+                        <input type="radio" data-conditional-case="9" name="saleofassets" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="10" name="saleofassets" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="9">
+                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="saleassetsadditional"></textarea>
@@ -285,7 +302,11 @@
                 <div class="tr">
                     <div class="tc">Other (Specify)</div>
                     <div class="tc">
-                        &pound;<input type="text" class="required" name="other">
+                        <input type="radio" data-conditional-case="11" name="other" id=""> Include other source <br>
+                        <input type="radio" data-conditional-case="12" name="investmentincome" id=""> Remove other source
+                            <div class="conditional" data-conditional-switch="11">
+                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="otheradditional"></textarea>
