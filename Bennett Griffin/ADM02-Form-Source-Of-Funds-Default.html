@@ -24,8 +24,9 @@
             font-family: Arial,Helvetica Neue,Helvetica,sans-serif;	
         }
         .sign-html-form form img{
-            width: 200px;
+            width: 150px;
             float: right;
+            padding-bottom: 20px;
         }
         .sign-html-form form h1{
             clear:both
@@ -96,16 +97,17 @@
             .sign-html-form form .table .small-only{
                 display: revert;
             }
+            .sign-html-form form .table .tr .conditional{
+                display: none;
+            }
         }
         /*remove end*/
         @media print {
             .sign-html-form form input, textarea{
                 border: none;
             }
-        }
-        @media print {
-            .sign-html-form form input, textarea{
-                border: none;
+            .sign-html-form form .table .tr .conditional{
+                display: revert;
             }
         }
     </style>
@@ -116,8 +118,8 @@
             <p>Please fill in the second and third columns of this questionnaire to explain the source of the funds you are providing for this transaction.  We need this information to meet the requirements of the Money Laundering Law and your Mortgage Lender, if appropriate.  We may also need to seek further information or documents from you.</p>
             <h2>Bank Account Ownership & Source of Funds Validation:</h2>
             <p>As part of our digital verification services and drive to improve efficiency, we would like to contact your bank electronically for bank account information and we would like your permission to do so.</p>
+            <p>Online bank verification uses either your banking app or your online banking service to view the details and contents of your bank account. You will be asked to select which bank you bank with, and then which account you would like to show to provide proof of funds.  This information is processed by VSiD, who purge the information after 7 days. If you consent, you will be asked to supply your bank details so we can confirm ownership of the account. You may consent to the bankcheck now and withdraw your consent during the process. If you do not wish to proceed with electronic banking, please provide a recent copy of your bank statement proving source of funds below. </p>
             <h2>Please select an option:</h2>
-            <!-- Ask Matt Kersey's bank validation thing -->
             <label>Yes, I am happy to use the electronic bank verification service </label><input type="radio" name="bankval" id="2"> (If yes, auto request bank account data fields) <br>
             No, I do not wish to use the electronic bank verification service <input type="radio" name="bankval" data-conditional-case="1"> (if no, proceed with manual process)</p>
            <div class="conditional" data-conditional-switch="1"> 
@@ -178,13 +180,20 @@
                     <div class="tc">Other information</div>
                 </div>
                 <div class="tr">
-                    <div class="tc col-1">Sale of current home (net of mortgage and other costs of sale - approximately)<br>If we are not acting in relation to your sale or if this has already completed through another firm please provide a letter from that firm confirming completion, financial statement showing the net sale proceeds and your bank statement showing the funds arriving in your account.
+                    <div class="tc col-1">Sale of current home (net of mortgage and other costs of sale approximately). Only tick include if we did not act/are not acting for you, on this sale
                     </div>
                     <div class="tc">
-                        &pound; <input type="text" name="saleofhome" id="saleofhome">
+                        <input type="radio" data-conditional-case="3" name="saleofhome" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="4" name="saleofhome" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="3">
+                                <div class="tc">&pound;<input type="text" class="required" name="saleofhome" id="saleofhome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional information: <textarea name="saleofhomeadditional" id="saleofhomeadditional"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr small-only break">
@@ -193,7 +202,11 @@
                 <div class="tr">
                     <div class="tc col-1">Mortgage loan on new property</div>
                     <div class="tc">
-                        &pound;<input type="text" name="mortgageloan">
+                        <input type="radio" data-conditional-case="5" name="mortgageloan" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="6" name="mortgageloan" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="5">
+                                <div class="tc">&pound;<input type="text" class="required" name="mortgageloan" id="mortgageloan"></div>
+                            </div>   
                     </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
@@ -218,9 +231,12 @@
                 <div class="tr">
                     <div class="tc col-1">Savings from employment <br> Please provide copies of your latest payslip evidencing your salary and a copy of the bank statement showing the funds in your account.
                     </div>
-                    <div class="tc">&pound;<input type="text" name="savingamount" id="savingamount"></div>
-                    <div class="tr small-only break">
-                        <div class="tc"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="7" name="savingsemployment1" id=""> Include Source <br>
+                        <input type="radio" data-conditional-case="8" name="savingsemployment1" id=""> Remove Source
+                            <div class="conditional" data-conditional-switch="7">
+                                <div class="tc">&pound;<input type="text" class="required" name="savingamount1" id="savingamount1"></div>
+                            </div>
                     </div>
                     <div class="tc">
                         <div class="tr">
@@ -249,14 +265,28 @@
                         </div>
                         <div class="tr">
                             <div class="tc">Your salary / salaries: (per annum)</div>
-                            <div class="tc">&pound;<input type="text" name="salaries" id="salaries"></div>
+                            <div class="tc">&pound;<input type="text" class="required" name="salaries" id="salaries"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="button-holder">
+                                <button class="add-attachment">Upload Evidence</button>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
                 </div>
                 <div class="tr">
                     <div class="tc">Savings from employment <br> (Cont...)
                     </div>
-                    <div class="tc">&pound;<input type="text" name="savingamount2" id="savingamount2"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="9" name="savingsemployment2" id=""> Include Source <br>
+                        <input type="radio" data-conditional-case="10" name="savingsemployment2" id=""> Remove Source
+                            <div class="conditional" data-conditional-switch="9">
+                                <div class="tc">&pound;<input type="text" class="required" name="savingamount2" id="savingamount2"></div>
+                            </div>   
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">What is your occupation?</div>
@@ -284,7 +314,7 @@
                         </div>
                         <div class="tr">
                             <div class="tc">Your salary / salaries: (per annum)</div>
-                            <div class="tc">&pound;<input type="text" name="salaries2" id="salaries2"></div>
+                            <div class="tc">&pound;<input type="text" class="required" name="salaries2" id="salaries2"></div>
                         </div>
                     </div>
                 </div>
@@ -293,7 +323,13 @@
            <div class="table">
                 <div class="tr">
                     <div class="tc col-1">Divorce settlement <br>Please provide a copy of the financial order/settlement agreement detailing the funds due to you together with a copy of your bank statement showing these funds arriving in your account.</div>
-                    <div class="tc">&pound;<input type="text" name="divorce" id="divorce"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="11" name="divorcesettlement" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="12" name="divorcesettlement" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="11">
+                                <div class="tc">&pound;<input type="text" class="required" name="divorcesettlement" id="divorcesettlement"></div>
+                            </div>   
+                    </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -319,11 +355,25 @@
                             <div class="tc">Date of divorce:</div>
                             <div class="tc"><input type="text" name="divorcedate" id="divorcedate"></div>
                         </div>
+                        <div class="tr">
+                            <div class="button-holder">
+                                <button class="add-attachment">Upload Evidence</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
                 </div>
                 <div class="tr">
                     <div class="tc">Inheritance<br>Please provide a copy of any correspondence received from the solicitors dealing with the probate confirming your inheritance together with your bank statement showing the funds arriving in your account.  If no solicitors were instructed please provide confirmation direct from the executor together with your bank statement.</div>
-                    <div class="tc">&pound;<input type="text" name="inheritance" id="inheritance"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="13" name="inheritance" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="14" name="inheritance" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="13">
+                                <div class="tc">&pound;<input type="text" class="required" name="inheritance" id="inheritance"></div>
+                            </div>   
+                    </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -356,6 +406,9 @@
                             <div class="tc">Solicitors who dealt with the probate:</div>
                             <div class="tc"><input type="text" name="inheritancesolicitor" id="inheritancesolicitor"></div>
                         </div>
+                        <div class="button-holder">
+                                <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr small-only break">
@@ -363,15 +416,31 @@
                 </div>
                 <div class="tr">
                     <div class="tc">Other:</div>
-                    <div class="tc">&pound;<input type="text" name="other" id="other"></div>
-                    <div class="tc">Please provide details: <textarea name="other" id="other"></textarea></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="15" name="other" id=""> Include Other source <br>
+                        <input type="radio" data-conditional-case="16" name="other" id=""> Remove Other source
+                            <div class="conditional" data-conditional-switch="15">
+                                <div class="tc">&pound;<input type="text" class="required" name="other" id="other"></div>
+                            </div>   
+                    </div>
+                    <div class="tc">Please provide details: <textarea name="other" id="other"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
+                    </div>
                 </div>
            </div>
            <br>
            <div class="table">
                 <div class="tr">
                     <div class="tc">Third party providing funds</div>
-                    <div class="tc">&pound;<input type="text" name="thirdparty" id="thirdparty"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="17" name="savingsemployment2" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="18" name="savingsemployment2" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="17">
+                                <div class="tc">&pound;<input type="text" class="required" name="savingamount2" id="savingamount2"></div>
+                            </div>   
+                    </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -379,6 +448,15 @@
                         <div class="tr">
                             <div class="tc">Name and relationship to you e.g. Mother, Edna Harris:</div>
                             <div class="tc"><input type="text" name="thirdpartyname" id="thirdpartyname"></div>
+                        </div>
+                        <div class="tr small-only break">
+                            <div class="tc"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Home Address of Third Party:</div>
+                            <div class="tc">
+                                <textarea></textarea>
+                            </div>
                         </div>
                         <div class="tr small-only break">
                             <div class="tc"></div>
@@ -419,6 +497,11 @@
                                 <input type="radio" name="moneyinterest" id="interestyes"> Yes
                                 <input type="radio" name="moneyinterest" id="interestno"> No
                             </div>
+                        </div>
+                        <div class="tr">
+                            <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                         </div>
                     </div>
                 </div>

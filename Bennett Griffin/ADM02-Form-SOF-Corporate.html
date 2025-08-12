@@ -24,8 +24,9 @@
             font-family: Arial,Helvetica Neue,Helvetica,sans-serif;	
         }
         .sign-html-form form img{
-            width: 200px;
+            width: 150px;
             float: right;
+            padding-bottom: 20px;
         }
         .sign-html-form form h1{
             clear:both
@@ -96,6 +97,10 @@
             .sign-html-form form .table .small-only{
                 display: revert;
             }
+            .sign-html-form form .table .tr .conditional{
+                display: none;
+            }
+            
         }
         /*remove end*/
         @media print {
@@ -103,7 +108,7 @@
                 border: none;
             }
             .sign-html-form form .conditional{
-                display: block;
+                display: revert;
             }
         }
     </style>
@@ -114,6 +119,8 @@
             <p>Please fill in the second and third columns of this questionnaire to explain the source of the funds you are providing for this transaction.  We need this information to meet the requirements of the Money Laundering Law and your Mortgage Lender, if appropriate.  We may also need to seek further information or documents from you.</p>
             <h2>Bank Account Ownership & Source of Funds Validation:</h2>
             <p>As part of our digital verification services and drive to improve efficiency, we would like to contact your bank electronically for bank account information and we would like your permission to do so.</p>
+            <p>Online bank verification uses either your banking app or your online banking service to view the details and contents of your bank account. You will be asked to select which bank you bank with, and then which account you would like to show to provide proof of funds.  This information is processed by VSiD, who purge the information after 7 days. If you consent, you will be asked to supply your bank details so we can confirm ownership of the account. You may consent to the bankcheck now and withdraw your consent during the process. If you do not wish to proceed with electronic banking, please provide a recent copy of your bank statement proving source of funds below. </p>
+            
             <h2>Please select an option:</h2>
             <!-- Ask Matt Kersey's bank validation thing -->
             <label>Yes, I am happy to use the electronic bank verification service </label><input type="radio" name="bankval" id="2"> (If yes, auto request bank account data fields) <br>
@@ -229,10 +236,17 @@
                     <div class="tc col-1">Company Reserves/Profit
                     </div>
                     <div class="tc">
-                        &pound; <input type="text" name="profit" id="profit">
+                        <input type="radio" data-conditional-case="3" name="companyprofit" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="4" name="companyprofit" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="3">
+                                <div class="tc">&pound;<input type="text" class="required" name="companyprofit" id="companyprofit"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional information: <textarea name="profitadditional" id="profitadditional"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr small-only break">
@@ -241,16 +255,27 @@
                 <div class="tr">
                     <div class="tc">Loan/Business Financing</div>
                     <div class="tc">
-                        &pound;<input type="text" name="businessloan">
+                        <input type="radio" data-conditional-case="5" name="loans" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="6" name="loans" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="5">
+                                <div class="tc">&pound;<input type="text" class="required" name="loans" id="loans"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="loanadditional"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr">
                     <div class="tc">Investment Income</div>
                     <div class="tc">
-                        &pound;<input type="text" name="investmentincome">
+                        <input type="radio" data-conditional-case="7" name="investmentincome" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="8" name="investmentincome" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="7">
+                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="investmentincomeadditional"></textarea>
@@ -262,10 +287,17 @@
                 <div class="tr">
                     <div class="tc">Sale of Company Assets</div>
                     <div class="tc">
-                        &pound;<input type="text" name="saleassets">
+                        <input type="radio" data-conditional-case="9" name="saleofassets" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="10" name="saleofassets" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="9">
+                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="saleassetsadditional"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
                 <div class="tr small-only break">
@@ -274,10 +306,17 @@
                 <div class="tr">
                     <div class="tc">Other (Specify)</div>
                     <div class="tc">
-                        &pound;<input type="text" name="other">
+                        <input type="radio" data-conditional-case="11" name="other" id=""> Include other source <br>
+                        <input type="radio" data-conditional-case="12" name="investmentincome" id=""> Remove other source
+                            <div class="conditional" data-conditional-switch="11">
+                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="otheradditional"></textarea>
+                        <div class="button-holder">
+                            <button class="add-attachment">Upload Evidence</button>
+                        </div>
                     </div>
                 </div>
             </div>
