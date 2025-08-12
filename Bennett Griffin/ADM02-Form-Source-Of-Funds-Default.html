@@ -96,16 +96,17 @@
             .sign-html-form form .table .small-only{
                 display: revert;
             }
+            .sign-html-form form .table .tr .conditional{
+                display: none;
+            }
         }
         /*remove end*/
         @media print {
             .sign-html-form form input, textarea{
                 border: none;
             }
-        }
-        @media print {
-            .sign-html-form form input, textarea{
-                border: none;
+            .sign-html-form form .table .tr .conditional{
+                display: revert;
             }
         }
     </style>
@@ -178,10 +179,14 @@
                     <div class="tc">Other information</div>
                 </div>
                 <div class="tr">
-                    <div class="tc col-1">Sale of current home (net of mortgage and other costs of sale approximately). Only tick yes if we did not act/are not acting for you, on this sale
+                    <div class="tc col-1">Sale of current home (net of mortgage and other costs of sale approximately). Only tick include if we did not act/are not acting for you, on this sale
                     </div>
                     <div class="tc">
-                        &pound; <input type="text" class="required" name="saleofhome" id="saleofhome">
+                        <input type="radio" data-conditional-case="3" name="saleofhome" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="4" name="saleofhome" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="3">
+                                <div class="tc">&pound;<input type="text" class="required" name="saleofhome" id="saleofhome"></div>
+                            </div>   
                     </div>
                     <div class="tc">
                         Additional information: <textarea name="saleofhomeadditional" id="saleofhomeadditional"></textarea>
@@ -196,7 +201,11 @@
                 <div class="tr">
                     <div class="tc col-1">Mortgage loan on new property</div>
                     <div class="tc">
-                        &pound;<input type="text" class="required" name="mortgageloan">
+                        <input type="radio" data-conditional-case="5" name="mortgageloan" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="6" name="mortgageloan" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="5">
+                                <div class="tc">&pound;<input type="text" class="required" name="mortgageloan" id="mortgageloan"></div>
+                            </div>   
                     </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
@@ -221,9 +230,12 @@
                 <div class="tr">
                     <div class="tc col-1">Savings from employment <br> Please provide copies of your latest payslip evidencing your salary and a copy of the bank statement showing the funds in your account.
                     </div>
-                    <div class="tc">&pound;<input type="text" class="required" name="savingamount" id="savingamount"></div>
-                    <div class="tr small-only break">
-                        <div class="tc"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="7" name="savingsemployment1" id=""> Include Source <br>
+                        <input type="radio" data-conditional-case="8" name="savingsemployment1" id=""> Remove Source
+                            <div class="conditional" data-conditional-switch="7">
+                                <div class="tc">&pound;<input type="text" class="required" name="savingamount1" id="savingamount1"></div>
+                            </div>
                     </div>
                     <div class="tc">
                         <div class="tr">
@@ -261,10 +273,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
+                </div>
                 <div class="tr">
                     <div class="tc">Savings from employment <br> (Cont...)
                     </div>
-                    <div class="tc">&pound;<input type="text" class="required" name="savingamount2" id="savingamount2"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="9" name="savingsemployment2" id=""> Include Source <br>
+                        <input type="radio" data-conditional-case="10" name="savingsemployment2" id=""> Remove Source
+                            <div class="conditional" data-conditional-switch="9">
+                                <div class="tc">&pound;<input type="text" class="required" name="savingamount2" id="savingamount2"></div>
+                            </div>   
+                    </div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">What is your occupation?</div>
@@ -301,7 +322,13 @@
            <div class="table">
                 <div class="tr">
                     <div class="tc col-1">Divorce settlement <br>Please provide a copy of the financial order/settlement agreement detailing the funds due to you together with a copy of your bank statement showing these funds arriving in your account.</div>
-                    <div class="tc">&pound;<input type="text" class="required" name="divorce" id="divorce"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="11" name="divorcesettlement" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="12" name="divorcesettlement" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="11">
+                                <div class="tc">&pound;<input type="text" class="required" name="divorcesettlement" id="divorcesettlement"></div>
+                            </div>   
+                    </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -334,9 +361,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="tr small-only break">
+                    <div class="tc"></div>
+                </div>
                 <div class="tr">
                     <div class="tc">Inheritance<br>Please provide a copy of any correspondence received from the solicitors dealing with the probate confirming your inheritance together with your bank statement showing the funds arriving in your account.  If no solicitors were instructed please provide confirmation direct from the executor together with your bank statement.</div>
-                    <div class="tc">&pound;<input type="text" class="required" name="inheritance" id="inheritance"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="13" name="inheritance" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="14" name="inheritance" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="13">
+                                <div class="tc">&pound;<input type="text" class="required" name="inheritance" id="inheritance"></div>
+                            </div>   
+                    </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
@@ -379,7 +415,13 @@
                 </div>
                 <div class="tr">
                     <div class="tc">Other:</div>
-                    <div class="tc">&pound;<input type="text" class="required" name="other" id="other"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="15" name="other" id=""> Include Other source <br>
+                        <input type="radio" data-conditional-case="16" name="other" id=""> Remove Other source
+                            <div class="conditional" data-conditional-switch="15">
+                                <div class="tc">&pound;<input type="text" class="required" name="other" id="other"></div>
+                            </div>   
+                    </div>
                     <div class="tc">Please provide details: <textarea name="other" id="other"></textarea>
                         <div class="button-holder">
                             <button class="add-attachment">Upload Evidence</button>
@@ -391,7 +433,13 @@
            <div class="table">
                 <div class="tr">
                     <div class="tc">Third party providing funds</div>
-                    <div class="tc">&pound;<input type="text" class="required" name="thirdparty" id="thirdparty"></div>
+                    <div class="tc">
+                        <input type="radio" data-conditional-case="17" name="savingsemployment2" id=""> Include source <br>
+                        <input type="radio" data-conditional-case="18" name="savingsemployment2" id=""> Remove source
+                            <div class="conditional" data-conditional-switch="17">
+                                <div class="tc">&pound;<input type="text" class="required" name="savingamount2" id="savingamount2"></div>
+                            </div>   
+                    </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
                     </div>
