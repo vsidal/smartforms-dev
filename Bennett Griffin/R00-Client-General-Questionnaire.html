@@ -24,6 +24,7 @@
         font-style:italic;
         clear:left;
         font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+        margin-top: 10px;
     }
     .sign-html-form form img{
         width: 150px;
@@ -40,15 +41,16 @@
         font-size: 14px;
     }
     .sign-html-form form .table{
-        display: table;
+        display: flex;
+        flex-direction: column;
         border: 1px black solid;
         border-collapse: collapse;
         width: 90%;
         margin: auto;
     }
     .sign-html-form form div.tr{
-        display: table-row;
-        width: inherit;
+        display: flex;
+        width: 100%;
     }
     .sign-html-form form .tc{
         border: 1px black solid;
@@ -62,12 +64,9 @@
     .sign-html-form form div.tc.container{
         writing-mode: sideways-lr;
         text-orientation: sideways-right;
-        max-width: 8%;
+        width: 5%;
         text-align: center;
-    }
-    .sign-html-form form div.tr.flex{
-        display:flex ;
-        width: inherit;
+        background-color: lightgray;
     }
     .sign-html-form form .tc > .tr{
         padding: 0px;
@@ -75,6 +74,28 @@
     }
     .sign-html-form form .tc:has(.tr){
         padding: 0%;
+        width: 95%;
+    }
+    .sign-html-form form .tc.half{
+        width: 45%;
+    }
+    .sign-html-form form .tc.quarter{
+        width: 25%;
+    }
+    .sign-html-form textarea, .sign-html-form input[type="text"]{
+        width: 98%;
+    }
+    @media (max-width: 600px){
+        .sign-html-form form div.table, .sign-html-form form div.tr, .sign-html-form form div.tc{
+            display: block;
+        }
+        .sign-html-form form div.tc{
+            width: revert!important;
+            text-align: center;
+        }
+        .sign-html-form form div.tc.container{
+            writing-mode: unset;   
+        }        
     }
     </style>
     <div class='sign-html-form'>
@@ -97,51 +118,276 @@
                 </div>
                 <div class="tr">
                     <div class="tc"><strong>National Insurance Number:</strong></div>
-                    <div class="tc"><input type="text" name="fname1" id="fname1"></div>
+                    <div class="tc"><input type="text" name="nin1" id="nin1"></div>
                 </div>
                 <div class="tr">
                     <div class="tc"><strong>Date of Birth:</strong></div>
-                    <div class="tc"><input type="text" name="fname1" id="fname1"></div>
+                    <div class="tc"><input type="text" name="dob1" id="dob1"></div>
                 </div>
                 <div class="tr">
                     <div class="tc"><strong>Occupation:</strong></div>
-                    <div class="tc"><input type="text" name="fname1" id="fname1"></div>
+                    <div class="tc"><input type="text" name="job1" id="job1"></div>
                 </div>
                 <div class="tr">
                     <div class="tc"><strong>Telephone Number | Home:</strong></div>
-                    <div class="tc"><input type="text" name="fname1" id="fname1"></div>
+                    <div class="tc"><input type="text" name="telhome1" id="telhome1"></div>
                 </div>
                 <div class="tr">
                     <div class="tc"><strong>Telephone Number | Work:</strong></div>
-                    <div class="tc"><input type="text" name="fname1" id="fname1"></div>
+                    <div class="tc"><input type="text" name="telwork1" id="telwork1"></div>
                 </div>
                 <div class="tr">
                     <div class="tc"><strong>Email:</strong></div>
-                    <div class="tc"><input type="text" name="fname1" id="fname1"></div>
+                    <div class="tc"><input type="text" name="email1" id="email1"></div>
                 </div>
                 <div class="tr ">
                     <div class="tc container">Name Change</div>
                     <div class="tc">
                         <div class="tr">
-                            <div class="tc">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
-                            <div class="tc">Yes <input type="radio" name="coa1" id="coa"></div>
-                            <div class="tc">No <input type="radio" name="coa1" id="coa"></div>
+                            <div class="tc half">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
+                            <div class="tc quarter">Yes <input type="radio" name="coa1" id="coa1yes"></div>
+                            <div class="tc quarter">No <input type="radio" name="coa1" id="coa1no"></div>
                         </div>
                         <div class="tr">
-                            <div class="tc">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
-                            <div class="tc">Yes <input type="radio" name="coa1" id="coa"></div>
-                            <div class="tc">No <input type="radio" name="coa1" id="coa"></div>
+                            <div class="tc half">If so, please provide the original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you.</div>
+                            <div class="tc quarter">Attached <input type="radio" name="namechange1" id="namechange1y">
+                                <br>
+                                <button class="attachment">Add attachment</button>
+                            </div>
+                            <div class="tc quarter">N/A <input type="radio" name="namechange1" id="namechange1n"></div>
                         </div>
                     </div>
                 </div>
                 <div class="tr">
                         <div class="tc">Preferred Method of Contact</div>
-                        <div class="tr">
-                            <div class="tc">Email <input type="radio" name="communication1" id="communication1"></div>
-                            <div class="tc">Post <input type="radio" name="communication1" id="communication1"></div>
-                        </div>
+                        <div class="tc quarter">Email <input type="radio" name="communication1" id="communication1e"></div>
+                        <div class="tc quarter">Post <input type="radio" name="communication1" id="communication1p"></div>
                     </div>
             </div>
+            <br>
+            <div class="table">
+                <div class="tr">
+                    <div class="tc"><strong>Full Name:</strong></div>
+                    <div class="tc"><input type="text" name="fname2" id="fname2"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>National Insurance Number:</strong></div>
+                    <div class="tc"><input type="text" name="nin2" id="nin2"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Date of Birth:</strong></div>
+                    <div class="tc"><input type="text" name="dob2" id="dob2"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Occupation:</strong></div>
+                    <div class="tc"><input type="text" name="job2" id="job2"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Telephone Number | Home:</strong></div>
+                    <div class="tc"><input type="text" name="telhome2" id="telhome2"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Telephone Number | Work:</strong></div>
+                    <div class="tc"><input type="text" name="telwork2" id="telwork2"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Email:</strong></div>
+                    <div class="tc"><input type="text" name="email2" id="email2"></div>
+                </div>
+                <div class="tr ">
+                    <div class="tc container">Name Change</div>
+                    <div class="tc">
+                        <div class="tr">
+                            <div class="tc half">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
+                            <div class="tc quarter">Yes <input type="radio" name="coa2" id="coa2yes"></div>
+                            <div class="tc quarter">No <input type="radio" name="coa2" id="coa2no"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc half">If so, please provide the original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you.</div>
+                            <div class="tc quarter">Attached <input type="radio" name="namechange2" id="namechange2y">
+                                <br>
+                                <button class="attachment">Add attachment</button></div>
+                            <div class="tc quarter">N/A <input type="radio" name="namechange2" id="namechange2n"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr">
+                        <div class="tc">Preferred Method of Contact</div>
+                        <div class="tc quarter">Email <input type="radio" name="communication2" id="communication2e"></div>
+                        <div class="tc quarter">Post <input type="radio" name="communication2" id="communication2p"></div>
+                    </div>
+            </div>
+            <br>
+            <div class="table">
+                <div class="tr">
+                    <div class="tc"><strong>Full Name:</strong></div>
+                    <div class="tc"><input type="text" name="fname3" id="fname3"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>National Insurance Number:</strong></div>
+                    <div class="tc"><input type="text" name="nin3" id="nin3"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Date of Birth:</strong></div>
+                    <div class="tc"><input type="text" name="dob3" id="dob3"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Occupation:</strong></div>
+                    <div class="tc"><input type="text" name="job3" id="job3"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Telephone Number | Home:</strong></div>
+                    <div class="tc"><input type="text" name="telhome3" id="telhome3"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Telephone Number | Work:</strong></div>
+                    <div class="tc"><input type="text" name="telwork3" id="telwork3"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc"><strong>Email:</strong></div>
+                    <div class="tc"><input type="text" name="email3" id="email3"></div>
+                </div>
+                <div class="tr ">
+                    <div class="tc container">Name Change</div>
+                    <div class="tc">
+                        <div class="tr">
+                            <div class="tc half">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
+                            <div class="tc quarter">Yes <input type="radio" name="coa3" id="coa3yes"></div>
+                            <div class="tc quarter">No <input type="radio" name="coa3" id="coa3no"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc half">If so, please provide the original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you.</div>
+                            <div class="tc quarter">Attached <input type="radio" name="namechange3" id="namechange3y">
+                                <br>
+                                <button class="attachment">Add attachment</button></div>
+                            <div class="tc quarter">N/A <input type="radio" name="namechange3" id="namechange3n"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr">
+                        <div class="tc">Preferred Method of Contact</div>
+                        <div class="tc quarter">Email <input type="radio" name="communication3" id="communication3e"></div>
+                        <div class="tc quarter">Post <input type="radio" name="communication3" id="communication3p"></div>
+                    </div>
+            </div>
+            <h2>Other Charges or Loans</h2>
+            <div class="table">
+                <div class="tr">
+                    <div class="tc">Do you have any further loans secured against the property, including Legal Aid Charge or business overdrafts?</div>
+                    <div class="tc quarter">Yes <input type="radio" name="loans" id="loansy" data-conditional-case="1"></div>
+                    <div class="tc quarter">No <input type="radio" name="loans" id="loansn" data-conditional-case="2"></div>
+                </div>
+                <div class="tr" data-conditional-switch="1">
+                    <div class="tc" style="width: 100%;">If so, please provide details below</div>
+                </div>
+                <div class="tr">
+                    <div class="tc container">
+                        Lender
+                    </div>
+                    <div class="tc">
+                        <div class="tr">
+                            <div class="tc">Lender Name:</div>
+                            <div class="tc"><input type="text" name="lendername" id="lendername"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Address:</div>
+                            <div class="tc"><textarea name="addresslender"></textarea></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Amount Borrowed:</div>
+                            <div class="tc">&pound;<input type="text" name="amountborrowed" id="amountborrowed"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Account Number:</div>
+                            <div class="tc"><input type="text" name="accountno" id="accountno"></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc">Approximate Amount Outstanding:</div>
+                            <div class="tc">&pound;<input type="text" name="amountoutstanding" id="amountoutstanding"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="tc">Is there a Green Deal improvement loan in respect of this property?</div>
+                    <div class="tc quarter">Yes <input type="radio" name="greendeal" id="greendealy" data-conditional-case="3"></div>
+                    <div class="tc quarter">No <input type="radio" name="greendeal" id="greendealn" data-conditional-case="4"></div>
+                </div>
+                <div class="tr" data-conditional-switch="3">
+                    <div class="tc" style="width: 100%;">If so, please provide details below</div>
+                </div>
+                <div class="tr">
+                    <div class="tc" style="width: 100%;">
+                        <textarea placeholder="Additional Details"></textarea>
+                    </div>
+                </div>
+            </div>
+            <h2>Payment Method Form</h2>
+            <p>Please complete the enclosed <strong>Payment Method Form</strong> and note that the account must have been used for at least <strong>12 months;</strong> we are required by CQS to obtain evidence of the account at this stage.</p>
+            <ul>
+                <li>If there are joint owners, the account must be in the names of all the owners.  If the owners do not have a joint bank account you must raise this with us.</li>
+                <li>If you are an Executor and this is a probate sale, the name on the account should either be the name of the deceased or in your name “as Executor” of the deceased.</li>
+                <li>If a company is the owner of the property then the account must be in the name of the company itself and not of a Director or Shareholder of the company.</li>
+            </ul>
+            <h2>Bankruptcy Searches</h2>
+            <p>As a matter of course, we undertake Bankruptcy Searches against all clients involved in property transactions.  This search is done by name only and some entries may arise on more common names.  We therefore ask you to sign below to confirm that any entries revealed against your name(s) do not relate to you and that you have never had either a Bankruptcy Petition or a Bankruptcy Order made against you.</p>
+            <div class="table">
+                <div class="tr">
+                    <div class="tc">I have never had either a Bankruptcy Petition or a Bankruptcy Order made against me.</div>
+                    <div class="tc">Acknowledged <input type="checkbox" name="Acknowledged" id="Acknowledged"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc">I have had either a Bankruptcy Petition or a Bankruptcy Order made against me.</div>
+                    <div class="tc">Please provide further details: <br><textarea></textarea></div>
+                </div>
+            </div>
+            <h2>Related Sale/Purchase</h2>
+            <div class="table">
+                <div class="tr">
+                    <div class="tc">
+                        Do you have a related sale/purchase?
+                    </div>
+                    <div class="tc quarter">Yes <input type="radio" name="relatedsale" id="relatedsaley"></div>
+                    <div class="tc quarter">No <input type="radio" name="relatedsale"></div>
+                </div>
+                <div class="tr">
+                    <div class="tc container">
+                        Transaction Details
+                    </div>
+                    <div class="tc">
+                        <div class="tr">
+                            <div class="tc" style="width: 100%;">If so, what stage is the transaction at?</div></div>
+                        <div class="tr">
+                            <div class="tc" style="width: 100%;"><textarea placeholder="Transaction Stage"></textarea></div></div>
+                        <div class="tr">
+                            <div class="tc half">
+                                Have you instructed this firm to act on your behalf in connection with the sale/purchase? 
+                            </div>
+                            <div class="tc quarter">Yes <input type="radio" name="instructedfirm" id=""></div>
+                            <div class="tc quarter">No <input type="radio" name="instructedfirm" id=""></div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc" style="width: 100%;">If not, please provide details of the firm acting on your behalf</div>
+                        </div>
+                        <div class="tr">
+                            <div class="tc" style="width: 100%;"> <textarea></textarea></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Wills</h2>
+            <div class="table">
+                <div class="tr">
+                    <div class="tc">Would you like us to contact you with a view to making a new Will or reviewing your existing Will?</div>
+                    <div class="tc quarter">Yes <input type="radio" name="willview"></div>
+                    <div class="tc quarter">No <input type="radio" name="willview" ></div>
+                </div>
+                <div class="tr">
+                    <div class="tc" style="width: 100%;">We take pride in ensuring that our Will-Writing Service is tailor-made to our client&apos;s individual needs, and would appreciate the opportunity of arranging a face to face meeting with a member of our Wills Service Team.</div></div>
+            </div>
+            <div class="signature-block-1">Parties to sign here</div>
+            <div class="signature-block-2"></div>
+            <div class="signature-block-3"></div>
+            <div class="signature-block-4"></div>
         </form>
     </div>
 </body>
