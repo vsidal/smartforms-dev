@@ -53,7 +53,7 @@
             display: table-cell;
             padding: 5px;
         }
-        .sign-html-form form .tc:has(div[class^="signature-block-"]){
+        .sign-html-form form .tc:has(div){
             border: none;
         }
         .sign-html-form form .tc:has(.tr){
@@ -106,9 +106,9 @@
         .sign-html-form form div.small-container{
             display: none;
         }
-        /* .sign-html-form form .conditional{
+        .sign-html-form form .conditional{
             display: none;
-        } */
+        }
         @media (max-width: 600px) {
             .sign-html-form form .table .tc, .tr, .quarter, .half, .sign-html-form form .table .tr.flex{
                 display: block;
@@ -124,6 +124,12 @@
         @media print{
             .sign-html-form form .switches{
                 display: none;
+            }
+            .sign-html-form form div.tc.container{
+                writing-mode: sideways-lr;
+                text-orientation: sideways-right;
+                width: 8%;
+                text-align: center;
             }
         }
     </style>
@@ -219,12 +225,12 @@
                         <div class="tc container three">Authorisation</div>
                         <div class="tr"><div class="tc"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
                         <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-1"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-2"><div class="signature-tag"></div></div></div>
+                            <div class="tc quarter"><div class="signature-block-1"></div></div>
+                            <div class="tc quarter"><div class="signature-block-2"></div></div>
                         </div>
                         <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-3"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-4"><div class="signature-tag"></div></div></div>
+                            <div class="tc quarter"><div class="signature-block-3"></div></div>
+                            <div class="tc quarter"><div class="signature-block-4"></div></div>
                         </div>
                     </div>
                     <div class="tr">
@@ -316,12 +322,12 @@
                         <div class="tc container three">Authorisation</div>
                         <div class="tr"><div class="tc"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
                         <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-1"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-2"><div class="signature-tag"></div></div></div>
+                            <div class="tc quarter"><div class="signature-block-1"></div></div>
+                            <div class="tc quarter"><div class="signature-block-2"></div></div>
                         </div>
                         <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-3"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-4"><div class="signature-tag"></div></div></div>
+                            <div class="tc quarter"><div class="signature-block-3"></div></div>
+                            <div class="tc quarter"><div class="signature-block-4"></div></div>
                         </div>
                     </div>
                     <div class="tr ">
