@@ -13,17 +13,17 @@
             font-size: 14px;
         }
         .sign-html-form form div.signature-tag{
-            float:left;
             border-radius:4px;
             padding:11px 22px;
             margin-right:10px;
             background:#FFC74D;
     }
     .sign-html-form div.signature-block{
-        float:right;
         font-style:italic;
-        clear:left;
         font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    }
+    .sign-html-form form div.signature-block span{
+        float: none;
     }
     .sign-html-form form img{
         width: 150px;
@@ -161,8 +161,8 @@
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">Have the parties agreed that any additional sum be paid for any contents or fittings of the property?</div>
-                            <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                            <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                            <div class="tc quarter">Yes <input type="radio" name="fittingssum" id=""></div>
+                            <div class="tc quarter">No <input type="radio" name="fittingssum" id=""></div>
                         </div>
                         <div class="tr">
                             <div class="tc" style="width: 100%;">If so, please provide details below</div>
@@ -193,8 +193,8 @@
                         </div>
                         <div class="tr">
                             <div class="tc">Do you feel that the price being paid for these items accurately reflects their market value?</div>
-                            <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                            <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                            <div class="tc quarter">Yes <input type="radio" name="feepricing" id=""></div>
+                            <div class="tc quarter">No <input type="radio" name="feepricing" id=""></div>
                         </div>
                     </div>
                 </div>
@@ -203,16 +203,16 @@
             <div class="table">
                 <div class="tr">
                     <div class="tc">Are you the owner of the property</div>
-                    <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                    <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                    <div class="tc quarter">Yes <input type="radio" name="propertyowner" id=""></div>
+                    <div class="tc quarter">No <input type="radio" name="propertyowner" id=""></div>
                 </div>
                 <div class="tr">
                     <div class="tc container">Non-Owner</div>
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">If not, in what capacity are you selling i.e. Executor/Attorney?</div>
-                            <div class="tc quarter">Executor <input type="radio" name="" id=""></div>
-                            <div class="tc quarter">Attorney <input type="radio" name="" id=""></div>
+                            <div class="tc quarter">Executor <input type="radio" name="executorattorney" id=""></div>
+                            <div class="tc quarter">Attorney <input type="radio" name="executorattorney" id=""></div>
                         </div>
                         <div class="tr">
                             <div class="tc" style="width: 75%;">Please provide the original Grant of Probate or Power of Attorney, which we will photocopy and return to you.</div>
@@ -267,8 +267,8 @@
                         </div>
                         <div class="tr">
                             <div class="tc">If a penalty is payable, do you want to complete your sale before it expires?</div>
-                            <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                            <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                            <div class="tc quarter">Yes <input type="radio" name="penaltypayable" id=""></div>
+                            <div class="tc quarter">No <input type="radio" name="penaltypayable" id=""></div>
                         </div>
                     </div>
                 </div>
@@ -277,8 +277,8 @@
             <div class="table">
                 <div class="tr">
                     <div class="tc">Do you have any further loans secured against the property, including Legal Aid Charge or business overdrafts?</div>
-                    <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                    <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                    <div class="tc quarter">Yes <input type="radio" name="chargesorloans" id=""></div>
+                    <div class="tc quarter">No <input type="radio" name="chargesorloans" id=""></div>
                 </div>
                 <div class="tr">
                     <div class="tc" style="width: 100%;">If so, please provide details below</div>
@@ -314,8 +314,8 @@
                 </div>
                 <div class="tr">
                     <div class="tc">Is there a Green Deal improvement loan in respect of this property?</div>
-                    <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                    <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                    <div class="tc quarter">Yes <input type="radio" name="greendeal" id=""></div>
+                    <div class="tc quarter">No <input type="radio" name="greendeal" id=""></div>
                 </div>
                 <div class="tr">
                     <div class="tc" style="width: 100%;">If so, please provide details below</div>
@@ -328,8 +328,8 @@
             <div class="table">
                 <div class="tr">
                     <div class="tc">Is there an Estate Agent involved in the transaction?</div>
-                    <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                    <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                    <div class="tc quarter">Yes <input type="radio" name="estateagent" id=""></div>
+                    <div class="tc quarter">No <input type="radio" name="estateagent" id=""></div>
                 </div>
                 <div class="tr">
                     <div class="tc" style="width: 100%;">If so, please provide details below</div>
@@ -385,8 +385,8 @@
             <div class="table">
                 <div class="tr">
                     <div class="tc">Is the property a “buy-to-let”?</div>
-                    <div class="tc quarter">Yes <input type="radio" name="" id=""></div>
-                    <div class="tc quarter">No <input type="radio" name="" id=""></div>
+                    <div class="tc quarter">Yes <input type="radio" name="buytolet" id=""></div>
+                    <div class="tc quarter">No <input type="radio" name="buytolet" id=""></div>
                 </div>
                 <div class="tr">
                     <div class="tc container">
@@ -399,8 +399,8 @@
                         </div>
                         <div class="tr">
                             <div class="tc">Please confirm whether you have agreed to buy the property with vacant possession or subject to the tenancy.</div>
-                            <div class="tc quarter"><strong>Vacant Possession</strong><input type="radio" name="" id=""></div>
-                            <div class="tc quarter"><strong>Subject to Tenancy</strong><input type="radio" name="" id=""></div>
+                            <div class="tc quarter"><strong>Vacant Possession</strong><input type="radio" name="vacantortenancy" id=""></div>
+                            <div class="tc quarter"><strong>Subject to Tenancy</strong><input type="radio" name="vacantortenancy" id=""></div>
                         </div>
                     </div>
                 </div>
@@ -423,11 +423,11 @@
                 <li>Correspond with any estate agents in the chain to provide them with updates as to the progress of the transaction.*</li>
                 <li>Complete the sale when we are able to do so.</li>
             </ul>
-            <div class="signature-block-1"></div>
-            <div class="signature-block-2"></div>
-            <div class="signature-block-3"></div>
-            <div class="signature-block-4"></div>
-            <p>If there is more than one owner of the property, you must each sign this form.</p>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-1"></div></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-2"></div></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-3"></div></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-4"></div></div>
+            <p style="clear: both;">If there is more than one owner of the property, you must each sign this form.</p>
             <p><strong>Note: </strong>*We are accredited as part of the Law Society's Conveyancing Quality Scheme ("CQS").  This is designed to improve transparency of transactions, raise service levels and provide better communication and a more efficient process.  To achieve this we need to be able to share information with other parties involved in this transaction and any related chain of transactions.  By signing this form you are expressly consenting to us sharing information in this way.  If you have any particular queries or concerns regarding CQS please do not hesitate to raise these with us at an early stage.</p>
         </form>
     </div>
