@@ -39,20 +39,47 @@
             color: red;
         }
         .sign-html-form form .table{
-            display: table;
-            border: 1px black solid;
-            border-collapse: collapse;
-            width: 90%;
-            margin: auto;
-        }
-        .sign-html-form form div.tr{
-            display: table-row;
-        }
-        .sign-html-form form .tc{
-            border: 1px black solid;
-            display: table-cell;
-            padding: 5px;
-        }
+        display: flex;
+        flex-direction: column;
+        border: 1px black solid;
+        border-collapse: collapse;
+        width: 90%;
+        margin: auto;
+    }
+    .sign-html-form form div.tr{
+        display: flex;
+        width: 100%;
+    }
+    .sign-html-form form .tc{
+        border: 1px black solid;
+        display: table-cell;
+        padding: 5px;
+        
+    }
+    .sign-html-form form .tc:not(.container){
+        width: 50%;
+    }
+    .sign-html-form form div.tc.container{
+        writing-mode: sideways-lr;
+        text-orientation: sideways-right;
+        width: 5%;
+        text-align: center;
+        background-color: lightgray;
+    }
+    .sign-html-form form .tc > .tr{
+        padding: 0px;
+        width: 100%;
+    }
+    .sign-html-form form .tc:has(.tr){
+        padding: 0%;
+        width: 95%;
+    }
+    .sign-html-form form .tc.half{
+        width: 45%;
+    }
+    .sign-html-form form .tc.quarter{
+        width: 25%;
+    }
         .sign-html-form form .tc:has(div){
             border: none;
         }
@@ -106,9 +133,9 @@
         .sign-html-form form div.small-container{
             display: none;
         }
-        .sign-html-form form .conditional{
+        /* .sign-html-form form .conditional{
             display: none;
-        }
+        } */
         @media (max-width: 600px) {
             .sign-html-form form .table .tc, .tr, .quarter, .half, .sign-html-form form .table .tr.flex{
                 display: block;
@@ -131,6 +158,12 @@
                 width: 8%;
                 text-align: center;
             }
+            .sign-html-form form div.tc:has(.tr){
+                padding: 0;
+            }
+            .sign-html-form form .tc:has(div){
+                border: none;
+        }
         }
     </style>
     <div class="sign-html-form">
@@ -160,32 +193,33 @@
                             Payment
                         </div>
                         <div class="tc">
-                            <div class="tr flex">
-                                <p>Please indicate your preferred payment method  </p>
-                                                       
+                            <div class="tr">
+                               <div class="tc" style="width: 100%;">Please indicate your preferred payment method</div>
                             </div>
                             <div class="tr">
                                 <div class="tc">
                                     <strong>Payment to be recieved by:</strong>
                                 </div>
-                                <div class="tr">
-                                    <div class="tc">
-                                        <input type="radio" name="paymenttype" id="paymenttype1">
-                                        <label for="paymenttype1"><strong>3 Day Payment</strong></label>
+                                <div class="tc">
+                                    <div class="tr">
+                                        <div class="tc">
+                                            <input type="radio" name="paymenttype" id="paymenttype1">
+                                            <label for="paymenttype1"><strong>3 Day Payment</strong></label>
+                                        </div>
+                                        <div class="tc">No Charge</div>
+                                        <div class="tc">Paid directly into your UK bank account taking 3 working days for funds to be available</div>
                                     </div>
-                                    <div class="tc">No Charge</div>
-                                    <div class="tc">Paid directly into your UK bank account taking 3 working days for funds to be available</div>
-                                </div>
-                                <div class="tr">
+                                <div class="tr small-container">
                                     <div class="tc small-container one">Or</div>
                                 </div>
-                                <div class="tr">
-                                    <div class="tc">
-                                        <input type="radio" name="paymenttype" id="paymenttype2">
-                                        <label for="paymenttype2"><strong>Same Day Payment</strong></label>
+                                    <div class="tr">
+                                        <div class="tc">
+                                            <input type="radio" name="paymenttype" id="paymenttype2">
+                                            <label for="paymenttype2"><strong>Same Day Payment</strong></label>
+                                        </div>
+                                        <div class="tc">&pound;60.00 inc VAT</div>
+                                        <div class="tc">Paid directly into your UK bank account with funds available on the same working day</div>
                                     </div>
-                                    <div class="tc">&pound;60.00 inc VAT</div>
-                                    <div class="tc">Paid directly into your UK bank account with funds available on the same working day</div>
                                 </div>
                             </div>
                         </div>
@@ -223,8 +257,9 @@
                     <div class="tr">
                         <div class="tc small-container three">Authorisation</div>
                         <div class="tc container three">Authorisation</div>
-                        <div class="tr"><div class="tc"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
-                        <div class="tr flex" style="justify-content: space-around;">
+                        <div class="tc">
+                            <div class="tr"><div class="tc" style="width: 100%;"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
+                            <div class="tr flex" style="justify-content: space-around;">
                             <div class="tc quarter"><div class="signature-block-1"></div></div>
                             <div class="tc quarter"><div class="signature-block-2"></div></div>
                         </div>
@@ -232,10 +267,10 @@
                             <div class="tc quarter"><div class="signature-block-3"></div></div>
                             <div class="tc quarter"><div class="signature-block-4"></div></div>
                         </div>
+                        </div>
                     </div>
                     <div class="tr">
-                        <div class="tc" style="width: 0px;"></div>
-                        <div class="tc">
+                        <div class="tc" style="width: 100%;">
                         <strong>Note: </strong>We rely entirely on the information you provide in this form when setting up a transfer of funds to your nominated account and shall have no liability if the account details provided are incorrect. As such, you should ensure you check the information you have provided thoroughly to ensure it is correct prior to returning this form to us. <br>
                         <br>Please note that, if you wish to change the bank account you want us to send funds to at any stage, we will require confirmation of the new account details in writing and evidence to support the proposed change such as a paying in slip for the new account or a copy of the bank statement to verify the account, together with any other investigations we may consider appropriate.  This is to protect you against potential fraud. <br>
                         <br>Please be aware that we may telephone you to verify account details before making payment.</div>
@@ -300,28 +335,33 @@
                     </div>
                     <div class="tr">
                         <div class="tc container four">International</div>
-                        <div class="tr flex">Please provide the following (and any routing bank details if your bank does not accept international transfers):</div>
-                        <div class="tr flex">
+                        <div class="tc">
+                            <div class="tr ">
+                            <div class="tc" style="width: 100%;">Please provide the following (and any routing bank details if your bank does not accept international transfers):</div></div>
+                        <div class="tr ">
                             <div class="tc half">BIC Code:</div>
                             <div class="tc half"><input type="text" name="biccode" id="biccode"></div>
                         </div>
-                        <div class="tr flex">
+                        <div class="tr ">
                             <div class="tc half">Swift Code:</div>
                             <div class="tc half"><input type="text" name="swiftcode" id="swiftcode"></div>
                         </div>
-                        <div class="tr flex">
+                        <div class="tr">
                             <div class="tc half">IBAN Number:</div>
                             <div class="tc half"><input type="text" name="ibanno" id="ibanno"></div>
                         </div>
-                        <div class="tr flex">
+                        <div class="tr ">
                             <div class="tc half">NCC Number:</div>
                             <div class="tc half"><input type="text" name="nccno" id="nccno"></div>
                         </div>
+                        </div>
                     </div>
                     <div class="tr">
+                        <div class="tc small-container three">Authorisation</div>
                         <div class="tc container three">Authorisation</div>
-                        <div class="tr"><div class="tc"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
-                        <div class="tr flex" style="justify-content: space-around;">
+                        <div class="tc">
+                            <div class="tr"><div class="tc" style="width: 100%;"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
+                            <div class="tr flex" style="justify-content: space-around;">
                             <div class="tc quarter"><div class="signature-block-1"></div></div>
                             <div class="tc quarter"><div class="signature-block-2"></div></div>
                         </div>
@@ -329,10 +369,10 @@
                             <div class="tc quarter"><div class="signature-block-3"></div></div>
                             <div class="tc quarter"><div class="signature-block-4"></div></div>
                         </div>
+                        </div>
                     </div>
                     <div class="tr ">
-                        <div class="tc"></div>
-                        <div class="tc">
+                        <div class="tc" style="width: 100%;">
                         <strong>Note: </strong>We rely entirely on the information you provide in this form when setting up a transfer of funds to your nominated account and shall have no liability if the account details provided are incorrect. As such, you should ensure you check the information you have provided thoroughly to ensure it is correct prior to returning this form to us. <br>
                         <br>Please note that, if you wish to change the bank account you want us to send funds to at any stage, we will require confirmation of the new account details in writing and evidence to support the proposed change such as a paying in slip for the new account or a copy of the bank statement to verify the account, together with any other investigations we may consider appropriate.  This is to protect you against potential fraud. <br>
                         <br>Please be aware that we may telephone you to verify account details before making payment.
