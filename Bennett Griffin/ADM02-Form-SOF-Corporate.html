@@ -55,8 +55,8 @@
             padding: 5px;
             box-sizing: border-box;
         }
-        .sign-html-form form .col-1{
-            width: 29%;
+        .sign-html-form form .col-3{
+            width: 20%;
         }
         .sign-html-form form .sig-block{
             width: 60%;
@@ -79,7 +79,7 @@
             padding: 15px;
         }
         .sign-html-form form .currency{
-            width: 60%;
+            width: 80%;
         }
         /*removestart*/
         @media (max-width:600px) {
@@ -183,10 +183,10 @@
                     <div class="tc">Business Information</div>
                 </div>
                 <div class="th large-only">
-                    <div class="tc col-1">
+                    <div class="tc">
                         <strong>Business</strong>
                     </div>
-                    <div class="tc col-1">
+                    <div class="tc">
                         <strong>Information</strong>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                 <div class="th large-only">
                     <div class="tc">Include/remove source</div>
                     <div class="tc">Source</div>
-                    <div class="tc">Amount</div>
+                    <div class="tc col-3">Amount</div>
                     <div class="tc">Other information</div>
                 </div>
                 <div class="tr">
@@ -244,7 +244,7 @@
                     <div class="tc">Company Reserves/Profit
                     </div>
                     <div class="tc">
-                        <div data-conditional-switch="3" class="conditional">
+                        <div data-conditional-switch="3" class="conditional" style="display: block;">
                             &pound;<input type="text" class='required currency' name="companyprofit" id="companyprofit">
                         </div>
                         <div data-conditional-switch="4" class="conditional">
@@ -268,7 +268,7 @@
                     </div>
                     <div class="tc">Loan/Business Financing</div>
                     <div class="tc">
-                        <div data-conditional-switch=""="5" class="conditional">
+                        <div data-conditional-switch=""="5" class="conditional" style="display: block;">
                             &pound;<input type="text" class='required currency' name="loansa" id="loans">
                         </div>
                         <div data-conditional-switch=""="6" class="conditional">
@@ -289,8 +289,8 @@
                     </div>
                     <div class="tc">Investment Income</div>
                     <div class="tc">
-                        <div data-conditional-switch="7" class="conditional">
-                            &pound;<input type="text" class="required" name="investmentincomea" id="investmentincome">
+                        <div data-conditional-switch="7" class="conditional" style="display: block;">
+                            &pound;<input type="text" class="currency required" name="investmentincomea" id="investmentincome">
                         </div>
                         <div data-conditional-switch="8" class="conditional">
                             &pound;<input type="text" class='currency' name="investmentincomea" id="investmentincome">
@@ -313,7 +313,7 @@
                     </div>
                     <div class="tc">Sale of Company Assets</div>
                     <div class="tc">
-                        <div data-conditional-switch="9" class="conditional">
+                        <div data-conditional-switch="9" class="conditional" style="display: block;">
                             &pound;<input type="text" class='required currency' name="saleofassetsa" id="saleofassets">
                         </div>
                         <div data-conditional-switch="10" class="conditional">
@@ -337,7 +337,7 @@
                     </div>
                     <div class="tc">Other (Specify)</div>
                     <div class="tc">
-                        <div data-conditional-switch="11" class="conditional">
+                        <div data-conditional-switch="11" class="conditional" style="display: block;">
                             &pound;<input type="text" class='required currency' name="investmentincomea" id="investmentincome">
                         </div>
                         <div data-conditional-switch="12" class="conditional">
