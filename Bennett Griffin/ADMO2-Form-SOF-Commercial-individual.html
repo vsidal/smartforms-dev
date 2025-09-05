@@ -55,8 +55,8 @@
             padding: 5px;
             box-sizing: border-box;
         }
-        .sign-html-form form .col-1{
-            width: 29%;
+        .sign-html-form form .col-3{
+            width: 20%;
         }
         .sign-html-form form .sig-block{
             width: 60%;
@@ -77,6 +77,9 @@
             width: fit-content;
             margin: auto;
             padding: 15px;
+        }
+        .sign-html-form form .currency{
+            width: 80%;
         }
         /*removestart*/
         @media (max-width:600px) {
@@ -178,10 +181,10 @@
                     <div class="tc">Personal Information</div>
                 </div>
                 <div class="th large-only">
-                    <div class="tc col-1">
+                    <div class="tc">
                         <strong>Personal</strong>
                     </div>
-                    <div class="tc col-1">
+                    <div class="tc">
                         <strong>Information</strong>
                     </div>
                 </div>
@@ -219,19 +222,25 @@
                     </div>
                 </div>
                 <div class="th large-only">
-                    <div class="tc col-1">Source</div>
-                    <div class="tc">Amount</div>
+                    <div class="tc">Include/Remove Source</div>
+                    <div class="tc">Source</div>
+                    <div class="tc col-3">Amount</div>
                     <div class="tc">Other information</div>
                 </div>
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='saleofcurrenthome' id='saleofcurrenthomey' data-conditional-case='3'> Include source <br>
+                        <input type='radio'  name='saleofcurrenthome' id='saleofcurrenthomen' data-conditional-case='4'> Remove source
+                    </div>
                     <div class="tc col-1">Sale of current home (net of mortgage and other costs of sale approximately). Only tick include if we did not act/are not acting for you, on this sale
                     </div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="3" name="saleofhome" id=""> Include source <br>
-                        <input type="radio" data-conditional-case="4" name="saleofhome" id=""> Remove source
-                            <div class="conditional" data-conditional-switch="3">
-                                <div class="tc">&pound;<input type="text" class="required" name="saleofhome" id="saleofhome"></div>
-                            </div>   
+                        <div data-conditional-switch='3' class='conditional' style="display: block;">
+                            &pound;<input type=text' class='required currency' name='saleofcurrenthomea' id='saleofcurrenthomea'>
+                        </div>
+                        <div data-conditional-switch='4' class='conditional'>
+                            &pound;<input type=text' class='currency' name='saleofcurrenthomea' id='saleofcurrenthomea'>
+                        </div>   
                     </div>
                     <div class="tc">
                         Additional information: <textarea name="saleofhomeadditional" id="saleofhomeadditional"></textarea>
@@ -244,13 +253,18 @@
                     <div class="tc"></div>
                 </div>
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='mortgageloan' id='mortgageloany' data-conditional-case='5'> Include source <br>
+                        <input type='radio'  name='mortgageloan' id='mortgageloann' data-conditional-case='6'> Remove source
+                    </div>
                     <div class="tc col-1">Mortgage loan on new property</div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="5" name="mortgageloan" id=""> Include source <br>
-                        <input type="radio" data-conditional-case="6" name="mortgageloan" id=""> Remove source
-                            <div class="conditional" data-conditional-switch="5">
-                                <div class="tc">&pound;<input type="text" class="required" name="mortgageloan" id="mortgageloan"></div>
-                            </div>   
+                        <div data-conditional-switch='5' class='conditional'  style="display: block;">
+                            &pound;<input type=text' class='required currency' name='mortgageloana' id='mortgageloana'>
+                        </div>
+                        <div data-conditional-switch='6' class='conditional'>
+                            &pound;<input type=text' class='currency' name='mortgageloana' id='mortgageloana'>
+                        </div> 
                     </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
@@ -276,13 +290,18 @@
                     <div class="tc"></div>
                 </div>
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='investmentincome' id='investmentincomey' data-conditional-case='7'> Include source <br>
+                        <input type='radio'  name='investmentincome' id='investmentincomen' data-conditional-case='8'> Remove source
+                    </div>
                     <div class="tc">Investment Income</div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="7" name="investmentincome" id=""> Include source <br>
-                        <input type="radio" data-conditional-case="8" name="investmentincome" id=""> Remove source
-                            <div class="conditional" data-conditional-switch="7">
-                                <div class="tc">&pound;<input type="text" class="required" name="investmentincome" id="investmentincome"></div>
-                            </div>   
+                        <div data-conditional-switch='7' class='conditional'  style="display: block;">
+                            &pound;<input type=text' class='required currency' name='investmentincomea' id='investmentincomea'>
+                        </div>
+                        <div data-conditional-switch='8' class='conditional'>
+                            &pound;<input type=text' class='currency' name='investmentincomea' id='investmentincomea'>
+                        </div>  
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="investmentincomeadditional"></textarea>
@@ -295,13 +314,18 @@
                     <div class="tc"></div>
                 </div>
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='saleofassets' id='saleofassetsy' data-conditional-case='9'> Include source <br>
+                        <input type='radio'  name='saleofassets' id='saleofassetsn' data-conditional-case='10'> Remove source
+                    </div>
                     <div class="tc">Sale of Company Assets</div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="9" name="saleofassets" id=""> Include source <br>
-                        <input type="radio" data-conditional-case="10" name="saleofassets" id=""> Remove source
-                            <div class="conditional" data-conditional-switch="9">
-                                <div class="tc">&pound;<input type="text" class="required" name="saleofhome" id="saleofhome"></div>
-                            </div>   
+                        <div data-conditional-switch='9' class='conditional'  style="display: block;">
+                            &pound;<input type=text' class='required currency' name='saleofassetsa' id='saleofassetsa'>
+                        </div>
+                        <div data-conditional-switch='10' class='conditional'>
+                            &pound;<input type=text' class='currency' name='saleofassetsa' id='saleofassetsa'>
+                        </div> 
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="saleassetsadditional"></textarea>
@@ -314,13 +338,18 @@
                     <div class="tc"></div>
                 </div>
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='other' id='othery' data-conditional-case='11'> Include source <br>
+                        <input type='radio'  name='other' id='othern' data-conditional-case='12'> Remove source
+                    </div>
                     <div class="tc">Other (Specify)</div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="11" name="other1" id=""> Include other source <br>
-                        <input type="radio" data-conditional-case="12" name="other1" id=""> Remove other source
-                            <div class="conditional" data-conditional-switch="11">
-                                <div class="tc">&pound;<input type="text" class="required" name="saleofhome" id="saleofhome"></div>
-                            </div>   
+                        <div data-conditional-switch='11' class='conditional'  style="display: block;">
+                            &pound;<input type=text' class='required currency' name='othera' id='othera'>
+                        </div>
+                        <div data-conditional-switch='12' class='conditional'>
+                            &pound;<input type=text' class='currency' name='othera' id='othera'>
+                        </div> 
                     </div>
                     <div class="tc">
                         Additional Information: <textarea name="otheradditional"></textarea>
@@ -334,13 +363,18 @@
             
            <div class="table">
                 <div class="tr">
-                    <div class="tc col-1">Divorce settlement <br>Please provide a copy of the financial order/settlement agreement detailing the funds due to you together with a copy of your bank statement showing these funds arriving in your account.</div>
-                    <div class="tc">
-                        <input type="radio" data-conditional-case="13" name="divorcesettlement" id=""> Include source <br>
-                        <input type="radio" data-conditional-case="14" name="divorcesettlement" id=""> Remove source
-                            <div class="conditional" data-conditional-switch="13">
-                                <div class="tc">&pound;<input type="text" class="required" name="divorcesettlement" id="divorcesettlement"></div>
-                            </div>   
+                    <div class='tc'>
+                        <input type='radio' name='divorce' id='divorcey' data-conditional-case='13'> Include source <br>
+                        <input type='radio'  name='divorce' id='divorcen' data-conditional-case='14'> Remove source
+                    </div>
+                    <div class="tc ">Divorce settlement <br>Please provide a copy of the financial order/settlement agreement detailing the funds due to you together with a copy of your bank statement showing these funds arriving in your account.</div>
+                    <div class="tc  col-3">
+                        <div data-conditional-switch='13' class='conditional'  style="display: block;">
+                            &pound;<input type=text' class='required currency' name='divorcea' id='divorcea'>
+                        </div>
+                        <div data-conditional-switch='14' class='conditional'>
+                            &pound;<input type=text' class='currency' name='divorcea' id='divorcea'>
+                        </div>  
                     </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
@@ -348,7 +382,7 @@
                     <div class="tc">
                         <div class="tr">
                             <div class="tc">Are the funds in an account in your name?</div>
-                            <div class="tc">
+                            <div class="tc ">
                                 <input type="radio" name="divorcefunds" id="fundsyes"> Yes
                                 <input type="radio" name="divorcefunds" id="fundsno"> No
                             </div>
@@ -375,13 +409,18 @@
                     </div>
                 </div>
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='inheritance' id='inheritancey' data-conditional-case='15'> Include source <br>
+                        <input type='radio'  name='inheritance' id='inheritancen' data-conditional-case='16'> Remove source
+                    </div>
                     <div class="tc">Inheritance<br>Please provide a copy of any correspondence received from the solicitors dealing with the probate confirming your inheritance together with your bank statement showing the funds arriving in your account.  If no solicitors were instructed please provide confirmation direct from the executor together with your bank statement.</div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="15" name="inheritance" id=""> Include source <br>
-                        <input type="radio" data-conditional-case="16" name="inheritance" id=""> Remove source
-                            <div class="conditional" data-conditional-switch="15">
-                                <div class="tc">&pound;<input type="text" class="required" name="saleofhome" id="saleofhome"></div>
-                            </div>   
+                        <div data-conditional-switch='15' class='conditional' style="display: block;">
+                            &pound;<input type=text' class='required currency' name='inheritancea' id='inheritancea'>
+                        </div>
+                        <div data-conditional-switch='16' class='conditional'>
+                            &pound;<input type=text' class='currency' name='inheritancea' id='inheritancea'>
+                        </div>
                     </div>
                     <div class="tr small-only break">
                         <div class="tc"></div>
@@ -425,15 +464,20 @@
                     <div class="tc"></div>
                 </div>       
                 <div class="tr">
+                    <div class='tc'>
+                        <input type='radio' name='other2' id='other2y' data-conditional-case='17'> Include source <br>
+                        <input type='radio'  name='other2' id='other2n' data-conditional-case='18'> Remove source
+                    </div>
                     <div class="tc">Other:</div>
                     <div class="tc">
-                        <input type="radio" data-conditional-case="17" name="other2" id=""> Include other source <br>
-                        <input type="radio" data-conditional-case="18" name="other2" id=""> Remove other source
-                            <div class="conditional" data-conditional-switch="17">
-                                <div class="tc">&pound;<input type="text" class="required" name="other2" id="other2"></div>
-                            </div>   
+                        <div data-conditional-switch='17' class='conditional' style="display: block;">
+                            &pound;<input type=text' class='required currency' name='other2a' id='other2a'>
+                        </div>
+                        <div data-conditional-switch='18' class='conditional'>
+                            &pound;<input type=text' class='currency' name='other2a' id='other2a'>
+                        </div>
                     </div>
-                    <div class="tc">Please provide details: <textarea name="other" id="other"></textarea>
+                    <div class="tc">Please provide details: <textarea name="other2additional" id="other2additional"></textarea>
                         <div class="button-holder">
                             <button class="add-attachment">Upload Evidence</button>
                         </div>
