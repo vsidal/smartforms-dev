@@ -71,7 +71,7 @@
         padding: 0px;
         width: 100%;
     }
-    .sign-html-form form .tc:has(.tr){
+    .sign-html-form form .tc.holder{
         padding: 0%;
         width: 95%;
     }
@@ -98,6 +98,12 @@
         .sign-html-form form div.tc.container{
             writing-mode: unset;   
         }        
+    }
+    @media print{
+        .table{
+            break-inside: avoid;
+            overflow-wrap: break-word;
+        }
     }
     </style>
     <div class='sign-html-form'>
@@ -159,7 +165,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Contents + Fittings</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc">Have the parties agreed that any additional sum be paid for any contents or fittings of the property?</div>
                             <div class="tc quarter">Yes <input type="radio" name="fittingssum" id=""></div>
@@ -209,7 +215,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Non-Owner</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc">If not, in what capacity are you selling i.e. Executor/Attorney?</div>
                             <div class="tc quarter">Executor <input type="radio" name="executorattorney" id=""></div>
@@ -226,7 +232,7 @@
             <div class="table">
                 <div class="tr">
                     <div class="tc container">Lender</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Lender Name:</strong></div>
                             <div class="tc"><input type="text" name="" id=""></div>
@@ -258,7 +264,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Penalty</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc" style="width: 100%;"><textarea></textarea></div>
                         </div>
@@ -286,7 +292,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Lender</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Lender Name:</strong></div>
                             <div class="tc"><input type="text" name="" id=""></div>
@@ -337,7 +343,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Estate Agent</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Full Name:</strong></div>
                             <div class="tc"><input type="text" name="" id=""></div>
@@ -393,7 +399,7 @@
                     <div class="tc container">
                         Yes
                     </div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc" style="width: 75%;">Please provide a copy of the Tenancy Agreement and/or any information already provided by the selling agent, including regards to any notice to quit served.</div>
                             <div class="tc quarter">Enclosed <input type="checkbox" name="" id=""> <br> <button class="attachment">Upload Evidence</button></div>

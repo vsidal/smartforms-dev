@@ -80,21 +80,77 @@
     .sign-html-form form .tc.quarter{
         width: 25%;
     }
-        .sign-html-form form .tc:has(div){
-            border: none;
+    .sign-html-form form .tc:has(div){
+        border: none;
+    }
+    .sign-html-form form .tc.holder{
+        padding: 0%;
+    }
+    .sign-html-form form .tc.half{
+        width: 50%;
+    }
+    .sign-html-form form div.quarter{
+        width: 25%;
+    }
+    .sign-html-form form .tc > .tr{
+        padding: 0px;
+        width: 100%;
+    }
+    .sign-html-form form div.tc.container{
+        writing-mode: sideways-lr;
+        text-orientation: sideways-right;
+        width: 8%;
+        text-align: center;
+    }
+    .sign-html-form form div.tr.flex{
+        display:flex ;
+    }
+    .sign-html-form form div.tc.one{
+        color: white;
+        background-color: darkslategrey;
+    }
+    .sign-html-form form div.tc.two{
+        color: white;
+        background-color:grey;
+    }
+    .sign-html-form form div.tc.three{
+        background-color: lightgray;
+    }
+    .sign-html-form form div.tc.four{
+        background-color: #b2b2b2;
+    }
+    .sign-html-form form .button-holder{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .sign-html-form form .table input.sortcode{
+        width: 22px;
+    }
+    .sign-html-form form div.footer{
+        float: right;
+        color: #b2b2b2;
+    }
+    .sign-html-form form div.small-container{
+        display: none;
+    }
+    /* .sign-html-form form .conditional{
+        display: none;
+    } */
+    @media (max-width: 600px) {
+        .sign-html-form form .table .tc, .tr, .quarter, .half, .sign-html-form form .table .tr.flex{
+            display: block;
+            width: revert;
         }
-        .sign-html-form form .tc:has(.tr){
-            padding: 0%;
+        .sign-html-form form .table .container{
+            display: none;
         }
-        .sign-html-form form .tc.half{
-            width: 50%;
+        .sign-html-form form div.small-container{
+            display: block;
         }
-        .sign-html-form form div.quarter{
-            width: 25%;
-        }
-        .sign-html-form form .tc > .tr{
-            padding: 0px;
-            width: 100%;
+    }
+    @media print{
+        .sign-html-form form .switches{
+            display: none;
         }
         .sign-html-form form div.tc.container{
             writing-mode: sideways-lr;
@@ -102,67 +158,15 @@
             width: 8%;
             text-align: center;
         }
-        .sign-html-form form div.tr.flex{
-            display:flex ;
+        .sign-html-form form div.tc:has(.tr){
+            padding: 0;
         }
-        .sign-html-form form div.tc.one{
-            color: white;
-            background-color: darkslategrey;
+        .sign-html-form form .tc:has(div){
+            border: none;
         }
-        .sign-html-form form div.tc.two{
-            color: white;
-            background-color:grey;
-        }
-        .sign-html-form form div.tc.three{
-            background-color: lightgray;
-        }
-        .sign-html-form form div.tc.four{
-            background-color: #b2b2b2;
-        }
-        .sign-html-form form .button-holder{
-            text-align: center;
-            padding-bottom: 15px;
-        }
-        .sign-html-form form .table input.sortcode{
-            width: 22px;
-        }
-        .sign-html-form form div.footer{
-            float: right;
-            color: #b2b2b2;
-        }
-        .sign-html-form form div.small-container{
-            display: none;
-        }
-        /* .sign-html-form form .conditional{
-            display: none;
-        } */
-        @media (max-width: 600px) {
-            .sign-html-form form .table .tc, .tr, .quarter, .half, .sign-html-form form .table .tr.flex{
-                display: block;
-                width: revert;
-            }
-            .sign-html-form form .table .container{
-                display: none;
-            }
-            .sign-html-form form div.small-container{
-                display: block;
-            }
-        }
-        @media print{
-            .sign-html-form form .switches{
-                display: none;
-            }
-            .sign-html-form form div.tc.container{
-                writing-mode: sideways-lr;
-                text-orientation: sideways-right;
-                width: 8%;
-                text-align: center;
-            }
-            .sign-html-form form div.tc:has(.tr){
-                padding: 0;
-            }
-            .sign-html-form form .tc:has(div){
-                border: none;
+        .table{
+            break-inside: avoid;
+            overflow-wrap: break-word;
         }
         }
     </style>

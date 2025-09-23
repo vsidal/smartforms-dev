@@ -68,7 +68,7 @@
         padding: 0px;
         width: 100%;
     }
-    .sign-html-form form .tc:has(.tr){
+    .sign-html-form form .tc.holder{
         padding: 0%;
         width: 95%;
     }
@@ -95,6 +95,12 @@
         .sign-html-form form div.tc.container{
             writing-mode: unset;   
         }        
+    }
+    @media print{
+        .table{
+            break-inside: avoid;
+            overflow-wrap: break-word;
+        }
     }
     </style>
     <div class='sign-html-form'>
@@ -148,7 +154,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Lender</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Lender Name:</strong></div>
                             <div class="tc"><input type="text" name="lendername" id=""></div>
@@ -179,7 +185,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Broker</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Full Name:</strong></div>
                             <div class="tc"><input type="text" name="brokername" id=""></div>
@@ -236,7 +242,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Occupiers</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Full Name:</strong></div>
                             <div class="tc"><input type=text></div>
@@ -311,7 +317,7 @@
                     <div class="tc container">
                         Shares
                     </div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc quarter"><input class="currency" type="text">&percnt; to:</div>
                             <div class="tc" style="width: 75%;"><input type="text" name="share1" id=""></div>
@@ -376,7 +382,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Yes</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc">Is the property currently occupied by anyone other than the seller?</div>
                             <div class="tc quarter"><strong>Yes</strong> <input type="radio" name="selleroccupied" id=""></div>
@@ -415,7 +421,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Post Completion Alterations</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc">Are alterations to the property intended after completion?</div>
                             <div class="tc quarter"><strong>Yes</strong> <input type="radio" name="newalterations" id=""></div>
@@ -504,7 +510,7 @@
                 </div>
                 <div class="tr">
                     <div class="tc container">Surveyor</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc"><strong>Firm:</strong></div>
                             <div class="tc"><input type="text"></div>
