@@ -168,8 +168,8 @@
             <div class="switches" style="clear: both;">
                 <h1>Please Select Bank account type:</h1>
                 <div class="" style="text-align: center;">
-                    <input type="radio" name="banktype" id="banktype" data-conditional-case="1"> UK Bank Account <br>
-                    <input type="radio" name="banktype" id="banktype" data-conditional-case="2"> International Bank Account
+                    <input type="radio" name="banktypeuk" id="banktype" data-conditional-case="1"> UK Bank Account <br>
+                    <input type="radio" name="banktypeint" id="banktype" data-conditional-case="2"> International Bank Account
                 </div>
             </div>
             <div class="domestic conditional" data-conditional-switch="1">
@@ -199,7 +199,7 @@
                                 <div class="tc holder">
                                     <div class="tr">
                                         <div class="tc">
-                                            <input type="radio" name="paymenttype" id="paymenttype1">
+                                            <input type="radio" name="paymenttype1" id="paymenttype1">
                                             <label for="paymenttype1"><strong>3 Day Payment</strong></label>
                                         </div>
                                         <div class="tc">No Charge</div>
@@ -210,7 +210,7 @@
                                 </div>
                                     <div class="tr">
                                         <div class="tc">
-                                            <input type="radio" name="paymenttype" id="paymenttype2">
+                                            <input type="radio" name="paymenttype2" id="paymenttype2">
                                             <label for="paymenttype2"><strong>Same Day Payment</strong></label>
                                         </div>
                                         <div class="tc">&pound;60.00 inc VAT</div>
@@ -256,13 +256,29 @@
                         <div class="tc holder">
                             <div class="tr"><div class="tc" style="width: 100%;"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
                             <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-1"></div></div>
-                            <div class="tc quarter"><div class="signature-block-2"></div></div>
-                        </div>
-                        <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-3"></div></div>
-                            <div class="tc quarter"><div class="signature-block-4"></div></div>
-                        </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-1"></div>
+                                    <div><input type="text" class="limit-party1" name="fullname1" id="fullname1"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-2"></div>
+                                    <div><input type="text" class="limit-party2" name="fullname2" id="fullname2"></div>
+                                    <div><span style="display: block;" class="auto-date"></span></div>
+                                </div>
+                            </div>
+                            <div class="tr flex" style="justify-content: space-around;">
+                                <div class="tc quarter">
+                                    <div class="signature-block-3"></div>
+                                    <div><input type="text" class="limit-party3" name="fullname3" id="fullname3"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-4"></div>
+                                    <div><input type="text" class="limit-party4" name="fullname4" id="fullname4"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tr">
@@ -358,13 +374,29 @@
                         <div class="tc holder">
                             <div class="tr"><div class="tc" style="width: 100%;"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
                             <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-1"></div></div>
-                            <div class="tc quarter"><div class="signature-block-2"></div></div>
-                        </div>
-                        <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-3"></div></div>
-                            <div class="tc quarter"><div class="signature-block-4"></div></div>
-                        </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-1"></div>
+                                    <div><input type="text" class="limit-party-1" name="fullname1" id="fullname1"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-2"></div>
+                                    <div><input type="text" class="limit-party-2" name="fullname2" id="fullname2"></div>
+                                    <div><span style="display: block;" class="auto-date"></span></div>
+                                </div>
+                            </div>
+                            <div class="tr flex" style="justify-content: space-around;">
+                                <div class="tc quarter">
+                                    <div class="signature-block-3"></div>
+                                    <div><input type="text" class="limit-party-3" name="fullname3" id="fullname3"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-4"></div>
+                                    <div><input type="text" class="limit-party-4" name="fullname4" id="fullname4"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tr ">
