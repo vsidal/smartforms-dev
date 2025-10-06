@@ -39,35 +39,113 @@
             color: red;
         }
         .sign-html-form form .table{
-            display: table;
-            border: 1px black solid;
-            border-collapse: collapse;
-            width: 90%;
-            margin: auto;
+        display: flex;
+        flex-direction: column;
+        border: 1px black solid;
+        border-collapse: collapse;
+        width: 90%;
+        margin: auto;
+    }
+    .sign-html-form form div.tr{
+        display: flex;
+        width: 100%;
+    }
+    .sign-html-form form .tc{
+        border: 1px black solid;
+        display: table-cell;
+        padding: 5px;
+        
+    }
+    .sign-html-form form .tc:not(.container){
+        width: 50%;
+    }
+    .sign-html-form form div.tc.container{
+        writing-mode: sideways-lr;
+        text-orientation: sideways-right;
+        width: 5%;
+        text-align: center;
+        background-color: lightgray;
+    }
+    .sign-html-form form .tc > .tr{
+        padding: 0px;
+        width: 100%;
+    }
+    .sign-html-form form .tc.container{
+        padding: 0%;
+        width: 95%;
+    }
+    .sign-html-form form .tc.half{
+        width: 50%;
+    }
+    .sign-html-form form .tc.quarter{
+        width: 25%;
+    }
+    .sign-html-form form .tc:has(div){
+        border: none;
+    }
+    .sign-html-form form .tc.holder{
+        padding: 0%;
+        width: 100%;
+    }
+    .sign-html-form form .tc > .tr{
+        padding: 0px;
+        width: 100%;
+    }
+    .sign-html-form form div.tc.container{
+        writing-mode: sideways-lr;
+        text-orientation: sideways-right;
+        width: 8%;
+        text-align: center;
+    }
+    .sign-html-form form div.tr.flex{
+        display:flex ;
+    }
+    .sign-html-form form div.tc.one{
+        color: white;
+        background-color: darkslategrey;
+    }
+    .sign-html-form form div.tc.two{
+        color: white;
+        background-color:grey;
+    }
+    .sign-html-form form div.tc.three{
+        background-color: lightgray;
+    }
+    .sign-html-form form div.tc.four{
+        background-color: #b2b2b2;
+    }
+    .sign-html-form form .button-holder{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .sign-html-form form .table input.sortcode{
+        width: 22px;
+    }
+    .sign-html-form form div.footer{
+        float: right;
+        color: #b2b2b2;
+    }
+    .sign-html-form form div.small-container{
+        display: none;
+    }
+    /* .sign-html-form form .conditional{
+        display: none;
+    } */
+    @media (max-width: 600px) {
+        .sign-html-form form .table .tc, .tr, .quarter, .half, .sign-html-form form .table .tr.flex{
+            display: block;
+            width: revert;
         }
-        .sign-html-form form div.tr{
-            display: table-row;
+        .sign-html-form form .table .container{
+            display: none;
         }
-        .sign-html-form form .tc{
-            border: 1px black solid;
-            display: table-cell;
-            padding: 5px;
+        .sign-html-form form div.small-container{
+            display: block;
         }
-        .sign-html-form form .tc:has(div[class^="signature-block-"]){
-            border: none;
-        }
-        .sign-html-form form .tc:has(.tr){
-            padding: 0%;
-        }
-        .sign-html-form form .tc.half{
-            width: 50%;
-        }
-        .sign-html-form form div.quarter{
-            width: 25%;
-        }
-        .sign-html-form form .tc > .tr{
-            padding: 0px;
-            width: 100%;
+    }
+    @media print{
+        .sign-html-form form .switches{
+            display: none;
         }
         .sign-html-form form div.tc.container{
             writing-mode: sideways-lr;
@@ -75,56 +153,13 @@
             width: 8%;
             text-align: center;
         }
-        .sign-html-form form div.tr.flex{
-            display:flex ;
+        .sign-html-form form .tc:has(div){
+            border: none;
         }
-        .sign-html-form form div.tc.one{
-            color: white;
-            background-color: darkslategrey;
+        .table{
+            break-inside: avoid;
+            overflow-wrap: break-word;
         }
-        .sign-html-form form div.tc.two{
-            color: white;
-            background-color:grey;
-        }
-        .sign-html-form form div.tc.three{
-            background-color: lightgray;
-        }
-        .sign-html-form form div.tc.four{
-            background-color: #b2b2b2;
-        }
-        .sign-html-form form .button-holder{
-            text-align: center;
-            padding-bottom: 15px;
-        }
-        .sign-html-form form .table input.sortcode{
-            width: 22px;
-        }
-        .sign-html-form form div.footer{
-            float: right;
-            color: #b2b2b2;
-        }
-        .sign-html-form form div.small-container{
-            display: none;
-        }
-        /* .sign-html-form form .conditional{
-            display: none;
-        } */
-        @media (max-width: 600px) {
-            .sign-html-form form .table .tc, .tr, .quarter, .half, .sign-html-form form .table .tr.flex{
-                display: block;
-                width: revert;
-            }
-            .sign-html-form form .table .container{
-                display: none;
-            }
-            .sign-html-form form div.small-container{
-                display: block;
-            }
-        }
-        @media print{
-            .sign-html-form form .switches{
-                display: none;
-            }
         }
     </style>
     <div class="sign-html-form">
@@ -133,8 +168,8 @@
             <div class="switches" style="clear: both;">
                 <h1>Please Select Bank account type:</h1>
                 <div class="" style="text-align: center;">
-                    <input type="radio" name="banktype" id="banktype" data-conditional-case="1"> UK Bank Account <br>
-                    <input type="radio" name="banktype" id="banktype" data-conditional-case="2"> International Bank Account
+                    <input type="radio" name="banktypeuk" id="banktype" data-conditional-case="1"> UK Bank Account <br>
+                    <input type="radio" name="banktypeint" id="banktype" data-conditional-case="2"> International Bank Account
                 </div>
             </div>
             <div class="domestic conditional" data-conditional-switch="1">
@@ -153,33 +188,34 @@
                         <div class="tc container one">
                             Payment
                         </div>
-                        <div class="tc">
-                            <div class="tr flex">
-                                <p>Please indicate your preferred payment method  </p>
-                                                       
+                        <div class="tc holder">
+                            <div class="tr">
+                               <div class="tc" style="width: 100%;">Please indicate your preferred payment method</div>
                             </div>
                             <div class="tr">
                                 <div class="tc">
                                     <strong>Payment to be recieved by:</strong>
                                 </div>
-                                <div class="tr">
-                                    <div class="tc">
-                                        <input type="radio" name="paymenttype" id="paymenttype1">
-                                        <label for="paymenttype1"><strong>3 Day Payment</strong></label>
+                                <div class="tc holder">
+                                    <div class="tr">
+                                        <div class="tc">
+                                            <input type="radio" name="paymenttype1" id="paymenttype1">
+                                            <label for="paymenttype1"><strong>3 Day Payment</strong></label>
+                                        </div>
+                                        <div class="tc">No Charge</div>
+                                        <div class="tc">Paid directly into your UK bank account taking 3 working days for funds to be available</div>
                                     </div>
-                                    <div class="tc">No Charge</div>
-                                    <div class="tc">Paid directly into your UK bank account taking 3 working days for funds to be available</div>
-                                </div>
-                                <div class="tr">
+                                <div class="tr small-container">
                                     <div class="tc small-container one">Or</div>
                                 </div>
-                                <div class="tr">
-                                    <div class="tc">
-                                        <input type="radio" name="paymenttype" id="paymenttype2">
-                                        <label for="paymenttype2"><strong>Same Day Payment</strong></label>
+                                    <div class="tr">
+                                        <div class="tc">
+                                            <input type="radio" name="paymenttype2" id="paymenttype2">
+                                            <label for="paymenttype2"><strong>Same Day Payment</strong></label>
+                                        </div>
+                                        <div class="tc">&pound;60.00 inc VAT</div>
+                                        <div class="tc">Paid directly into your UK bank account with funds available on the same working day</div>
                                     </div>
-                                    <div class="tc">&pound;60.00 inc VAT</div>
-                                    <div class="tc">Paid directly into your UK bank account with funds available on the same working day</div>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +227,7 @@
                         <div class="tc container two">
                             Banking
                         </div>
-                        <div class="tc">
+                        <div class="tc holder">
                             <div class="tr flex">
                                 <div class="tc half">Bank Name:</div>
                                 <div class="tc half"><input type="text" name="bankname" id="bankname"></div>
@@ -215,21 +251,38 @@
                         </div>
                     </div>
                     <div class="tr">
-                        <div class="tc small-container three">Authorisation</div>
+                        <div class="tc small-container three">Authorisation </div>
                         <div class="tc container three">Authorisation</div>
-                        <div class="tr"><div class="tc"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
-                        <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-1"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-2"><div class="signature-tag"></div></div></div>
-                        </div>
-                        <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-3"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-4"><div class="signature-tag"></div></div></div>
+                        <div class="tc holder">
+                            <div class="tr"><div class="tc" style="width: 100%;"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
+                            <div class="tr flex" style="justify-content: space-around;">
+                                <div class="tc quarter">
+                                    <div class="signature-block-1"></div>
+                                    <div><input type="text" class="limit-party1" name="fullname1" id="fullname1"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-2"></div>
+                                    <div><input type="text" class="limit-party2" name="fullname2" id="fullname2"></div>
+                                    <div><span style="display: block;" class="auto-date"></span></div>
+                                </div>
+                            </div>
+                            <div class="tr flex" style="justify-content: space-around;">
+                                <div class="tc quarter">
+                                    <div class="signature-block-3"></div>
+                                    <div><input type="text" class="limit-party3" name="fullname3" id="fullname3"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-4"></div>
+                                    <div><input type="text" class="limit-party4" name="fullname4" id="fullname4"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tr">
-                        <div class="tc" style="width: 0px;"></div>
-                        <div class="tc">
+                        <div class="tc" style="width: 100%;">
                         <strong>Note: </strong>We rely entirely on the information you provide in this form when setting up a transfer of funds to your nominated account and shall have no liability if the account details provided are incorrect. As such, you should ensure you check the information you have provided thoroughly to ensure it is correct prior to returning this form to us. <br>
                         <br>Please note that, if you wish to change the bank account you want us to send funds to at any stage, we will require confirmation of the new account details in writing and evidence to support the proposed change such as a paying in slip for the new account or a copy of the bank statement to verify the account, together with any other investigations we may consider appropriate.  This is to protect you against potential fraud. <br>
                         <br>Please be aware that we may telephone you to verify account details before making payment.</div>
@@ -249,7 +302,7 @@
                         <div class="tc container one">
                             Payment
                         </div>
-                        <div class="tc">
+                        <div class="tc holder">
                             <div class="tr">
                                 <div class="tc">
                                     <strong>Payment to be recieved by:</strong>
@@ -269,7 +322,7 @@
                         <div class="tc container two">
                             Banking
                         </div>
-                        <div class="tc">
+                        <div class="tc holder">
                             <div class="tr flex">
                                 <div class="tc half">Bank Name:</div>
                                 <div class="tc half"><input type="text" name="bankname" id="bankname"></div>
@@ -294,39 +347,60 @@
                     </div>
                     <div class="tr">
                         <div class="tc container four">International</div>
-                        <div class="tr flex">Please provide the following (and any routing bank details if your bank does not accept international transfers):</div>
-                        <div class="tr flex">
+                        <div class="tc holder">
+                            <div class="tr ">
+                            <div class="tc" style="width: 100%;">Please provide the following (and any routing bank details if your bank does not accept international transfers):</div></div>
+                        <div class="tr ">
                             <div class="tc half">BIC Code:</div>
                             <div class="tc half"><input type="text" name="biccode" id="biccode"></div>
                         </div>
-                        <div class="tr flex">
+                        <div class="tr ">
                             <div class="tc half">Swift Code:</div>
                             <div class="tc half"><input type="text" name="swiftcode" id="swiftcode"></div>
                         </div>
-                        <div class="tr flex">
+                        <div class="tr">
                             <div class="tc half">IBAN Number:</div>
                             <div class="tc half"><input type="text" name="ibanno" id="ibanno"></div>
                         </div>
-                        <div class="tr flex">
+                        <div class="tr ">
                             <div class="tc half">NCC Number:</div>
                             <div class="tc half"><input type="text" name="nccno" id="nccno"></div>
                         </div>
+                        </div>
                     </div>
                     <div class="tr">
+                        <div class="tc small-container three">Authorisation</div>
                         <div class="tc container three">Authorisation</div>
-                        <div class="tr"><div class="tc"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
-                        <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-1"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-2"><div class="signature-tag"></div></div></div>
-                        </div>
-                        <div class="tr flex" style="justify-content: space-around;">
-                            <div class="tc quarter"><div class="signature-block-3"><div class="signature-tag"></div></div></div>
-                            <div class="tc quarter"><div class="signature-block-4"><div class="signature-tag"></div></div></div>
+                        <div class="tc holder">
+                            <div class="tr"><div class="tc" style="width: 100%;"><strong>Important: </strong>Please sign below to give your authority for payments to be made to the above account. All clients are required to sign this form.</div></div>
+                            <div class="tr flex" style="justify-content: space-around;">
+                                <div class="tc quarter">
+                                    <div class="signature-block-1"></div>
+                                    <div><input type="text" class="limit-party-1" name="fullname1" id="fullname1"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-2"></div>
+                                    <div><input type="text" class="limit-party-2" name="fullname2" id="fullname2"></div>
+                                    <div><span style="display: block;" class="auto-date"></span></div>
+                                </div>
+                            </div>
+                            <div class="tr flex" style="justify-content: space-around;">
+                                <div class="tc quarter">
+                                    <div class="signature-block-3"></div>
+                                    <div><input type="text" class="limit-party-3" name="fullname3" id="fullname3"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                                <div class="tc quarter">
+                                    <div class="signature-block-4"></div>
+                                    <div><input type="text" class="limit-party-4" name="fullname4" id="fullname4"></div>
+                                    <div><span class="auto-date"></span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="tr ">
-                        <div class="tc"></div>
-                        <div class="tc">
+                        <div class="tc" style="width: 100%;">
                         <strong>Note: </strong>We rely entirely on the information you provide in this form when setting up a transfer of funds to your nominated account and shall have no liability if the account details provided are incorrect. As such, you should ensure you check the information you have provided thoroughly to ensure it is correct prior to returning this form to us. <br>
                         <br>Please note that, if you wish to change the bank account you want us to send funds to at any stage, we will require confirmation of the new account details in writing and evidence to support the proposed change such as a paying in slip for the new account or a copy of the bank statement to verify the account, together with any other investigations we may consider appropriate.  This is to protect you against potential fraud. <br>
                         <br>Please be aware that we may telephone you to verify account details before making payment.

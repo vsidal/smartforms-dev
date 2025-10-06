@@ -68,11 +68,11 @@
         text-align: center;
         background-color: lightgray;
     }
-    .sign-html-form form .tc > .tr{
+    .sign-html-form form .tc > div.tr{
         padding: 0px;
         width: 100%;
     }
-    .sign-html-form form .tc:has(.tr){
+    .sign-html-form form .tc.holder{
         padding: 0%;
         width: 95%;
     }
@@ -96,6 +96,12 @@
         .sign-html-form form div.tc.container{
             writing-mode: unset;   
         }        
+    }
+    @media print{
+        .table{
+            break-inside: avoid;
+            overflow-wrap: break-word;
+        }
     }
     </style>
     <div class='sign-html-form'>
@@ -142,7 +148,7 @@
                 </div>
                 <div class="tr ">
                     <div class="tc container">Name Change</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc half">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
                             <div class="tc quarter">Yes <input type="radio" name="coa1" id="coa1yes"></div>
@@ -150,9 +156,9 @@
                         </div>
                         <div class="tr">
                             <div class="tc half">If so, please provide the original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you.</div>
-                            <div class="tc quarter">Attached <input type="radio" name="namechange1" id="namechange1y">
+                            <div class="tc quarter">Paper Original to Be Provided <input type="radio" name="namechange1" id="namechange1y">
                                 <br>
-                                <button class="attachment">Add attachment</button>
+                                <p>Please arrange to provide us with the paper original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you. We cannot accept digital versions or photocopies. </p>
                             </div>
                             <div class="tc quarter">N/A <input type="radio" name="namechange1" id="namechange1n"></div>
                         </div>
@@ -196,7 +202,7 @@
                 </div>
                 <div class="tr ">
                     <div class="tc container">Name Change</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc half">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
                             <div class="tc quarter">Yes <input type="radio" name="coa2" id="coa2yes"></div>
@@ -204,9 +210,10 @@
                         </div>
                         <div class="tr">
                             <div class="tc half">If so, please provide the original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you.</div>
-                            <div class="tc quarter">Attached <input type="radio" name="namechange2" id="namechange2y">
+                            <div class="tc quarter">Paper Original to Be Provided <input type="radio" name="namechange2" id="namechange2y">
                                 <br>
-                                <button class="attachment">Add attachment</button></div>
+                                <p>Please arrange to provide us with the paper original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you. We cannot accept digital versions or photocopies. </p>
+                            </div>
                             <div class="tc quarter">N/A <input type="radio" name="namechange2" id="namechange2n"></div>
                         </div>
                     </div>
@@ -249,7 +256,7 @@
                 </div>
                 <div class="tr ">
                     <div class="tc container">Name Change</div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc half">Have you changed your name since you bought the property e.g. marriage or Deed Poll?</div>
                             <div class="tc quarter">Yes <input type="radio" name="coa3" id="coa3yes"></div>
@@ -257,9 +264,10 @@
                         </div>
                         <div class="tr">
                             <div class="tc half">If so, please provide the original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you.</div>
-                            <div class="tc quarter">Attached <input type="radio" name="namechange3" id="namechange3y">
+                            <div class="tc quarter">Paper Original to Be Provided <input type="radio" name="namechange3" id="namechange3y">
                                 <br>
-                                <button class="attachment">Add attachment</button></div>
+                                <p>Please arrange to provide us with the paper original Marriage Certificate or Change of Name Deed, which we will photocopy and return to you. We cannot accept digital versions or photocopies. </p>
+                            </div>
                             <div class="tc quarter">N/A <input type="radio" name="namechange3" id="namechange3n"></div>
                         </div>
                     </div>
@@ -284,7 +292,7 @@
                     <div class="tc container">
                         Lender
                     </div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc">Lender Name:</div>
                             <div class="tc"><input type="text" name="lendername" id="lendername"></div>
@@ -353,7 +361,7 @@
                     <div class="tc container">
                         Transaction Details
                     </div>
-                    <div class="tc">
+                    <div class="tc holder">
                         <div class="tr">
                             <div class="tc" style="width: 100%;">If so, what stage is the transaction at?</div></div>
                         <div class="tr">
@@ -384,10 +392,10 @@
                 <div class="tr">
                     <div class="tc" style="width: 100%;">We take pride in ensuring that our Will-Writing Service is tailor-made to our client&apos;s individual needs, and would appreciate the opportunity of arranging a face to face meeting with a member of our Wills Service Team.</div></div>
             </div>
-            <div class="signature-block-1">Parties to sign here</div>
-            <div class="signature-block-2"></div>
-            <div class="signature-block-3"></div>
-            <div class="signature-block-4"></div>
+           <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-1"></div></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-2"></div></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-3"></div></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-4"></div></div>
         </form>
     </div>
 </body>
