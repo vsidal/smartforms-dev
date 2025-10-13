@@ -101,6 +101,9 @@
             break-inside: avoid;
             overflow-wrap: break-word;
         }
+        button{
+            display: none;
+        }
     }
     </style>
     <div class='sign-html-form'>
@@ -133,7 +136,7 @@
                     <div class="tc"><input type="text" name="chattelsprice" id=""></div>
                 </div>
             </div>
-            <h2>Financials</h2>
+            <h2>Financial</h2>
             <div class="table">
                 <div class="tr">
                     <div class="tc" style="width: 100%;">Please provide details of any Preliminary Deposit or other Direct Payment made or intended to be made</div>
@@ -177,8 +180,8 @@
                 </div>
                 <div class="tr">
                     <div class="tc">Do you have a mortgage broker?</div>
-                    <div class="tc quarter"><strong>Yes</strong> <input type="radio" name="mortgagebroker" id=""></div>
-                    <div class="tc quarter"><strong>No</strong> <input type="radio" name="mortgagebroker" id=""></div>
+                    <div class="tc quarter"><strong>Yes</strong> <input type="radio" name="mortgagebroker" id="mortgagebrokery"></div>
+                    <div class="tc quarter"><strong>No</strong> <input type="radio" name="mortgagebroker" id="mortgagebrokern"></div>
                 </div>
                 <div class="tr">
                     <div class="tc" style="width: 100%;">If so, please provide their name and contact details below.  By providing these details you are <strong>consenting to us contacting your broker</strong> to discuss the transaction.</div>
@@ -284,7 +287,7 @@
                 </div>
             </div>
             <h2>Joint Ownership</h2>
-            <p>Where there are joint purchasers we must indicate how the beneficial interest in the property is to be held by them. Below is a summary of the two methods of co-ownership. Please indicate your choice accordingly.</p>
+            <p>Where there are joint purchasers we must indicate how the beneficial interest in the property is to be held by them. Below is a summary of the two methods of co&ndash;ownership. Please indicate your choice accordingly.</p>
             <div class="table">
                 <div class="tr">
                     <div class="tc" style="width: 75%;">Joint Tenants?</div>
@@ -367,10 +370,10 @@
                     <div class="tc" style="width: 100%;"><strong>Note: </strong>In certain circumstances the seller may agree to accept a reduced deposit.  However if, after contracts have been exchanged, you are unable to complete on the completion date, you may have to forfeit a deposit equivalent to 10% of the purchase price and the seller may make a claim against you for the balance.</div>
                 </div>
             </div>
-            <h2>Buy-To-Let</h2>
+            <h2>Buy&ndash;To&ndash;Let</h2>
             <div class="table">
                 <div class="tr">
-                    <div class="tc">Are you purchasing this property as a “buy-to-let”?</div>
+                    <div class="tc">Are you purchasing this property as a “buy&ndash;to&ndash;let”?</div>
                     <div class="tc quarter"><strong>Yes</strong> <input type="radio" name="buytolet" id=""></div>
                     <div class="tc quarter"><strong>No</strong> <input type="radio" name="buytolet" id=""></div> 
                 </div>
@@ -494,7 +497,7 @@
                 </li>
                 <br>
                 <li>Flooding <br><br>
-                    Flooding may take a variety of forms: it may be seasonal or irregular or simply a one-off occurrence.  The property does not need to be near a sea or river for flooding to occur.  For further information, please visit <a href="www.gov.uk/check-flood-risk">www.gov.uk/check-flood-risk</a> and <a href="environment-agency.gov.uk">apps.environment-agency.gov.uk</a>, which includes a mapping tool.  Please note that this firm will not automatically carry out research in this respect on your behalf and you are advised to investigate this as soon as possible by visiting these websites.
+                    Flooding may take a variety of forms: it may be seasonal or irregular or simply a one&ndash;off occurrence.  The property does not need to be near a sea or river for flooding to occur.  For further information, please visit <a href="www.gov.uk/check-flood-risk">www.gov.uk/check-flood-risk</a> and <a href="environment-agency.gov.uk">apps.environment-agency.gov.uk</a>, which includes a mapping tool.  Please note that this firm will not automatically carry out research in this respect on your behalf and you are advised to investigate this as soon as possible by visiting these websites.
                 </li>
             </ul>
             <p><strong>Note: </strong>By returning this form and your payment on account, you authorise us to submit the application for searches without delay.  If you wish us to delay submitting the application, please advise us in writing.</p>
@@ -502,8 +505,8 @@
             <div class="table">
                 <div class="tr">
                     <div class="tc">Have you already or do you propose to commission your own survey of the property?</div>
-                    <div class="tc quarter"><strong>Yes</strong><input type="radio" name="" id=""></div>
-                    <div class="tc quarter"><strong>No</strong><input type="radio" name="" id=""></div>
+                    <div class="tc quarter"><strong>Yes</strong><input type="radio" name="propertysurvey" id=""></div>
+                    <div class="tc quarter"><strong>No</strong><input type="radio" name="propertysurvey" id=""></div>
                 </div>
                 <div class="tr">
                     <div class="tc" style="width: 100%;">If so, please provide the name and contact details of your surveyor.  By providing this information you are expressly consenting to us contacting your surveyor to discuss the property and the transaction with them.  However, we are not obliged to do so and if you wish us to particularly be aware of the matters in your survey report, please ensure that we have a copy and request what aspect you wish us to check/verify.</div>
@@ -556,11 +559,11 @@
                 <li>Act for my/our lender and to disclose all relevant facts about me/us and the property.</li>
                 <li>Complete the purchase when we are able to do so.</li>
             </ul>
-            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-1"></div></div>
-            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-2"></div></div>
-            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-3"></div></div>
-            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-4"></div></div>
-            <p>If there is to be more than one purchaser of the property, you must each sign this form.</p>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-1"></div> <br><span class="auto-date"></span><br><input class="limit-party1" style="width: revert;" type="text" name="name1" id=""> </div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-2"></div> <br><span class="auto-date"></span><br><input class="limit-party2" style="width: revert; display: none;"  type="text" name="name2" id=""></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-3"></div> <br><span class="auto-date"></span><br><input class="limit-party3" style="width: revert;" type="text" name="name3" id=""></div>
+            <div class="form-row" style="clear: both; margin: 0 0 auto;"><div class="signature-block-4"></div> <br><span class="auto-date"></span><br><input class="limit-party4" style="width: revert;" type="text" name="name4" id=""></div>
+            <p style="clear: both;">If there is to be more than one purchaser of the property, you must each sign this form.</p>
             <p><strong>Note: </strong>*We are accredited as part of the Law Society's Conveyancing Quality Scheme ("CQS").  This is designed to improve transparency of transactions, raise service levels and provide better communication and a more efficient process.  To achieve this we need to be able to share information with other parties involved in this transaction and any related chain of transactions.  By signing this form you are expressly consenting to us sharing information in this way.  If you have any particular queries or concerns regarding CQS please do not hesitate to raise these with us at an early stage.</p>
         </form>
     </div>
