@@ -1,0 +1,82 @@
+<head>
+     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+    <style>
+        .sign-html-form{
+            max-width:850px;
+            margin:auto;
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: normal;	
+            font-size: 14px;
+        }
+        .sign-html-form form div.signature-tag{
+            border-radius:4px;
+            padding:11px 22px;
+            margin-right:10px;
+            background:#FFC74D;
+      }
+      .sign-html-form div.signature-block{
+          font-style:italic;
+          clear:left;
+          font-family: Arial,Helvetica Neue,Helvetica,sans-serif;	
+      }
+      .sign-html-form form div.relax{
+        clear: both;
+      }
+      .sign-html-form form button.add-attachment{
+        background-color: #E8592D;
+        color: white;
+        border: white;
+        padding: 5px
+      }
+      .bold{
+        font-weight: bold;
+      }
+    </style>
+    <div class="sign-html-form">
+    <form>
+		<img style="float:right; width:185px;" src="data:image/png;base64,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"/>
+		<div class="address">
+			<p><span>{{fname}} {{sname}}</span><br>
+                <span>{{add1}}</span><br>
+                <span>{{add2}}</span><br>
+                <span>{{town}}</span><br>
+                <span>{{county}}</span><br>
+                <span>{{postcode}}</span></p>
+		</div>
+		
+		<div class="relax"></div>
+		
+		<div class="form-row">
+			<p>Dear {{fname}} {{sname}},</p>
+			
+			<p class="bold">Reference: {{reference}}</p>
+ 
+			<p>Thank you for selecting us to deal with professional requirements.</p>
+
+			<p>Your account will be managed by a professional team and details of the person handling it will be sent to you upon completion and return of certain information we require in order to proceed.</p>
+			<p>We enclose with this letter information on how our firm will deal with your personal details.</p>
+			<p>Please provide us with all requested information, electronically sign the documents and provide Identity information and photo ID such as a UK Passport or Driver Licence for electronic verification purposes. You may also be required to identify yourself via facial recognition technology if you have a Smart device or PC with camera.</p>
+            <button class="add-attachment" name="evidence">Upload Identity Evidence</button>
+			<p>If you believe any part of this letter to be inaccurate or not to represent your understanding of the position, please let us know immediately.</p>
+			<p>If you have any questions or queries, please do not hesitate to contact us.</p>
+			
+			<p>Yours Sincerely,</p>
+			<p class="bold">{{feeeanername}}<br>{{feeearnertitle}}</p>
+
+		</div>
+		
+		<hr/>
+		
+		<p class="bold">Please electronically sign here to confirm that you agree to the above terms and wish to proceed;</p>
+		
+		<div class="signature-block">
+			<span>Party to electronically sign here</span>
+		</div>
+	                
+        <div class="relax"></div>
+    </form>
+</body>
